@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Home</title>
+    <div th:replace="~{include/AdminNav::bootstrap}"></div>
+</head>
+<body>
+<div th:replace="~{include/AdminNav::adminNav }"></div>
+<div style=" margin-left: 20%; ">
+    <h1>用户管理</h1>
+    <form  method="post"  th:action="@{/searchUser}">
+        <input type="text" placeholder="请输入UID" name="uid_search" style="width: 300px;height: 30px;margin-bottom: 10px;" />
+        <input type="submit" value="搜索" class="btn btn-primary">
+    </form>
+    <a href="#" class="btn btn-primary" onclick="$('#addModal').modal('show');">添加用户</a>
+    <div style="text-align: center"><span style="color: red;text-align: center"  th:text="${error}"/></div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>UID</th>
+            <th>用户名</th>
+            <th>邮箱</th>
+            <th>电话</th>
+            <th style="width: 20%">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user,iterStat: ${users}">
+            <td th:text="${iterStat.count}" th:id="'count'+${iterStat.count}"></td>
+            <td th:text="${user.uid}" th:id="'uid'+${iterStat.count}"></td>
+            <td th:text="${user.name}" th:id="'name'+${iterStat.count}"></td>
+            <td th:text="${user.email}" th:id="'email'+${iterStat.count}"></td>
+            <td th:text="${user.phone}" th:id="'phone'+${iterStat.count}"></td>
+            <td>
+                <a href="#"  class="btn btn-primary"  th:onclick="'javascript:openEditModal(\''+${iterStat.count}+'\');'" >编辑</a>
+                <a href="#" class="btn btn-danger" onclick="if (confirm('确认删除？') === false) return false;" id="delete" th:href="@{'/deleteUser?userid='+${user.uid}}">删除</a>
+                <a href="#" class="btn btn-success"  onclick="if (confirm('确认重置密码？') === false) return false;"  th:id="reset" th:href="@{'/resetPassword?userid='+${user.uid}}">重置密码</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <script>
+        openEditModal = function (item) {
+            console.log(item);
+            $('#userid_edit').val($('#uid' + item).text());
+            $('#username_edit').val($('#name' + item).text());
+            $('#email_edit').val($('#email' + item).text());
+            $('#phone_edit').val($('#phone' + item).text());
+            $('#editModal').modal('show');
+        }
+
+
+    </script>
+
+
+    <!-- 编辑用户模态框 -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="Label">编辑</h4>
+                </div>
+                <form class="form-horizontal" th:action="@{/editUser}" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">学号</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="userid_edit" class="form-control" id="userid_edit"/>
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-sm-2 control-label">姓名</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="username_edit" class="form-control" id="username_edit"
+                                       placeholder="">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-sm-2 control-label">邮箱</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="email_edit" class="form-control" id="email_edit"
+                                       placeholder="">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-sm-2 control-label">电话</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="phone_edit" class="form-control" id="phone_edit"
+                                       placeholder="">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary" id="tch_save_btn">保存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 添加用户模态框 -->
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="my" style="text-align:center">添加用户</h4>
+                </div>
+                <form class="form-horizontal" th:action="@{/addUser}" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">学号</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="uid_add" class="form-control" id="uid_add"
+                                       placeholder="">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-sm-2 control-label">姓名</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="name_add" class="form-control" id="name_add"
+                                       placeholder="">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-sm-2 control-label">密码</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="pwd_add" class="form-control" id="pwd_add"
+                                       placeholder="">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            <button type="submit" class="btn btn-primary" id="commit_btn">提交</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

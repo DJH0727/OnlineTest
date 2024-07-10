@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Home</title>
+  <div th:replace="~{include/AdminNav::bootstrap}"></div>
+  <link rel="stylesheet" href="/css/serch.css">
+</head>
+<body>
+<div th:replace="~{include/AdminNav::adminNav }"></div>
+<div style=" margin-left: 20%; ">
+  <h1>试题添加</h1>
+  <iframe id="myIframe" name="myIframe" style="display:none;"></iframe>
+
+  <div class="form-group" >
+    <select id="questionType" name="questionType" onchange="showQuestionForm()" style="font-size: 18px; text-align: center;" class="btn-primary">
+      <option value="singleChoice" style="text-align: center;">单选题</option>
+      <option value="multipleChoice" style="text-align: center;">多选题</option>
+      <option value="trueFalse" style="text-align: center;">判断题</option>
+    </select>
+  </div>
+
+  <!-- 单选题的表单 -->
+  <div class="question" id="singleChoiceForm" style="display: block;">
+    <form th:action="@{/addSingleChoiceQuestion}" method="post" target="myIframe">
+    <div class="form-group" style="margin-left:10% ;margin-right:15%;text-align:center;" >
+      <span style="font-size: 18px">题干：</span>
+      <p>
+        <textarea rows="4" cols="30" id="question1" name ="question1" class="form-control" style="font-weight: bold;" placeholder="请输入题干" required></textarea>
+      </p>
+    </div>
+    <div class="form-group" style="text-align:center; width:40%; display: inline-block; margin-right: 10%;" >
+      <span style="font-size: 15px">选项 A：</span>
+      <p>
+        <textarea rows="2" cols="15" id="optionA1" name ="optionA1" class="form-control" style="font-weight: bold;" placeholder="请输入选项 A" required></textarea>
+      </p>
+    </div>
+    <div class="form-group" style="text-align:center; width:40%; display: inline-block;" >
+      <span style="font-size: 15px">选项 B：</span>
+      <p>
+        <textarea rows="2" cols="15" id="optionB1" name ="optionB1" class="form-control" style="font-weight: bold;" placeholder="请输入选项 B" required></textarea>
+      </p>
+    </div>
+    <div class="form-group" style="text-align:center; width:40%; display: inline-block; margin-right: 10%;" >
+      <span style="font-size: 15px">选项 C：</span>
+      <p>
+        <textarea rows="2" cols="15" id="optionC1" name ="optionC1" class="form-control" style="font-weight: bold;" placeholder="请输入选项 C" required></textarea>
+      </p>
+    </div>
+    <div class="form-group" style="text-align:center; width:40%; display: inline-block;" >
+      <span style="font-size: 15px">选项 D：</span>
+      <p>
+        <textarea rows="2" cols="15" id="optionD1" name ="optionD1" class="form-control" style="font-weight: bold;" placeholder="请输入选项 D" required></textarea>
+      </p>
+    </div>
+
+      <div class="form-group" style="font-size: 24px;text-align:center; width:40%; display: inline-block;" >
+        <span style="font-size: 20px">课程：</span>
+        <select id="courseId" name="courseId" class="form-control" required>
+          <option th:each="course : ${courses}" th:value="${course.cid}" th:text="${course.cname}"></option>
+        </select>
+      </div>
+      <div  class="form-group" style="font-size: 24px;text-align:center; width:40%; display: inline-block; margin-right: 10%;" >
+        <span style="font-size: 20px">正确答案：</span>
+        <input type="radio" id="answer1" name="answer1" value="A" required>
+        <label for="answer1">A</label>
+        <input type="radio" id="answer2" name="answer1" value="B">
+        <label for="answer2">B</label>
+        <input type="radio" id="answer3" name="answer1" value="C">
+        <label for="answer3">C</label>
+        <input type="radio" id="answer4" name="answer1" value="D">
+        <label for="answer4">D</label>
+      </div>
+
+
+    <script>
+      // 保存文本到 LocalStorage
+      document.getElementById("question1").addEventListener("input", function() {
+        localStorage.setItem("question1", this.value);
+      });
+      document.getElementById("optionA1").addEventListener("input", function() {
+        localStorage.setItem("optionA1", this.value);
+      });
+      document.getElementById("optionB1").addEventListener("input", function() {
+        localStorage.setItem("optionB1", this.value);
+      });
+      document.getElementById("optionC1").addEventListener("input", function() {
+        localStorage.setItem("optionC1", this.value);
+      });
+      document.getElementById("optionD1").addEventListener("input", function() {
+        localStorage.setItem("optionD1", this.value);
+      });
+      // 获取之前保存的文本并填充到 textarea
+      document.getElementById("question1").value = localStorage.getItem("question1");
+      document.getElementById("optionA1").value = localStorage.getItem("optionA1");
+      document.getElementById("optionB1").value = localStorage.getItem("optionB1");
+      document.getElementById("optionC1").value = localStorage.getItem("optionC1");
+      document.getElementById("optionD1").value = localStorage.getItem("optionD1");
+      function ClearInput() {
+        localStorage.clear();
+        document.getElementById("question1").value = "";
+        document.getElementById("optionA1").value = "";
+        document.getElementById("optionB1").value = "";
+        document.getElementById("optionC1").value = "";
+        document.getElementById("optionD1").value = "";
+      }
+    </script>
+      <a  class="btn btn-primary" style="margin-left: 80%;" onclick="ClearInput()">清空内容</a>
+
+      <div style="margin-right: 10%; margin-top: 2%">
+      <button type="submit" class="btn btn-primary">提交</button>
+      </div>
+
+
+  </form>
+  </div>
+
+  <!-- 多选题的表单 -->
+  <div class="question" id="multipleChoiceForm" style="display: none;">
+    <form th:action="@{/addMultipleChoiceQuestion}" method="post" target="myIframe">
+      <div class="form-group" style="margin-left:10% ;margin-right:15%;text-align:center;" >
+        <span style="font-size: 18px">题干：</span>
+        <p>
+          <textarea rows="4" cols="30" id="question2" name ="question2" class="form-control" style="font-weight: bold;" placeholder="请输入题干" required></textarea>
+        </p>
+      </div>
+      <div class="form-group" style="text-align:center; width:40%; display: inline-block; margin-right: 10%;" >
+        <span style="font-size: 15px">选项 A：</span>
+        <p>
+          <textarea rows="2" cols="15" id="optionA2" name ="optionA2" class="form-control" style="font-weight: bold;" placeholder="请输入选项 A" required></textarea>
+        </p>
+      </div>
+      <div class="form-group" style="text-align:center; width:40%; display: inline-block;" >
+        <span style="font-size: 15px">选项 B：</span>
+        <p>
+          <textarea rows="2" cols="15" id="optionB2" name ="optionB2" class="form-control" style="font-weight: bold;" placeholder="请输入选项 B" required></textarea>
+        </p>
+      </div>
+      <div class="form-group" style="text-align:center; width:40%; display: inline-block; margin-right: 10%;" >
+        <span style="font-size: 15px">选项 C：</span>
+        <p>
+          <textarea rows="2" cols="15" id="optionC2" name ="optionC2" class="form-control" style="font-weight: bold;" placeholder="请输入选项 C" required></textarea>
+        </p>
+      </div>
+      <div class="form-group" style="text-align:center; width:40%; display: inline-block;" >
+        <span style="font-size: 15px">选项 D：</span>
+        <p>
+          <textarea rows="2" cols="15" id="optionD2" name ="optionD2" class="form-control" style="font-weight: bold;" placeholder="请输入选项 D" required></textarea>
+        </p>
+      </div>
+
+      <div class="form-group" style="font-size: 24px;text-align:center; width:40%; display: inline-block;" >
+        <span style="font-size: 20px">课程：</span>
+        <select id="courseId2" name="courseId2" class="form-control" required>
+          <option th:each="course : ${courses}" th:value="${course.cid}" th:text="${course.cname}"></option>
+        </select>
+      </div>
+      <div  class="form-group" style="font-size: 24px;text-align:center; width:40%; display: inline-block; margin-right: 10%;" >
+        <span style="font-size: 20px">正确答案：</span>
+        <input type="radio" id="mul_answer1" name="answer2" value="A" required>
+        <label for="answer1">A</label>
+        <input type="radio" id="mul_answer2" name="answer2" value="B">
+        <label for="answer2">B</label>
+        <input type="radio" id="mul_answer3" name="answer2" value="C">
+        <label for="answer3">C</label>
+        <input type="radio" id="mul_answer4" name="answer2" value="D">
+        <label for="answer4">D</label>
+      </div>
+
+
+      <script>
+        // 保存文本到 LocalStorage
+        document.getElementById("question2").addEventListener("input", function() {
+          localStorage.setItem("question2", this.value);
+        });
+        document.getElementById("optionA2").addEventListener("input", function() {
+          localStorage.setItem("optionA2", this.value);
+        });
+        document.getElementById("optionB2").addEventListener("input", function() {
+          localStorage.setItem("optionB2", this.value);
+        });
+        document.getElementById("optionC2").addEventListener("input", function() {
+          localStorage.setItem("optionC2", this.value);
+        });
+        document.getElementById("optionD2").addEventListener("input", function() {
+          localStorage.setItem("optionD2", this.value);
+        });
+        // 获取之前保存的文本并填充到 textarea
+        document.getElementById("question2").value = localStorage.getItem("question2");
+        document.getElementById("optionA2").value = localStorage.getItem("optionA2");
+        document.getElementById("optionB2").value = localStorage.getItem("optionB2");
+        document.getElementById("optionC2").value = localStorage.getItem("optionC2");
+        document.getElementById("optionD2").value = localStorage.getItem("optionD2");
+        function ClearInput() {
+          localStorage.clear();
+          document.getElementById("question2").value = "";
+          document.getElementById("optionA2").value = "";
+          document.getElementById("optionB2").value = "";
+          document.getElementById("optionC2").value = "";
+          document.getElementById("optionD2").value = "";
+        }
+      </script>
+      <a  class="btn btn-primary" style="margin-left: 80%;" onclick="ClearInput()">清空内容</a>
+
+      <div style="margin-right: 10%; margin-top: 2%">
+        <button type="submit" class="btn btn-primary">提交</button>
+      </div>
+
+
+    </form>
+
+
+
+  </div>
+
+  <div class="question" id="trueFalseForm" style="display: none;">
+    <!-- 判断题的输入框 -->
+    <span>判断题的输入框</span>
+  </div>
+
+
+  <script>
+    // 显示表单,设置questionType的值到 localStorage
+
+    const questionType = localStorage.getItem("questionType");
+    if (questionType) {
+      document.getElementById("questionType").value = questionType;
+      document.querySelectorAll(".question").forEach(form => {
+        form.style.display = "none";
+      });
+      document.getElementById(questionType + "Form").style.display = "block";
+    }
+
+    function showQuestionForm() {
+      const questionType = document.getElementById("questionType").value;
+      console.log(questionType);
+      localStorage.setItem("questionType", questionType);
+      document.querySelectorAll(".question").forEach(form => {
+        form.style.display = "none";
+      });
+      document.getElementById(questionType + "Form").style.display = "block";
+    }
+
+
+  </script>
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
