@@ -15,6 +15,7 @@ import org.web.onlinetest.main.QusOption;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 
 @Component
@@ -85,53 +86,35 @@ public class QuestionService {
     }
 
 
+    public List<Question> searchQuestionByKeyword(String keyword,int cid,int qtype) {
+        List<Question> questions = findAllQuestions();
+        List<Question> select = new ArrayList<>();
+        for (Question question : questions) {
 
-    public List<Question> findQuestionsByCidAndQtype(List<Question> questions,int courseId, int questionType) {
-            List<Question> result = new ArrayList<>();
-            if (courseId == -1 && questionType == -1) {
-                return questions;
+            if(cid==-1&&qtype==-1)
+            {
+                select.add(question);
             }
-            if (questionType == -1) {
-                for (Question question : questions) {
-                    if (question.getCid() == courseId) {
-                        result.add(question);
-                    }
-                }
+            else if(cid!=-1&&qtype==-1)
+            {
+                if(question.getCid() == cid) select.add(question);
             }
-            else if(courseId == -1) {
-                for (Question question : questions) {
-                    if (question.getQtype() == questionType) {
-                        result.add(question);
-                    }
-                }
+            else if(cid==-1&&qtype!=-1)
+            {
+                if(question.getQtype()==qtype) select.add(question);
             }
-            else {
-                for (Question question : questions) {
-                    if (question.getCid() == courseId && question.getQtype() == questionType) {
-                        result.add(question);
-                    }
-                }
-            }
-            return result;
-    }
-
-
-    public List<Question> searchQuestionByKeyword(String keyword) {
-        List<Question> questions = null;
-        List<QusOption> options = null;
-        try {
-            questions = jdbcTemplate.query("select * from questions where qtext like ?", questionRowMapper, "%" + keyword + "%");
-            for (Question question : questions) {
-                String courseName = jdbcTemplate.queryForObject("select cname from courses where cid=?", String.class, question.getCid());
-                question.setCourseName(courseName);
-                options = jdbcTemplate.query("select * from options where qid=?", answerRowMapper, question.getQid());
-                question.setOptions(options);
+            else if(cid != -1 && qtype != -1)
+            {
+                if(question.getCid() == cid && question.getQtype() == qtype) select.add(question);
             }
         }
-        catch (Exception e) {
-            logger.error("searchQuestionByKeyword error", e);
+
+        List<Question> result = new ArrayList<>();
+        for (Question question : select) {
+            Pattern pattern = Pattern.compile(keyword);
+            if(pattern.matcher(question.getQtext()).find()) result.add(question);
         }
-        return questions;
+        return result;
     }
 
     public boolean deleteQuestion(int qid) {

@@ -9,10 +9,21 @@
 <div th:replace="~{include/AdminNav::adminNav }"></div>
 <div style=" margin-left: 20%; ">
     <h1>试题管理</h1>
-    <form  method="post"  th:action="@{/searchQuestion}" style="display: inline-block;">
-        <input type="text" name="searchText" id="searchText" placeholder="搜索关键词" class="form-control" style="width: 60%; display: inline-block;" >
-        <input type="submit" value="搜索" class="btn btn-primary" style="display: inline-block; " onclick="saveKeyword()">
+    <form  method="post"  th:action="@{/searchQuestion}" >
+        <input type="text" name="searchText" id="searchText" placeholder="搜索关键词" class="form-control" style="width: 40%; display: inline-block;" >
+        <select id="courseId" name="courseId" class="form-control" required style="display: inline-block; width: 200px;" >
+            <option value="-1">全部</option>
+            <option th:each="course : ${courses}" th:value="${course.cid}" th:text="${course.cname}"></option>
+        </select>
+        <select id="questionType" name="questionType" class="form-control" required style="display: inline-block; width: 200px;">
+            <option value="-1">全部</option>
+            <option value="1">单选题</option>
+            <option value="2">多选题</option>
+            <option value="3">判断题</option>
+        </select>
+        <input type="submit" value="搜索" class="btn btn-primary" onclick="saveKeyword()">
     </form>
+    <span th:text="${ListMode}" id="listModel" style="display: none;"></span>
     <script>
         function saveKeyword() {
             var keyword = document.getElementById("searchText").value;
@@ -23,21 +34,8 @@
             document.getElementById("searchText").value = keyword;
         }
     </script>
-    <form  method="post"  th:action="@{/selectQuestion}" style="width: 60% ; display: inline-block;">
-        <select id="courseId" name="courseId" class="form-control" required style="display: inline-block; width: 200px;">
-            <option value="-1">全部</option>
-            <option th:each="course : ${courses}" th:value="${course.cid}" th:text="${course.cname}"></option>
-        </select>
-        <select id="questionType" name="questionType" class="form-control" required style="display: inline-block; width: 200px;">
-            <option value="-1">全部</option>
-            <option value="1">单选题</option>
-            <option value="2">多选题</option>
-            <option value="3">判断题</option>
-        </select>
-        <input type="submit" value="筛选" class="btn btn-primary">
-    </form>
 
-
+    <div id="questionTable">
     <table class="table table-striped">
         <thead>
         <tr>
@@ -63,7 +61,48 @@
         </tr>
         </tbody>
     </table>
+    </div>
+
+    <div style="margin-left: 30%; margin-top: 20px;" id = 'allQList'>
+        <!--分页文字信息  -->
+        <div class="col-md-6" style="margin-left:5%;">当前 <span th:text="${pageNum}"></span>页,总<span th:text="${totalPage}"></span>
+            页,总 <span th:text="${AllQCount}"></span> 道题目</div>
+        <!-- 分页条信息 -->
+        <div class="col-md-6">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li><a th:href="@{/quesManage?page=1}" >首页</a></li>
+                    <li><a th:href="@{/quesManage(page=${prevPage})}" >上一页</a></li>
+                    <li><a th:href="@{/quesManage(page=${nextPage})}" >下一页</a></li>
+                    <li><a th:href="@{/quesManage(page=${totalPage})}" >末页</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div style="margin-left: 30%; margin-top: 20px; display: none;" id = 'searchQList' >
+        <!--分页文字信息  -->
+        <div class="col-md-6" style="margin-left:5%;">当前 <span th:text="${pageNum}"></span>页,总<span th:text="${totalPage}"></span>
+            页,总 <span th:text="${AllQCount}"></span> 道题目</div>
+        <!-- 分页条信息 -->
+        <div class="col-md-6">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li><a th:href="@{/searchQuestion?page=1}" >首页</a></li>
+                    <li><a th:href="@{/searchQuestion(page=${prevPage})}" >上一页</a></li>
+                    <li><a th:href="@{/searchQuestion(page=${nextPage})}" >下一页</a></li>
+                    <li><a th:href="@{/searchQuestion(page=${totalPage})}" >末页</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
     <script>
+        if($("#listModel").text() === "search")
+        {
+            document.getElementById("searchQList").style.display = "block";
+            document.getElementById("allQList").style.display = "none";
+        }
         document.getElementById("courseId").addEventListener("input", function() {
             sessionStorage.setItem("courseId", this.value);
         });

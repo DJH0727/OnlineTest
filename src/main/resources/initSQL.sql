@@ -56,7 +56,7 @@ CREATE TABLE `options` (
                            PRIMARY KEY (`opid`),
                            KEY `qid` (`qid`),
                            CONSTRAINT `options_ibfk_1` FOREIGN KEY (`qid`) REFERENCES `questions` (`qid`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -65,7 +65,7 @@ CREATE TABLE `options` (
 
 LOCK TABLES `options` WRITE;
 /*!40000 ALTER TABLE `options` DISABLE KEYS */;
-INSERT INTO `options` VALUES (1,1,1,' MAC地址在每次启动后都会改变',NULL),(2,1,2,' MAC地址一共有48比特，它们从出厂时就被固化在网卡中',NULL),(3,1,3,' MAC地址也称做物理地址，或通常所说的计算机的硬件地址',NULL),(4,1,4,' MAC地址每次启动后都不会变化',NULL),(6,2,1,'7E FE 27 7D 5D 65 7D 7E',NULL),(7,2,2,' 7E FE 27 7D 65 7E',NULL),(8,2,3,'7D 5E FE 27 7D 5D 7D 5D 65 7D 5E',NULL),(9,2,4,'7E FE 27 7D 7D 65 7E',NULL),(10,3,1,'任何一个关系模式一定有键。',NULL),(11,3,2,'任何一个包含两个属性的关系模式一定满足3NF。',NULL),(12,3,3,'7任何一个包含两个属性的关系模式一定满足BCNF。',NULL),(13,3,4,'任何一个包含三个属性的关系模式一定满足2NF。',NULL);
+INSERT INTO `options` VALUES (1,1,1,' MAC地址在每次启动后都会改变',NULL),(2,1,2,' MAC地址一共有48比特，它们从出厂时就被固化在网卡中',NULL),(3,1,3,' MAC地址也称做物理地址，或通常所说的计算机的硬件地址',NULL),(4,1,4,' MAC地址每次启动后都不会变化',NULL),(6,2,1,'7E FE 27 7D 5D 65 7D 7E',NULL),(7,2,2,' 7E FE 27 7D 65 7E',NULL),(8,2,3,'7D 5E FE 27 7D 5D 7D 5D 65 7D 5E',NULL),(9,2,4,'7E FE 27 7D 7D 65 7E',NULL),(10,3,1,'任何一个关系模式一定有键。',NULL),(11,3,2,'任何一个包含两个属性的关系模式一定满足3NF。',NULL),(12,3,3,'7任何一个包含两个属性的关系模式一定满足BCNF。',NULL),(13,3,4,'任何一个包含三个属性的关系模式一定满足2NF。',NULL),(14,4,1,' 通信技术',NULL),(15,4,2,'电子技术 ',NULL),(16,4,3,'工业技术    ',NULL),(17,4,4,'存储技术',NULL),(56,5,1,'.class',NULL),(57,5,2,'.java',NULL),(58,5,3,'.cpp',NULL),(59,5,4,'.txt',NULL),(60,6,1,'a[0]; ',NULL),(61,6,2,'a[a.length-1];',NULL),(62,6,3,'a[3]; ',NULL),(63,6,4,'int i=1； a[i];',NULL),(64,7,1,'终端、电缆、计算机',NULL),(65,7,2,'信号发生器、通信线路、信号接收设备',NULL),(66,7,3,'源系统、传输系统、 目的系统',NULL),(67,7,4,'终端、通信设施、接收设备',NULL),(68,8,1,'模/数和数/模',NULL),(69,8,2,'调制/解调 ',NULL),(70,8,3,'无线有线 ',NULL),(71,8,4,'电信号/光信号',NULL),(72,9,1,'仅Ⅲ， Ⅳ  ',NULL),(73,9,2,'仅Ⅰ， Ⅱ， Ⅲ',NULL),(74,9,3,'仅Ⅰ， Ⅱ， Ⅳ',NULL),(75,9,4,'Ⅰ， Ⅱ， Ⅲ ， Ⅳ',NULL);
 /*!40000 ALTER TABLE `options` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -87,7 +87,7 @@ CREATE TABLE `questions` (
                              PRIMARY KEY (`qid`),
                              KEY `cid` (`cid`),
                              CONSTRAINT `questions_ibfk_1` FOREIGN KEY (`cid`) REFERENCES `courses` (`cid`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -96,7 +96,7 @@ CREATE TABLE `questions` (
 
 LOCK TABLES `questions` WRITE;
 /*!40000 ALTER TABLE `questions` DISABLE KEYS */;
-INSERT INTO `questions` VALUES (1,3,1,'以下关于MAC的说法中错误的是',NULL,0,'A'),(2,3,1,'一个PPP帧的数据部分（用十六进制写出）是7D 5E FE 27 7D 5D 7D 5D 65 7D 5E。\r\n试问真正的数据是什么（用十六进制写出）？',NULL,0,'D'),(3,1,1,'在下列关于规范化理论的叙述中，不正确的是_________。\r\n',NULL,0,'D');
+INSERT INTO `questions` VALUES (1,3,1,'以下关于MAC的说法中错误的是',NULL,0,'A'),(2,3,1,'一个PPP帧的数据部分（用十六进制写出）是7D 5E FE 27 7D 5D 7D 5D 65 7D 5E。\r\n试问真正的数据是什么（用十六进制写出）？',NULL,0,'D'),(3,1,1,'在下列关于规范化理论的叙述中，不正确的是_________。\r\n',NULL,0,'D'),(4,3,1,'计算机网络是计算机技术和（ ）技术的产物。',NULL,0,'A'),(5,5,1,'使用Java语言编写的源程序保存时的文件扩展名是（ ）。',NULL,0,'B'),(6,5,1,'设有数组的定义int[] a = new int[3]，则下面对数组元素的引用错误的是（ ）。',NULL,0,'D'),(7,3,1,'通信系统必须具备的三个基本要素是（）。',NULL,0,'C'),(8,3,1,'调制解调器实现的信号转换是\r\n',NULL,0,'A'),(9,3,1,'下列关于IP路由器功能的描述中，正确的是\r\nⅠ.运行路由协议，设备路由表\r\nⅡ.检测到拥塞时，合理丢弃IP分组\r\nⅢ.对收到的IP分组头进行差错校验，确保传输的IP分组不丢失\r\nⅣ.根据收到的IP分组的目的IP地址，将其转发至合适的输出线路上\r\n',NULL,0,'C');
 /*!40000 ALTER TABLE `questions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -124,7 +124,7 @@ CREATE TABLE `user_info` (
 
 LOCK TABLES `user_info` WRITE;
 /*!40000 ALTER TABLE `user_info` DISABLE KEYS */;
-INSERT INTO `user_info` VALUES ('37220222203581','djh','M','17382319551','2724948893@qq.com'),('admin','admin','M',NULL,NULL),('user1','user1','M',NULL,NULL),('user2','user2','M','183369','37220222203581@stu.xmu.edu.cn'),('user3','user3','M','','sarah3122212@gmail.com'),('user4','djh',NULL,NULL,NULL);
+INSERT INTO `user_info` VALUES ('37220222203581','djh','M','17382319551','2724948893@qq.com'),('admin','admin','M',NULL,NULL),('user1','user1','M',NULL,NULL),('user2','user2','M','183369','37220222203581@stu.xmu.edu.cn'),('user5','杜俊豪',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `user_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -149,7 +149,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES ('37220222203581',1,'djh666'),('admin',0,'123456'),('user1',1,'user1'),('user2',1,'user2'),('user3',1,'user3'),('user4',1,'user4');
+INSERT INTO `users` VALUES ('37220222203581',1,'djh666'),('admin',0,'123456'),('user1',1,'user1'),('user2',1,'user2'),('user5',1,'12345');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -162,4 +162,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-10 18:49:05
+-- Dump completed on 2024-07-11 14:48:58
