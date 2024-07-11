@@ -49,19 +49,26 @@ public class AdminController {
 
     }
 
-    @RequestMapping("usermanage")
-    public String userManage(Model model) {
-        List<User> userList = adminService.findAllUser();
-        model.addAttribute("users", userList);
-        model.addAttribute("menu", 1);
-        return "admin/userManage";
-    }
 
-    @GetMapping("/userManage")
-    public String toUserManage( Model model) {
+
+    final Integer UserPageSize = 7;
+    @RequestMapping("/userManage")
+    public String toUserManage( Model model,Integer page) {
         List<User> userList = adminService.findAllUser();
-        model.addAttribute("users", userList);
+
         model.addAttribute("menu", 1);
+        if (page == null||page<=0) {
+            page = 1;
+        }
+        int start = (page - 1) * UserPageSize;
+        int end = start + UserPageSize;
+        List<User> userPageList = userList.subList(start, end > userList.size() ? userList.size() : end);
+        model.addAttribute("users", userPageList);
+        model.addAttribute("pageNum", page);
+        model.addAttribute("totalPage", (userList.size()+UserPageSize-1)/UserPageSize);
+        model.addAttribute("AllQCount", userList.size());
+        model.addAttribute("prevPage", Math.max(1, page - 1));
+        model.addAttribute("nextPage", Math.min((userList.size()+UserPageSize-1)/UserPageSize, page + 1));
         return "admin/userManage";
     }
 
@@ -276,7 +283,7 @@ public class AdminController {
         }
 
     final String currentQList = "currentQList";
-    final int pageSize = 5;
+    final int QuestionPageSize = 5;
     @RequestMapping("/quesManage")
     public String quesManage(Model model, HttpSession session,Integer page) {
         List<Question> AllQuestions = new ArrayList<>();
@@ -287,9 +294,9 @@ public class AdminController {
         session.setAttribute(currentQList, AllQuestions);
 
         List<Question> questions = new ArrayList<>();
-        if(page==null) page = 1;
-        int start = (page-1)*pageSize;
-        int end = start+pageSize;
+        if(page==null||page<=0) page = 1;
+        int start = (page-1)*QuestionPageSize;
+        int end = start+QuestionPageSize;
         if(AllQuestions.size()<end) end = AllQuestions.size();
         for(int i=start;i<end;i++)
         {
@@ -297,10 +304,10 @@ public class AdminController {
         }
 
         model.addAttribute("pageNum", page);
-        model.addAttribute("totalPage", (AllQuestions.size()+pageSize-1)/pageSize);
+        model.addAttribute("totalPage", (AllQuestions.size()+QuestionPageSize-1)/QuestionPageSize);
         model.addAttribute("AllQCount", AllQuestions.size());
         model.addAttribute("prevPage", Math.max(page - 1, 1));
-        model.addAttribute("nextPage", Math.min(page + 1, (AllQuestions.size()+pageSize-1)/pageSize));
+        model.addAttribute("nextPage", Math.min(page + 1, (AllQuestions.size()+QuestionPageSize-1)/QuestionPageSize));
 
         logger.info("trying to ques manage page{}", page);
         model.addAttribute("questions", questions);
@@ -314,37 +321,77 @@ public class AdminController {
         return "redirect:/quesManage";
     }
 
-    //逻辑上是先搜索后筛选，能用就行（bushi）
-    @RequestMapping("/searchQuestion")
-    public String searchQuestion(@RequestParam("searchText") String questionText,
-                                 @RequestParam("courseId") int courseId,
-                                 @RequestParam("questionType") int questionType,
+
+    @PostMapping("/searchQuestion")
+    public String searchQuestion(@RequestParam(value = "searchText", required = false) String searchText,
+                                 @RequestParam(value = "courseId" , required = false) Integer courseId,
+                                 @RequestParam(value = "questionType" , required = false) Integer questionType,
                                  Model model, HttpSession session, Integer page) {
 
-        logger.info("trying to search question by question: {}", questionText);
+        logger.info("Post trying to search question by question: {}, courseId: {}, questionType: {}", searchText, courseId, questionType);
         List<Course> courses = questionService.getAllCourses();
         model.addAttribute("courses", courses);
         model.addAttribute("menu", 3);
         List<Question> questions = new ArrayList<>();
-        questions = questionService.searchQuestionByKeyword(questionText, courseId, questionType);
+        questions = questionService.searchQuestionByKeyword(searchText, courseId, questionType);
         List<Question> searchQList = new ArrayList<>();
-        if(page==null) page = 1;
-        int start = (page-1)*pageSize;
-        int end = start+pageSize;
+        if(page==null||page<=0) page = 1;
+        int start = (page-1)*QuestionPageSize;
+        int end = start+QuestionPageSize;
         if(questions.size()<end) end = questions.size();
         for(int i=start;i<end;i++)
         {
             searchQList.add(questions.get(i));
         }
+
+        model.addAttribute("searchText", searchText);
+        model.addAttribute("courseId", courseId);
+        model.addAttribute("questionType", questionType);
+
         model.addAttribute("pageNum", page);
-        model.addAttribute("totalPage", (questions.size()+pageSize-1)/pageSize);
+        model.addAttribute("totalPage", (questions.size()+QuestionPageSize-1)/QuestionPageSize);
         model.addAttribute("AllQCount", questions.size());
         model.addAttribute("prevPage", Math.max(page - 1, 1));
-        model.addAttribute("nextPage", Math.min(page + 1, (questions.size()+pageSize-1)/pageSize));
+        model.addAttribute("nextPage", Math.min(page + 1, (questions.size()+QuestionPageSize-1)/QuestionPageSize));
         model.addAttribute("questions", searchQList);
         model.addAttribute("ListMode", "search");
+
+
         return "admin/quesManage";
     }
+    @GetMapping("/searchQuestion")
+    public String searchQuestion(Model model,String searchText,Integer courseId,Integer questionType,Integer page) {
+
+        List<Course> courses = questionService.getAllCourses();
+        model.addAttribute("courses", courses);
+        model.addAttribute("menu", 3);
+        List<Question> questions = new ArrayList<>();
+        questions = questionService.searchQuestionByKeyword(searchText, courseId, questionType);
+        List<Question> searchQList = new ArrayList<>();
+        if(page==null||page<=0) page = 1;
+        int start = (page-1)*QuestionPageSize;
+        int end = start+QuestionPageSize;
+        if(questions.size()<end) end = questions.size();
+        for(int i=start;i<end;i++)
+        {
+            searchQList.add(questions.get(i));
+        }
+        model.addAttribute("searchText", searchText);
+        model.addAttribute("courseId", courseId);
+        model.addAttribute("questionType", questionType);
+        model.addAttribute("pageNum", page);
+        model.addAttribute("totalPage", (questions.size()+QuestionPageSize-1)/QuestionPageSize);
+        model.addAttribute("AllQCount", questions.size());
+        model.addAttribute("prevPage", Math.max(page - 1, 1));
+        model.addAttribute("nextPage", Math.min(page + 1, (questions.size()+QuestionPageSize-1)/QuestionPageSize));
+        model.addAttribute("questions", searchQList);
+        model.addAttribute("ListMode", "search");
+        logger.info("Get trying to search question by question");
+
+        return "admin/quesManage";
+    }
+
+
 
 
 
