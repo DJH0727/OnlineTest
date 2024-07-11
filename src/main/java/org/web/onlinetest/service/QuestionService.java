@@ -130,4 +130,33 @@ public class QuestionService {
         logger.info("deleteQuestion success");
         return true;
     }
+
+    public boolean updateQuestion(int qid, String question,
+                                  String optionA, String optionB, String optionC, String optionD,
+                                  String answer,int cid) {
+
+       try {
+           jdbcTemplate.update("update questions set qtext=?, cid=?,answer=? where qid=?", question, cid, answer, qid);
+           jdbcTemplate.update("update options set optext=? where qid=? and op=?", optionA, qid, 1);
+           jdbcTemplate.update("update options set optext=? where qid=? and op=?", optionB, qid, 2);
+           jdbcTemplate.update("update options set optext=? where qid=? and op=?", optionC, qid, 3);
+           jdbcTemplate.update("update options set optext=? where qid=? and op=?", optionD, qid, 4);
+       }
+       catch (Exception e) {
+           logger.error("updateQuestion error", e);
+           return false;
+       }
+        return true;
+    }
+    public boolean updateQuestion(int qid, String question,String answer,int cid) {
+        try {
+            jdbcTemplate.update("update questions set qtext=?, cid=?,answer=? where qid=?", question, cid, answer, qid);
+        }
+        catch (Exception e) {
+            logger.error("updateQuestion error", e);
+            return false;
+        }
+        return true;
+    }
+
 }

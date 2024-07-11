@@ -392,6 +392,55 @@ public class AdminController {
     }
 
 
+    @RequestMapping("/editMultipleChoiceQuestion")
+    public String editMultipleChoiceQuestion(@RequestParam("mul_qid") int qid,
+                                             @RequestParam("mul_question")String question,
+                                             @RequestParam("mul_optionA")String optionA,
+                                             @RequestParam("mul_optionB")String optionB,
+                                             @RequestParam("mul_optionC")String optionC,
+                                             @RequestParam("mul_optionD")String optionD,
+                                             @RequestParam("mul_answer")String answer,
+                                             @RequestParam("mul_courseId")int courseId,
+                                             HttpSession session) {
+
+       logger.info("trying to edit multiple choice question id: {}", qid);
+       boolean flag = questionService.updateQuestion(qid, question, optionA, optionB, optionC, optionD, answer, courseId);
+       if(flag)logger.info("edit multiple choice question id: {} success", qid);
+       else logger.info("edit multiple choice question id: {} fail", qid);
+
+       return "redirect:/quesManage";
+    }
+    @RequestMapping("/editSingleChoiceQuestion")
+    public String editSingleChoiceQuestion(@RequestParam("single_qid") int qid,
+                                           @RequestParam("single_question")String question,
+                                           @RequestParam("single_optionA")String optionA,
+                                           @RequestParam("single_optionB")String optionB,
+                                           @RequestParam("single_optionC")String optionC,
+                                           @RequestParam("single_optionD")String optionD,
+                                           @RequestParam("single_answer")String answer,
+                                           @RequestParam("single_courseId")int courseId)
+    {
+        logger.info("trying to edit single choice question id: {}", qid);
+        boolean flag = questionService.updateQuestion(qid, question, optionA, optionB, optionC, optionD, answer, courseId);
+        if(flag)logger.info("edit single choice question id: {} success", qid);
+        else logger.info("edit single choice question id: {} fail", qid);
+        return "redirect:/quesManage";
+    }
+    @RequestMapping("/editJudgeQuestion")
+    public String editJudgeQuestion(@RequestParam("judge_qid") int qid,
+                                    @RequestParam("judge_question")String question,
+                                    @RequestParam("judge_answer")String answer,
+                                    @RequestParam("judge_courseId")int courseId)
+    {
+        logger.info("trying to edit judge question id: {}", qid);
+        boolean flag = questionService.updateQuestion(qid, question, answer, courseId);
+        if(flag)logger.info("edit judge question id: {} success", qid);
+        else logger.info("edit judge question id: {} fail", qid);
+        return "redirect:/quesManage";
+    }
+
+
+
 
 
 

@@ -112,6 +112,26 @@ public class Question {
     public String toString() {
         return "Question [qid=" + qid + ", cid=" + cid + ", qtype=" + qtype + ", qtext=" + qtext + ", qurl=" + qurl + ", qscore=" + qscore + ", answer=" + answer + ", options=" + options + "]";
     }
+    public String getOptionA() {
+        if(options.size()>=2)
+            return options.get(0).getOptext();
+        else return null;
+    }
+    public String getOptionB() {
+        if(options.size()>=2)
+            return options.get(1).getOptext();
+        else return null;
+    }
+    public String getOptionC() {
+        if(options.size()>=4)
+            return options.get(2).getOptext();
+        else return null;
+    }
+    public String getOptionD() {
+        if(options.size()>=4)
+            return options.get(3).getOptext();
+        else return null;
+    }
 
 
 }

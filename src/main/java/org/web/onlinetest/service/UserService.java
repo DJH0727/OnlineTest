@@ -34,7 +34,7 @@ public class UserService {
                     "SELECT * FROM users,user_info WHERE users.uid = user_info.uid AND users.uid = ?", userRowMapper, uid);
         }
         catch (Exception e) {
-            logger.error("getUserById exception");
+            logger.info("The user {} not found", uid);
         }
         return user;
     }
@@ -49,6 +49,10 @@ public class UserService {
         logger.info("try login by {}...", uid);
         User user = getUserById(uid);
         logger.info("user {} found", user);
+        if (user == null) {
+            logger.info("user {} not found", uid);
+            return null;
+        }
         if (user.getPwd().equals(pwd)) {
             return user;
         }
