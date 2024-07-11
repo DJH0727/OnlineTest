@@ -1,6 +1,10 @@
 package org.web.onlinetest.main;
 
+import org.springframework.jdbc.core.JdbcOperations;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.w3c.dom.Text;
+import org.web.onlinetest.service.QuestionService;
+import org.web.onlinetest.service.UserService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +26,9 @@ public class Question {
     }
 
     public void setQtype(int qtype) {
+        if(qtype==1) typeName="单选";
+        else if(qtype==2) typeName="多选";
+        else if(qtype==3) typeName="判断";
         this.qtype = qtype;
     }
 
@@ -80,6 +87,26 @@ public class Question {
     private int qscore;// 问题分值
     private String answer;// 答案
     private List<QusOption> options;// 选项列表
+
+    private String typeName;
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public String getTypeName() {
+        return typeName;
+    }
+
+    public void setTypeName(String typeName) {
+        this.typeName = typeName;
+    }
+
+    private String courseName;
 
     public Question() {}
     public String toString() {

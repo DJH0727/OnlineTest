@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Admin Home</title>
@@ -10,9 +10,21 @@
 <div style=" margin-left: 20%; ">
     <h1>用户管理</h1>
     <form  method="post"  th:action="@{/searchUser}">
-        <input type="text" placeholder="请输入UID" name="uid_search" style="width: 300px;height: 30px;margin-bottom: 10px;" />
-        <input type="submit" value="搜索" class="btn btn-primary">
+        <input type="text" placeholder="请输入UID" name="uid_search" id="uid_search" style="width: 300px;height: 30px;margin-bottom: 10px;" />
+        <input type="submit" value="搜索" class="btn btn-primary" onclick="saveSearchText()" />
     </form>
+    <script>
+        function saveSearchText() {
+            var searchText = $('#uid_search').val();
+            sessionStorage.setItem("searchText", searchText);
+        }
+        searchText = sessionStorage.getItem("searchText");
+        if (searchText!= null) {
+            $('#uid_search').val(searchText);
+        }
+
+
+    </script>
     <a href="#" class="btn btn-primary" onclick="$('#addModal').modal('show');">添加用户</a>
     <div style="text-align: center"><span style="color: red;text-align: center"  th:text="${error}"/></div>
     <table class="table table-striped">

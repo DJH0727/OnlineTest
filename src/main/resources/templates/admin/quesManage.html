@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Admin Home</title>
@@ -8,7 +8,79 @@
 <body>
 <div th:replace="~{include/AdminNav::adminNav }"></div>
 <div style=" margin-left: 20%; ">
+    <h1>试题管理</h1>
+    <form  method="post"  th:action="@{/searchQuestion}" style="display: inline-block;">
+        <input type="text" name="searchText" id="searchText" placeholder="搜索关键词" class="form-control" style="width: 60%; display: inline-block;" >
+        <input type="submit" value="搜索" class="btn btn-primary" style="display: inline-block; " onclick="saveKeyword()">
+    </form>
+    <script>
+        function saveKeyword() {
+            var keyword = document.getElementById("searchText").value;
+            sessionStorage.setItem("keyword", keyword);
+        }
+        var keyword = sessionStorage.getItem("keyword");
+        if (keyword) {
+            document.getElementById("searchText").value = keyword;
+        }
+    </script>
+    <form  method="post"  th:action="@{/selectQuestion}" style="width: 60% ; display: inline-block;">
+        <select id="courseId" name="courseId" class="form-control" required style="display: inline-block; width: 200px;">
+            <option value="-1">全部</option>
+            <option th:each="course : ${courses}" th:value="${course.cid}" th:text="${course.cname}"></option>
+        </select>
+        <select id="questionType" name="questionType" class="form-control" required style="display: inline-block; width: 200px;">
+            <option value="-1">全部</option>
+            <option value="1">单选题</option>
+            <option value="2">多选题</option>
+            <option value="3">判断题</option>
+        </select>
+        <input type="submit" value="筛选" class="btn btn-primary">
+    </form>
 
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>题号</th>
+            <th>类型</th>
+            <th>课程</th>
+            <th>题干</th>
+            <th>答案</th>
+            <th style="width: 15%">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="question,iterStat: ${questions}">
+            <td th:text="${question.qid}" th:id="'qid'+${iterStat.count}"></td>
+            <td th:text="${question.typeName}" th:id="'qtype'+${iterStat.count}"></td>
+            <td th:text="${question.courseName}" th:id="'cid'+${iterStat.count}"></td>
+            <td th:text="${question.qtext}" th:id="'qtext'+${iterStat.count}"></td>
+            <td th:text="${question.answer}" th:id="'answer'+${iterStat.count}"></td>
+            <td>
+                <a href="#"  class="btn btn-primary"  >编辑</a>
+                <a th:href="@{'/deleteQuestion?qid='+${question.qid}}" href="#" class="btn btn-danger" onclick="if (confirm('确认删除？') === false) return false;" id="delete" >删除</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <script>
+        document.getElementById("courseId").addEventListener("input", function() {
+            sessionStorage.setItem("courseId", this.value);
+        });
+        document.getElementById("questionType").addEventListener("input", function() {
+            sessionStorage.setItem("questionType", this.value);
+        });
+        var courseId = sessionStorage.getItem("courseId");
+        var questionType = sessionStorage.getItem("questionType");
+        if (courseId) {
+            document.getElementById("courseId").value = courseId;
+        }
+        if (questionType) {
+            document.getElementById("questionType").value = questionType;
+        }
+
+
+    </script>
 
 
 

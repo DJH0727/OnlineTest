@@ -13,6 +13,7 @@ import org.web.onlinetest.main.Course;
 import org.web.onlinetest.main.Question;
 import org.web.onlinetest.main.QusOption;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -30,7 +31,7 @@ public class QuestionService {
     RowMapper<Course> courseRowMapper = new BeanPropertyRowMapper<>(Course.class);
 
     public int getQuestionCount() {
-        String sql = "select count(*) from questions";
+        String sql = "select MAX(qid) from questions";
         return jdbcTemplate.queryForObject(sql, Integer.class);
     }
     public int geCidByName(String cname) {
@@ -64,4 +65,86 @@ public class QuestionService {
         return true;
     }
 
+    public List<Question> findAllQuestions() {
+        List<Question> questions = null;
+        List<QusOption> options = null;
+        try {
+             questions = jdbcTemplate.query("select * from questions", questionRowMapper);
+            for (Question question : questions) {
+                String courseName = jdbcTemplate.queryForObject("select cname from courses where cid=?", String.class, question.getCid());
+                question.setCourseName(courseName);
+                options = jdbcTemplate.query("select * from options where qid=?", answerRowMapper, question.getQid());
+                question.setOptions(options);
+            }
+        }
+        catch (Exception e) {
+            logger.error("findAllQuestions error", e);
+        }
+        return questions;
+
+    }
+
+
+
+    public List<Question> findQuestionsByCidAndQtype(List<Question> questions,int courseId, int questionType) {
+            List<Question> result = new ArrayList<>();
+            if (courseId == -1 && questionType == -1) {
+                return questions;
+            }
+            if (questionType == -1) {
+                for (Question question : questions) {
+                    if (question.getCid() == courseId) {
+                        result.add(question);
+                    }
+                }
+            }
+            else if(courseId == -1) {
+                for (Question question : questions) {
+                    if (question.getQtype() == questionType) {
+                        result.add(question);
+                    }
+                }
+            }
+            else {
+                for (Question question : questions) {
+                    if (question.getCid() == courseId && question.getQtype() == questionType) {
+                        result.add(question);
+                    }
+                }
+            }
+            return result;
+    }
+
+
+    public List<Question> searchQuestionByKeyword(String keyword) {
+        List<Question> questions = null;
+        List<QusOption> options = null;
+        try {
+            questions = jdbcTemplate.query("select * from questions where qtext like ?", questionRowMapper, "%" + keyword + "%");
+            for (Question question : questions) {
+                String courseName = jdbcTemplate.queryForObject("select cname from courses where cid=?", String.class, question.getCid());
+                question.setCourseName(courseName);
+                options = jdbcTemplate.query("select * from options where qid=?", answerRowMapper, question.getQid());
+                question.setOptions(options);
+            }
+        }
+        catch (Exception e) {
+            logger.error("searchQuestionByKeyword error", e);
+        }
+        return questions;
+    }
+
+    public boolean deleteQuestion(int qid) {
+        String sql = "delete from questions where qid=?";
+        try {
+            jdbcTemplate.update("delete from options where qid=?", qid);
+            jdbcTemplate.update(sql, qid);
+        }
+        catch (Exception e) {
+            logger.error("deleteQuestion error", e);
+            return false;
+        }
+        logger.info("deleteQuestion success");
+        return true;
+    }
 }

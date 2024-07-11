@@ -2,6 +2,7 @@ package org.web.onlinetest.controller;
 
 
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,7 @@ import org.web.onlinetest.service.QuestionService;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 @Controller
@@ -171,7 +173,8 @@ public class AdminController {
                                           @RequestParam("optionC1") String optionC1,
                                           @RequestParam("optionD1") String optionD1,
                                           @RequestParam("answer1") String answer1,
-                                          @RequestParam("courseId") int courseId)
+                                          @RequestParam("courseId") int courseId,
+                                          RedirectAttributes redirectAttributes)
     {
         Question question = new Question();
         question.setCid(courseId);
@@ -192,7 +195,11 @@ public class AdminController {
         optionD.setOp(4);optionD.setOptext(optionD1);
         options.add(optionD);
         question.setOptions(options);
-        questionService.addQuestion(question);
+        boolean flag = questionService.addQuestion(question);
+        if(flag)
+            redirectAttributes.addFlashAttribute("message","添加成功!");
+        else
+            redirectAttributes.addFlashAttribute("message","添加失败!");
         return "redirect:/addQuestion";
     }
     @PostMapping("/addMultipleChoiceQuestion")
@@ -201,25 +208,132 @@ public class AdminController {
                                             @RequestParam("optionB2") String optionB2,
                                             @RequestParam("optionC2") String optionC2,
                                             @RequestParam("optionD2") String optionD2,
-                                            @RequestParam("answer2") String answer2,
-                                            @RequestParam("courseId2") int courseId) {
+                                            @RequestParam("courseId2") int courseId,
+                                            @RequestParam("mul_answer") String answer,
+                                            RedirectAttributes redirectAttributes)
+    {
+        if(answer.isEmpty())
+        {
+            redirectAttributes.addFlashAttribute("message","请选择正确答案!");
+            return "redirect:/addQuestion";
+        }
+        Question question = new Question();
+        question.setCid(courseId);
+        question.setQtype(2);
+        question.setQtext(question2);
+        question.setAnswer(answer);
+        List<QusOption> options = new ArrayList<>();
+        QusOption optionA = new QusOption();
+        optionA.setOp(1);optionA.setOptext(optionA2);
+        options.add(optionA);
+        QusOption optionB = new QusOption();
+        optionB.setOp(2);optionB.setOptext(optionB2);
+        options.add(optionB);
+        QusOption optionC = new QusOption();
+        optionC.setOp(3);optionC.setOptext(optionC2);
+        options.add(optionC);
+        QusOption optionD = new QusOption();
+        optionD.setOp(4);optionD.setOptext(optionD2);
+        options.add(optionD);
+        question.setOptions(options);
+        boolean flag = questionService.addQuestion(question);
+        if(flag)
+            redirectAttributes.addFlashAttribute("message","添加成功!");
+        else
+            redirectAttributes.addFlashAttribute("message","添加失败!");
 
-
-        System.out.println("question2: " + question2);
-        System.out.println("optionA2: " + optionA2);
-        System.out.println("optionB2: " + optionB2);
-        System.out.println("optionC2: " + optionC2);
-        System.out.println("optionD2: " + optionD2);
-        System.out.println("answer2: " + answer2);
-        System.out.println("courseId: " + courseId);
         return "redirect:/addQuestion";
     }
+
+    @PostMapping("/addTrueFalseQuestion")
+    public String addTrueFalseQuestion(@RequestParam("question3") String question,
+                                       @RequestParam("answer3") String answer,
+                                       @RequestParam("courseId3") int courseId,
+                                       RedirectAttributes redirectAttributes,
+                                       HttpSession session)
+        {
+            Question NewQuestion = new Question();
+            NewQuestion.setCid(courseId);
+            NewQuestion.setQtype(3);
+            NewQuestion.setQtext(question);
+            NewQuestion.setAnswer(answer);
+            List<QusOption> options = new ArrayList<>();
+            QusOption optionA = new QusOption();
+            optionA.setOp(1);optionA.setOptext("True");
+            options.add(optionA);
+            QusOption optionB = new QusOption();
+            optionB.setOp(2);optionB.setOptext("False");
+            options.add(optionB);
+            NewQuestion.setOptions(options);
+
+            boolean flag = questionService.addQuestion(NewQuestion);
+            if(flag)
+                redirectAttributes.addFlashAttribute("message","添加成功!");
+            else
+                redirectAttributes.addFlashAttribute("message","添加失败!");
+
+            return "redirect:/addQuestion";
+        }
+
+    final String currentQList = "currentQList";
+    final String selectedQList = "selectedQList";
+    final String searchQList = "searchQList";
     @RequestMapping("/quesManage")
-    public String quesManage(Model model) {
-        logger.info("trying to ques manage");
+    public String quesManage(Model model, HttpSession session) {
+        List<Question> questions = new ArrayList<>();
+        List<Course> courses = questionService.getAllCourses();
+        model.addAttribute("courses", courses);
         model.addAttribute("menu", 3);
+        questions = questionService.findAllQuestions();
+        session.setAttribute(currentQList, questions);
+        logger.info("trying to ques manage");
+        model.addAttribute("questions", questions);
         return "admin/quesManage";
     }
+    @RequestMapping("/deleteQuestion")
+    public String deleteQuestion(@RequestParam("qid") int qid,HttpSession session) {
+        logger.info("trying to delete question id: {}", qid);
+        boolean flag = questionService.deleteQuestion(qid);
+
+        return "redirect:/quesManage";
+    }
+    @PostMapping("/selectQuestion")
+    @SuppressWarnings("unchecked")
+    public String selectQuestion(@RequestParam("courseId") int courseId,
+                               @RequestParam("questionType") int questionType,
+                               Model model, HttpSession session) {
+        logger.info("trying to search question by courseId: {} and questionType: {}", courseId, questionType);
+
+        List<Course> courses = questionService.getAllCourses();
+        model.addAttribute("courses", courses);
+        model.addAttribute("menu", 3);
+        session.setAttribute("courseId", courseId);
+        session.setAttribute("questionType", questionType);
+        List<Question> questions = new ArrayList<>();
+
+        Object obj = session.getAttribute(currentQList);
+        if(obj instanceof List<?>) {
+            questions = (List<Question>) obj;
+        }
+        questions = questionService.findQuestionsByCidAndQtype(questions,courseId, questionType);
+
+        model.addAttribute("questions",questions);
+        return "admin/quesManage";
+    }
+    //逻辑上是先搜索后筛选，能用就行（bushi）
+    @RequestMapping("/searchQuestion")
+    public String searchQuestion(@RequestParam("searchText") String questionText, Model model, HttpSession session) {
+        logger.info("trying to search question by question: {}", questionText);
+        List<Course> courses = questionService.getAllCourses();
+        model.addAttribute("courses", courses);
+        model.addAttribute("menu", 3);
+        List<Question> questions = new ArrayList<>();
+        questions = questionService.searchQuestionByKeyword(questionText);
+        session.setAttribute(currentQList, questions);
+        model.addAttribute("questions", questions);
+        return "admin/quesManage";
+    }
+
 
 
 
