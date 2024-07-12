@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <title>Admin Home</title>
     <div th:replace="~{include/AdminNav::bootstrap}"></div>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #6495ED;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+
 </head>
 <body>
 <div th:replace="~{include/AdminNav::adminNav }"></div>
-<div style=" margin-left: 20%; ">
+<div style=" margin-left: 17%; ">
     <h1>试题管理</h1>
     <iframe id="myIframe" name="myIframe" style="display:none;"></iframe>
     <form  method="post"  th:action="@{/searchQuestion}" >
@@ -53,7 +73,11 @@
             <td th:text="${question.qid}" th:id="'qid'+${iterStat.count}"></td>
             <td th:text="${question.typeName}" th:id="'typeName'+${iterStat.count}"></td>
             <td th:text="${question.courseName}" th:id="'courseName'+${iterStat.count}"></td>
-            <td th:text="${question.qtext}" th:id="'qtext'+${iterStat.count}"></td>
+            <td style=" max-height: 100px; max-width: 800px;">
+                <div style=" max-height: 100px; max-width: 800px; text-overflow: ellipsis; overflow: hidden;  ">
+                    <span th:text="${question.qtext}"  th:id="'qtext'+${iterStat.count}"></span>
+                </div>
+            </td>
             <td th:text="${question.answer}" th:id="'answer'+${iterStat.count}"></td>
             <td>
                 <div id="DisplayInfoDiv" style="display: none;">

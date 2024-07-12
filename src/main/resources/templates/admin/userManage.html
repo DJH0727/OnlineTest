@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <title>Admin Home</title>
     <div th:replace="~{include/AdminNav::bootstrap}"></div>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #6495ED;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
 <div th:replace="~{include/AdminNav::adminNav }"></div>
-<div style=" margin-left: 20%; ">
+<div style=" margin-left: 17%; ">
     <h1>用户管理</h1>
     <form  method="post"  th:action="@{/searchUser}">
         <input type="text" placeholder="请输入UID" name="uid_search" id="uid_search" style="width: 300px;height: 30px;margin-bottom: 10px;" />
@@ -71,7 +90,34 @@
             </nav>
         </div>
     </div>
+    <div style="margin-left: 30%; margin-top: 20px;" id = 'searchQList'>
+        <!--分页文字信息  -->
+        <div class="col-md-6" style="margin-left:5%;">当前 <span th:text="${pageNum}"></span>页,总<span th:text="${totalPage}"></span>
+            页,总共 <span th:text="${AllQCount}"></span> 个用户</div>
+        <!-- 分页条信息 -->
+        <div class="col-md-6">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li><a th:href="@{/searchUser(page=1,uid_search=${uid_search})}" >首页</a></li>
+                    <li><a th:href="@{/searchUser(page=${prevPage},uid_search=${uid_search})}" >上一页</a></li>
+                    <li><a th:href="@{/searchUser(page=${nextPage},uid_search=${uid_search})}" >下一页</a></li>
+                    <li><a th:href="@{/searchUser(page=${totalPage},uid_search=${uid_search})}" >末页</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <span th:text="${mode}" style="display:none" id="mode"></span>
+
     <script>
+        if (document.getElementById("mode").innerHTML === "search") {
+            console.log("search");
+            $('#searchQList').show();
+            $('#allQList').hide();
+        } else {
+            console.log("all");
+            $('#searchQList').hide();
+            $('#allQList').show();
+        }
         openEditModal = function (item) {
             console.log(item);
             $('#userid_edit').val($('#uid' + item).text());

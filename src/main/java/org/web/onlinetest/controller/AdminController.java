@@ -138,26 +138,25 @@ public class AdminController {
     }
 
     @RequestMapping("/searchUser")
-    public String searchUser(@RequestParam("uid_search") String uid, Model model) {
-        //先查询全部用户
-        List<User> userList = adminService.findAllUser();
+    public String searchUser(@RequestParam("uid_search") String uid,Integer page, Model model) {
+        logger.info("trying to search user by uid: {}", uid);
+        List<User> userList = adminService.findUserByUid(uid);
 
-        if (uid.isEmpty()) {
-            model.addAttribute("users", userList);
-            model.addAttribute("menu", 1);
-            return "admin/userManage";
+        if (page == null||page<=0) {
+            page = 1;
         }
-        List<User> searchList =new ArrayList<>();
-        Pattern pattern = Pattern.compile(".*"+uid+".*");
-        //正则表达式匹配用户
-        for (User user : userList) {
-            if (pattern.matcher(user.getUid()).matches()) {
-                searchList.add(user);
-            }
-        }
-
-        model.addAttribute("users", searchList);
+        int start = (page - 1) * UserPageSize;
+        int end = start + UserPageSize;
+        List<User> userPageList = userList.subList(start, end > userList.size() ? userList.size() : end);
+        model.addAttribute("uid_search", uid);
+        model.addAttribute("users", userPageList);
+        model.addAttribute("pageNum", page);
+        model.addAttribute("totalPage", (userList.size()+UserPageSize-1)/UserPageSize);
+        model.addAttribute("AllQCount", userList.size());
+        model.addAttribute("prevPage", Math.max(1, page - 1));
+        model.addAttribute("nextPage", Math.min((userList.size()+UserPageSize-1)/UserPageSize, page + 1));
         model.addAttribute("menu", 1);
+        model.addAttribute("mode", "search");
         return "admin/userManage";
     }
     ///
@@ -322,7 +321,7 @@ public class AdminController {
     }
 
 
-    @PostMapping("/searchQuestion")
+    @RequestMapping("/searchQuestion")
     public String searchQuestion(@RequestParam(value = "searchText", required = false) String searchText,
                                  @RequestParam(value = "courseId" , required = false) Integer courseId,
                                  @RequestParam(value = "questionType" , required = false) Integer questionType,
@@ -356,37 +355,6 @@ public class AdminController {
         model.addAttribute("questions", searchQList);
         model.addAttribute("ListMode", "search");
 
-
-        return "admin/quesManage";
-    }
-    @GetMapping("/searchQuestion")
-    public String searchQuestion(Model model,String searchText,Integer courseId,Integer questionType,Integer page) {
-
-        List<Course> courses = questionService.getAllCourses();
-        model.addAttribute("courses", courses);
-        model.addAttribute("menu", 3);
-        List<Question> questions = new ArrayList<>();
-        questions = questionService.searchQuestionByKeyword(searchText, courseId, questionType);
-        List<Question> searchQList = new ArrayList<>();
-        if(page==null||page<=0) page = 1;
-        int start = (page-1)*QuestionPageSize;
-        int end = start+QuestionPageSize;
-        if(questions.size()<end) end = questions.size();
-        for(int i=start;i<end;i++)
-        {
-            searchQList.add(questions.get(i));
-        }
-        model.addAttribute("searchText", searchText);
-        model.addAttribute("courseId", courseId);
-        model.addAttribute("questionType", questionType);
-        model.addAttribute("pageNum", page);
-        model.addAttribute("totalPage", (questions.size()+QuestionPageSize-1)/QuestionPageSize);
-        model.addAttribute("AllQCount", questions.size());
-        model.addAttribute("prevPage", Math.max(page - 1, 1));
-        model.addAttribute("nextPage", Math.min(page + 1, (questions.size()+QuestionPageSize-1)/QuestionPageSize));
-        model.addAttribute("questions", searchQList);
-        model.addAttribute("ListMode", "search");
-        logger.info("Get trying to search question by question");
 
         return "admin/quesManage";
     }

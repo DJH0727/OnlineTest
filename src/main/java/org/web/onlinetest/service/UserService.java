@@ -60,5 +60,8 @@ public class UserService {
         return null;
     }
 
+    //找到uid跟要查询的uid相似的用户
+
+
 
 }

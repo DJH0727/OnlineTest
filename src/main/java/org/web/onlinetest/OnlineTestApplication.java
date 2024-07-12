@@ -13,14 +13,4 @@ public class OnlineTestApplication {
         SpringApplication.run(OnlineTestApplication.class, args);
     }
 
-    @Bean
-    WebMvcConfigurer createWebMvcConfigurer() {
-        return new WebMvcConfigurer() {
-            @Override
-            public void addResourceHandlers(ResourceHandlerRegistry registry) {
-                registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
-            }
-        };
-    }
-
 }

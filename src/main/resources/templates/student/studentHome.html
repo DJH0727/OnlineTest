@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Student Home</title>
+    <div th:replace="~{include/StuNav::bootstrap}"></div>
 </head>
 <body>
+<div th:replace="~{include/StuNav::stuNav }"></div>
+<div style="margin-top: 5%; margin-left: 30%; margin-right: 5%;">
+    <h1>Welcome to Student Home</h1>
+    <p>This is the student home page. Here, you can view your courses, assignments, and grades.</p>
+</div>
 
 </body>
 </html>

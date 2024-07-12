@@ -1,0 +1,1180 @@
+2024-07-12T20:09:16.548+08:00  INFO 25156 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 25156 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T20:09:16.550+08:00  INFO 25156 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T20:09:17.270+08:00  INFO 25156 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T20:09:17.278+08:00  INFO 25156 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T20:09:17.278+08:00  INFO 25156 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T20:09:17.329+08:00  INFO 25156 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T20:09:17.329+08:00  INFO 25156 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 737 ms
+2024-07-12T20:09:17.474+08:00  INFO 25156 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T20:09:17.683+08:00  INFO 25156 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T20:09:17.691+08:00  INFO 25156 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.478 seconds (process running for 1.877)
+2024-07-12T20:09:24.593+08:00  INFO 4724 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 4724 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T20:09:24.594+08:00  INFO 4724 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T20:09:25.294+08:00  INFO 4724 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T20:09:25.302+08:00  INFO 4724 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T20:09:25.302+08:00  INFO 4724 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T20:09:25.342+08:00  INFO 4724 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T20:09:25.342+08:00  INFO 4724 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 702 ms
+2024-07-12T20:09:25.484+08:00  INFO 4724 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T20:09:25.699+08:00  INFO 4724 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T20:09:25.705+08:00  INFO 4724 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.459 seconds (process running for 1.868)
+2024-07-12T20:30:02.701+08:00  INFO 12004 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 12004 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T20:30:02.703+08:00  INFO 12004 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T20:30:03.505+08:00  INFO 12004 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T20:30:03.514+08:00  INFO 12004 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T20:30:03.516+08:00  INFO 12004 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T20:30:03.564+08:00  INFO 12004 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T20:30:03.564+08:00  INFO 12004 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 816 ms
+2024-07-12T20:30:03.724+08:00  INFO 12004 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T20:30:03.964+08:00  INFO 12004 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T20:30:03.971+08:00  INFO 12004 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.697 seconds (process running for 2.237)
+2024-07-12T20:30:06.546+08:00  INFO 12004 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T20:30:06.546+08:00  INFO 12004 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T20:30:06.547+08:00  INFO 12004 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T20:30:06.605+08:00  INFO 12004 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.SignInController        : user is null
+2024-07-12T20:30:36.467+08:00  INFO 15024 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 15024 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T20:30:36.470+08:00  INFO 15024 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T20:30:37.171+08:00  INFO 15024 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T20:30:37.179+08:00  INFO 15024 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T20:30:37.179+08:00  INFO 15024 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T20:30:37.222+08:00  INFO 15024 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T20:30:37.222+08:00  INFO 15024 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 711 ms
+2024-07-12T20:30:37.362+08:00  INFO 15024 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T20:30:37.591+08:00  INFO 15024 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T20:30:37.597+08:00  INFO 15024 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.481 seconds (process running for 1.934)
+2024-07-12T20:30:41.011+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T20:30:41.011+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T20:30:41.012+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T20:30:41.069+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.SignInController        : user is null
+2024-07-12T20:30:50.213+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.SignInController        : user is null
+2024-07-12T20:30:52.046+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] o.w.o.controller.SignInController        : user is null
+2024-07-12T20:30:56.614+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-8] o.w.o.controller.SignInController        : user is null
+2024-07-12T20:30:58.388+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] o.w.o.controller.SignInController        : Request to signin
+2024-07-12T20:31:04.094+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] o.w.o.controller.SignInController        : POST /signin
+2024-07-12T20:31:04.098+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T20:31:04.369+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@192bf363
+2024-07-12T20:31:04.370+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T20:31:04.374+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] org.web.onlinetest.service.UserService   : try login by admin...
+2024-07-12T20:31:04.395+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] org.web.onlinetest.service.UserService   : user User [uid=admin, role=0, pwd=123456, name=admin, email=null, phone=null] found
+2024-07-12T20:31:28.871+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to add question
+2024-07-12T20:31:31.080+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T20:31:35.809+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T20:31:36.606+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-10] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T20:31:37.790+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T20:31:38.494+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-8] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T20:31:39.368+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T20:32:29.501+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to add question
+2024-07-12T20:32:53.837+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-8] o.w.o.controller.SignInController        : user is null
+2024-07-12T20:32:55.243+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-7] o.w.o.controller.SignInController        : Request to signin
+2024-07-12T20:36:53.067+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.SignInController        : user is null
+2024-07-12T20:36:54.213+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.SignInController        : Request to signin
+2024-07-12T20:36:54.769+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] o.w.o.controller.SignInController        : POST /signin
+2024-07-12T20:36:54.770+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] org.web.onlinetest.service.UserService   : try login by 37220222203581...
+2024-07-12T20:36:54.771+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-6] org.web.onlinetest.service.UserService   : user User [uid=37220222203581, role=1, pwd=djh666, name=djh, email=2724948893@qq.com, phone=17382319551] found
+2024-07-12T20:37:12.909+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.AdminController         : trying to add question
+2024-07-12T20:37:14.064+08:00  INFO 15024 --- [OnlineTest] [http-nio-8080-exec-7] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:20:45.159+08:00  INFO 15024 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:20:45.163+08:00  INFO 15024 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:20:48.647+08:00  INFO 24588 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 24588 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:20:48.650+08:00  INFO 24588 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:20:49.504+08:00  INFO 24588 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:20:49.517+08:00  INFO 24588 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:20:49.518+08:00  INFO 24588 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:20:49.582+08:00  INFO 24588 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:20:49.582+08:00  INFO 24588 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 876 ms
+2024-07-12T21:20:49.753+08:00  INFO 24588 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:20:50.085+08:00  INFO 24588 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:20:50.097+08:00  INFO 24588 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.869 seconds (process running for 2.4)
+2024-07-12T21:20:54.468+08:00  INFO 24588 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:20:54.469+08:00  INFO 24588 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:20:54.470+08:00  INFO 24588 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:20:54.539+08:00  INFO 24588 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.SignInController        : user is null
+2024-07-12T21:20:55.451+08:00  INFO 24588 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.SignInController        : Request to signin
+2024-07-12T21:20:56.084+08:00  INFO 24588 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.SignInController        : POST /signin
+2024-07-12T21:20:56.090+08:00  INFO 24588 --- [OnlineTest] [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:20:56.446+08:00  INFO 24588 --- [OnlineTest] [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18843d3c
+2024-07-12T21:20:56.448+08:00  INFO 24588 --- [OnlineTest] [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:20:56.454+08:00  INFO 24588 --- [OnlineTest] [http-nio-8080-exec-3] org.web.onlinetest.service.UserService   : try login by 37220222203581...
+2024-07-12T21:20:56.484+08:00  INFO 24588 --- [OnlineTest] [http-nio-8080-exec-3] org.web.onlinetest.service.UserService   : user User [uid=37220222203581, role=1, pwd=djh666, name=djh, email=2724948893@qq.com, phone=17382319551] found
+2024-07-12T21:22:41.968+08:00  INFO 24588 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:22:41.973+08:00  INFO 24588 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:22:43.897+08:00  INFO 20500 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 20500 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:22:43.900+08:00  INFO 20500 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:22:44.674+08:00  INFO 20500 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:22:44.682+08:00  INFO 20500 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:22:44.682+08:00  INFO 20500 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:22:44.723+08:00  INFO 20500 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:22:44.723+08:00  INFO 20500 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 776 ms
+2024-07-12T21:22:44.866+08:00  INFO 20500 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:22:45.088+08:00  INFO 20500 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:22:45.094+08:00  INFO 20500 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.572 seconds (process running for 2.081)
+2024-07-12T21:22:47.086+08:00  INFO 20500 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:22:47.087+08:00  INFO 20500 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:22:47.088+08:00  INFO 20500 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:22:47.115+08:00  INFO 20500 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:22:47.323+08:00  INFO 20500 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c37500b
+2024-07-12T21:22:47.324+08:00  INFO 20500 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:22:55.809+08:00  INFO 20500 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:23:13.861+08:00  INFO 20500 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:23:13.866+08:00  INFO 20500 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:23:15.868+08:00  INFO 23696 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 23696 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:23:15.870+08:00  INFO 23696 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:23:16.593+08:00  INFO 23696 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:23:16.600+08:00  INFO 23696 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:23:16.600+08:00  INFO 23696 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:23:16.641+08:00  INFO 23696 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:23:16.642+08:00  INFO 23696 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 727 ms
+2024-07-12T21:23:16.783+08:00  INFO 23696 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:23:16.993+08:00  INFO 23696 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:23:17.000+08:00  INFO 23696 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.553 seconds (process running for 2.083)
+2024-07-12T21:23:18.494+08:00  INFO 23696 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:23:18.495+08:00  INFO 23696 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:23:18.495+08:00  INFO 23696 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-12T21:23:18.522+08:00  INFO 23696 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:23:18.722+08:00  INFO 23696 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c37500b
+2024-07-12T21:23:18.724+08:00  INFO 23696 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:23:40.395+08:00  INFO 23696 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:23:40.401+08:00  INFO 23696 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:23:42.290+08:00  INFO 25248 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 25248 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:23:42.292+08:00  INFO 25248 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:23:43.010+08:00  INFO 25248 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:23:43.018+08:00  INFO 25248 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:23:43.018+08:00  INFO 25248 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:23:43.059+08:00  INFO 25248 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:23:43.059+08:00  INFO 25248 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 720 ms
+2024-07-12T21:23:43.204+08:00  INFO 25248 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:23:43.414+08:00  INFO 25248 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:23:43.421+08:00  INFO 25248 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.494 seconds (process running for 2.007)
+2024-07-12T21:23:45.415+08:00  INFO 25248 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:23:45.415+08:00  INFO 25248 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:23:45.416+08:00  INFO 25248 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:23:45.444+08:00  INFO 25248 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:23:45.659+08:00  INFO 25248 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@257f2d4f
+2024-07-12T21:23:45.661+08:00  INFO 25248 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:24:35.531+08:00  INFO 25248 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:24:37.183+08:00  INFO 25248 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:25:18.426+08:00  INFO 25248 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to search user by uid: u
+2024-07-12T21:27:21.573+08:00  INFO 25248 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:27:21.581+08:00  INFO 25248 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:27:23.964+08:00  INFO 11376 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 11376 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:27:23.967+08:00  INFO 11376 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:27:24.789+08:00  INFO 11376 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:27:24.797+08:00  INFO 11376 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:27:24.798+08:00  INFO 11376 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:27:24.842+08:00  INFO 11376 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:27:24.842+08:00  INFO 11376 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 827 ms
+2024-07-12T21:27:24.985+08:00  INFO 11376 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:27:25.327+08:00  INFO 11376 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:27:25.335+08:00  INFO 11376 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.81 seconds (process running for 2.324)
+2024-07-12T21:27:37.903+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:27:37.903+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:27:37.905+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:27:37.939+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to search user by uid: u
+2024-07-12T21:27:37.945+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:27:38.248+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6be8fefc
+2024-07-12T21:27:38.251+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:27:52.571+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to search user by uid: u
+2024-07-12T21:27:53.486+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.AdminController         : trying to search user by uid: u
+2024-07-12T21:27:56.189+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to search user by uid: u
+2024-07-12T21:27:58.078+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-6] o.w.o.controller.AdminController         : trying to search user by uid: u
+2024-07-12T21:29:19.009+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-8] o.w.o.controller.AdminController         : trying to search user by uid: u
+2024-07-12T21:29:20.297+08:00  INFO 11376 --- [OnlineTest] [http-nio-8080-exec-9] o.w.o.controller.AdminController         : trying to search user by uid: u
+2024-07-12T21:29:51.799+08:00  INFO 11376 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:29:51.804+08:00  INFO 11376 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:29:53.671+08:00  INFO 22472 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 22472 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:29:53.674+08:00  INFO 22472 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:29:54.395+08:00  INFO 22472 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:29:54.403+08:00  INFO 22472 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:29:54.403+08:00  INFO 22472 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:29:54.445+08:00  INFO 22472 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:29:54.445+08:00  INFO 22472 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 727 ms
+2024-07-12T21:29:54.590+08:00  INFO 22472 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:29:54.807+08:00  INFO 22472 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:29:54.816+08:00  INFO 22472 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.524 seconds (process running for 2.029)
+2024-07-12T21:29:54.861+08:00  INFO 22472 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:29:54.862+08:00  INFO 22472 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:29:54.862+08:00  INFO 22472 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-12T21:29:54.883+08:00  INFO 22472 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to add question
+2024-07-12T21:29:54.888+08:00  INFO 22472 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:29:55.236+08:00  INFO 22472 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f4896c7
+2024-07-12T21:29:55.239+08:00  INFO 22472 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:30:03.313+08:00  INFO 22472 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:30:03.319+08:00  INFO 22472 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:30:05.085+08:00  INFO 23640 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 23640 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:30:05.093+08:00  INFO 23640 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:30:05.813+08:00  INFO 23640 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:30:05.820+08:00  INFO 23640 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:30:05.821+08:00  INFO 23640 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:30:05.864+08:00  INFO 23640 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:30:05.864+08:00  INFO 23640 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 730 ms
+2024-07-12T21:30:06.013+08:00  INFO 23640 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:30:06.270+08:00  INFO 23640 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:30:06.278+08:00  INFO 23640 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.535 seconds (process running for 2.012)
+2024-07-12T21:30:09.739+08:00  INFO 23640 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:30:09.739+08:00  INFO 23640 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:30:09.740+08:00  INFO 23640 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:30:09.768+08:00  INFO 23640 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:30:09.998+08:00  INFO 23640 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ec36844
+2024-07-12T21:30:09.999+08:00  INFO 23640 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:30:52.540+08:00  INFO 23640 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:30:52.546+08:00  INFO 23640 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:30:54.409+08:00  INFO 17984 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 17984 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:30:54.416+08:00  INFO 17984 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:30:55.137+08:00  INFO 17984 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:30:55.145+08:00  INFO 17984 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:30:55.146+08:00  INFO 17984 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:30:55.189+08:00  INFO 17984 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:30:55.189+08:00  INFO 17984 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 731 ms
+2024-07-12T21:30:55.331+08:00  INFO 17984 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:30:55.556+08:00  INFO 17984 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:30:55.564+08:00  INFO 17984 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.503 seconds (process running for 1.984)
+2024-07-12T21:30:57.229+08:00  INFO 17984 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:30:57.230+08:00  INFO 17984 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:30:57.231+08:00  INFO 17984 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:30:57.259+08:00  INFO 17984 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:30:57.473+08:00  INFO 17984 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ec36844
+2024-07-12T21:30:57.475+08:00  INFO 17984 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:31:24.587+08:00  INFO 17984 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:31:24.595+08:00  INFO 17984 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:31:26.478+08:00  INFO 14852 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 14852 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:31:26.480+08:00  INFO 14852 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:31:27.198+08:00  INFO 14852 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:31:27.206+08:00  INFO 14852 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:31:27.206+08:00  INFO 14852 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:31:27.249+08:00  INFO 14852 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:31:27.249+08:00  INFO 14852 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 723 ms
+2024-07-12T21:31:27.391+08:00  INFO 14852 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:31:27.600+08:00  INFO 14852 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:31:27.607+08:00  INFO 14852 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.472 seconds (process running for 1.98)
+2024-07-12T21:31:27.717+08:00  INFO 14852 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:31:27.718+08:00  INFO 14852 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:31:27.719+08:00  INFO 14852 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:31:27.752+08:00  INFO 14852 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:31:28.031+08:00  INFO 14852 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@257f2d4f
+2024-07-12T21:31:28.033+08:00  INFO 14852 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:31:47.536+08:00  INFO 14852 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:31:47.541+08:00  INFO 14852 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:31:49.393+08:00  INFO 18716 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 18716 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:31:49.395+08:00  INFO 18716 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:31:50.107+08:00  INFO 18716 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:31:50.115+08:00  INFO 18716 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:31:50.115+08:00  INFO 18716 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:31:50.157+08:00  INFO 18716 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:31:50.157+08:00  INFO 18716 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 718 ms
+2024-07-12T21:31:50.304+08:00  INFO 18716 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:31:50.554+08:00  INFO 18716 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:31:50.561+08:00  INFO 18716 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.518 seconds (process running for 1.993)
+2024-07-12T21:31:52.186+08:00  INFO 18716 --- [OnlineTest] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:31:52.186+08:00  INFO 18716 --- [OnlineTest] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:31:52.187+08:00  INFO 18716 --- [OnlineTest] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:31:52.221+08:00  INFO 18716 --- [OnlineTest] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:31:52.470+08:00  INFO 18716 --- [OnlineTest] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cbf3098
+2024-07-12T21:31:52.471+08:00  INFO 18716 --- [OnlineTest] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:32:00.470+08:00  INFO 18716 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:32:00.475+08:00  INFO 18716 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:32:02.377+08:00  INFO 24916 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 24916 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:32:02.379+08:00  INFO 24916 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:32:03.112+08:00  INFO 24916 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:32:03.120+08:00  INFO 24916 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:32:03.120+08:00  INFO 24916 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:32:03.162+08:00  INFO 24916 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:32:03.162+08:00  INFO 24916 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 740 ms
+2024-07-12T21:32:03.303+08:00  INFO 24916 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:32:03.538+08:00  INFO 24916 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:32:03.546+08:00  INFO 24916 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.524 seconds (process running for 2.014)
+2024-07-12T21:32:03.773+08:00  INFO 24916 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:32:03.773+08:00  INFO 24916 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:32:03.774+08:00  INFO 24916 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:32:03.804+08:00  INFO 24916 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:32:04.033+08:00  INFO 24916 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74d0ae13
+2024-07-12T21:32:04.035+08:00  INFO 24916 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:32:06.671+08:00  INFO 24916 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:32:16.241+08:00  INFO 24916 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to search user by uid: u
+2024-07-12T21:32:22.542+08:00  INFO 24916 --- [OnlineTest] [http-nio-8080-exec-9] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:32:25.128+08:00  INFO 24916 --- [OnlineTest] [http-nio-8080-exec-7] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:32:48.296+08:00  INFO 24916 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:33:13.101+08:00  INFO 24916 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:33:13.106+08:00  INFO 24916 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:33:15.167+08:00  INFO 26536 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 26536 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:33:15.169+08:00  INFO 26536 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:33:15.888+08:00  INFO 26536 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:33:15.897+08:00  INFO 26536 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:33:15.897+08:00  INFO 26536 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:33:15.944+08:00  INFO 26536 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:33:15.945+08:00  INFO 26536 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 731 ms
+2024-07-12T21:33:16.123+08:00  INFO 26536 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:33:16.371+08:00  INFO 26536 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:33:16.380+08:00  INFO 26536 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.567 seconds (process running for 2.098)
+2024-07-12T21:33:17.442+08:00  INFO 26536 --- [OnlineTest] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:33:17.443+08:00  INFO 26536 --- [OnlineTest] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:33:17.443+08:00  INFO 26536 --- [OnlineTest] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-12T21:33:17.516+08:00  INFO 26536 --- [OnlineTest] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:33:17.775+08:00  INFO 26536 --- [OnlineTest] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d553d22
+2024-07-12T21:33:17.777+08:00  INFO 26536 --- [OnlineTest] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:33:17.825+08:00  INFO 26536 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:33:33.917+08:00  INFO 26536 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:33:33.923+08:00  INFO 26536 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:33:36.265+08:00  INFO 17664 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 17664 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:33:36.268+08:00  INFO 17664 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:33:36.991+08:00  INFO 17664 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:33:36.999+08:00  INFO 17664 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:33:37.000+08:00  INFO 17664 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:33:37.042+08:00  INFO 17664 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:33:37.043+08:00  INFO 17664 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 729 ms
+2024-07-12T21:33:37.189+08:00  INFO 17664 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:33:37.406+08:00  INFO 17664 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:33:37.413+08:00  INFO 17664 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.51 seconds (process running for 1.929)
+2024-07-12T21:33:38.787+08:00  INFO 17664 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:33:38.787+08:00  INFO 17664 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:33:38.788+08:00  INFO 17664 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:33:38.850+08:00  INFO 17664 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:33:39.063+08:00  INFO 17664 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4155870b
+2024-07-12T21:33:39.064+08:00  INFO 17664 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:33:39.114+08:00  INFO 17664 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:33:49.445+08:00  INFO 17664 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:33:49.450+08:00  INFO 17664 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:33:51.788+08:00  INFO 17848 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 17848 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:33:51.790+08:00  INFO 17848 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:33:52.523+08:00  INFO 17848 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:33:52.532+08:00  INFO 17848 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:33:52.532+08:00  INFO 17848 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:33:52.578+08:00  INFO 17848 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:33:52.578+08:00  INFO 17848 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 732 ms
+2024-07-12T21:33:52.719+08:00  INFO 17848 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:33:52.932+08:00  INFO 17848 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:33:52.939+08:00  INFO 17848 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.543 seconds (process running for 2.192)
+2024-07-12T21:33:55.290+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:33:55.291+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:33:55.291+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-12T21:33:55.354+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:33:55.569+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38614be2
+2024-07-12T21:33:55.570+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:33:55.622+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:34:02.567+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:34:03.779+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-6] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:34:04.577+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:34:09.002+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:34:18.138+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:34:23.095+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-7] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:34:24.063+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-8] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:34:30.041+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-9] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:34:32.958+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-10] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:34:35.246+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:34:36.456+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:34:37.957+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-6] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:34:41.152+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:34:42.189+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:34:43.397+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:34:43.681+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-7] o.w.o.controller.AdminController         : trying to add question
+2024-07-12T21:34:46.599+08:00  INFO 17848 --- [OnlineTest] [http-nio-8080-exec-9] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:34:56.777+08:00  INFO 17848 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:34:56.783+08:00  INFO 17848 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:35:01.332+08:00  INFO 14676 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 14676 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:35:01.334+08:00  INFO 14676 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:35:02.113+08:00  INFO 14676 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:35:02.122+08:00  INFO 14676 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:35:02.122+08:00  INFO 14676 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:35:02.167+08:00  INFO 14676 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:35:02.167+08:00  INFO 14676 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 783 ms
+2024-07-12T21:35:02.312+08:00  INFO 14676 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:35:02.552+08:00  INFO 14676 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:35:02.559+08:00  INFO 14676 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.619 seconds (process running for 2.053)
+2024-07-12T21:35:02.854+08:00  INFO 14676 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:35:02.855+08:00  INFO 14676 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:35:02.856+08:00  INFO 14676 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:35:02.897+08:00  INFO 14676 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:35:03.151+08:00  INFO 14676 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c37500b
+2024-07-12T21:35:03.153+08:00  INFO 14676 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:36:34.004+08:00  INFO 14676 --- [OnlineTest] [http-nio-8080-exec-8] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:37:20.419+08:00  INFO 14676 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:37:20.425+08:00  INFO 14676 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:37:24.112+08:00  INFO 22500 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 22500 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:37:24.114+08:00  INFO 22500 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:37:24.963+08:00  INFO 22500 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:37:24.972+08:00  INFO 22500 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:37:24.972+08:00  INFO 22500 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:37:25.019+08:00  INFO 22500 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:37:25.019+08:00  INFO 22500 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 854 ms
+2024-07-12T21:37:25.190+08:00  INFO 22500 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:37:25.485+08:00  INFO 22500 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:37:25.494+08:00  INFO 22500 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.744 seconds (process running for 2.192)
+2024-07-12T21:37:26.043+08:00  INFO 22500 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:37:26.044+08:00  INFO 22500 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:37:26.046+08:00  INFO 22500 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-12T21:37:26.107+08:00  INFO 22500 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:37:26.385+08:00  INFO 22500 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3bf3b9c4
+2024-07-12T21:37:26.386+08:00  INFO 22500 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:37:36.760+08:00  INFO 22500 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:37:36.765+08:00  INFO 22500 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:37:40.438+08:00  INFO 9760 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 9760 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:37:40.440+08:00  INFO 9760 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:37:41.174+08:00  INFO 9760 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:37:41.182+08:00  INFO 9760 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:37:41.182+08:00  INFO 9760 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:37:41.225+08:00  INFO 9760 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:37:41.226+08:00  INFO 9760 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 742 ms
+2024-07-12T21:37:41.373+08:00  INFO 9760 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:37:41.604+08:00  INFO 9760 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:37:41.612+08:00  INFO 9760 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.536 seconds (process running for 1.999)
+2024-07-12T21:37:41.856+08:00  INFO 9760 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:37:41.858+08:00  INFO 9760 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:37:41.865+08:00  INFO 9760 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-07-12T21:37:41.918+08:00  INFO 9760 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:37:42.168+08:00  INFO 9760 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c37500b
+2024-07-12T21:37:42.170+08:00  INFO 9760 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:42:23.956+08:00  INFO 9760 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:42:23.962+08:00  INFO 9760 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:42:26.222+08:00  INFO 25964 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 25964 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:42:26.227+08:00  INFO 25964 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:42:27.017+08:00  INFO 25964 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:42:27.026+08:00  INFO 25964 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:42:27.026+08:00  INFO 25964 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:42:27.069+08:00  INFO 25964 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:42:27.069+08:00  INFO 25964 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 787 ms
+2024-07-12T21:42:27.220+08:00  INFO 25964 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:42:27.456+08:00  INFO 25964 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:42:27.464+08:00  INFO 25964 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.659 seconds (process running for 2.335)
+2024-07-12T21:42:32.205+08:00  INFO 25964 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:42:32.207+08:00  INFO 25964 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:42:32.208+08:00  INFO 25964 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:42:32.235+08:00  INFO 25964 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:42:32.460+08:00  INFO 25964 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b83d101
+2024-07-12T21:42:32.461+08:00  INFO 25964 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:42:42.221+08:00  INFO 25964 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:42:42.231+08:00  INFO 25964 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:42:44.467+08:00  INFO 15484 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 15484 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:42:44.471+08:00  INFO 15484 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:42:45.222+08:00  INFO 15484 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:42:45.230+08:00  INFO 15484 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:42:45.230+08:00  INFO 15484 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:42:45.270+08:00  INFO 15484 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:42:45.270+08:00  INFO 15484 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 740 ms
+2024-07-12T21:42:45.410+08:00  INFO 15484 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:42:45.636+08:00  INFO 15484 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:42:45.646+08:00  INFO 15484 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.56 seconds (process running for 2.252)
+2024-07-12T21:43:27.815+08:00  INFO 22704 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 22704 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:43:27.817+08:00  INFO 22704 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:43:28.596+08:00  INFO 22704 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:43:28.604+08:00  INFO 22704 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:43:28.604+08:00  INFO 22704 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:43:28.646+08:00  INFO 22704 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:43:28.646+08:00  INFO 22704 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 779 ms
+2024-07-12T21:43:28.810+08:00  INFO 22704 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:43:29.046+08:00  INFO 22704 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:43:29.054+08:00  INFO 22704 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.665 seconds (process running for 2.213)
+2024-07-12T21:43:29.086+08:00  INFO 22704 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:43:29.086+08:00  INFO 22704 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:43:29.087+08:00  INFO 22704 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:43:29.116+08:00  INFO 22704 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:43:29.349+08:00  INFO 22704 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@266dcc04
+2024-07-12T21:43:29.351+08:00  INFO 22704 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:43:41.457+08:00  INFO 22704 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:43:41.463+08:00  INFO 22704 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:43:43.397+08:00  INFO 24368 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 24368 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:43:43.400+08:00  INFO 24368 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:43:44.143+08:00  INFO 24368 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:43:44.150+08:00  INFO 24368 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:43:44.151+08:00  INFO 24368 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:43:44.193+08:00  INFO 24368 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:43:44.193+08:00  INFO 24368 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 744 ms
+2024-07-12T21:43:44.336+08:00  INFO 24368 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:43:44.560+08:00  INFO 24368 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:43:44.567+08:00  INFO 24368 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.562 seconds (process running for 2.08)
+2024-07-12T21:50:47.438+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:50:47.438+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:50:47.439+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:50:47.506+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:50:47.722+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58cecaed
+2024-07-12T21:50:47.723+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:50:47.774+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:51:56.590+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-8] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:51:59.162+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:52:00.850+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.AdminController         : trying to add question
+2024-07-12T21:52:21.051+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-7] o.w.onlinetest.service.QuestionService   : addQuestion success
+2024-07-12T21:52:21.147+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to add question
+2024-07-12T21:52:23.106+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-9] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:52:24.633+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-10] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:52:26.572+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page3
+2024-07-12T21:52:27.814+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:52:32.247+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-6] o.w.o.controller.AdminController         : trying to ques manage page3
+2024-07-12T21:52:36.198+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-8] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:52:38.342+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.AdminController         : trying to delete question id: 11
+2024-07-12T21:52:38.346+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-5] o.w.onlinetest.service.QuestionService   : deleteQuestion success
+2024-07-12T21:52:38.377+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:52:39.677+08:00  INFO 24368 --- [OnlineTest] [http-nio-8080-exec-7] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:58:38.658+08:00  INFO 24368 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T21:58:38.664+08:00  INFO 24368 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T21:58:41.191+08:00  INFO 26900 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 26900 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T21:58:41.199+08:00  INFO 26900 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T21:58:42.118+08:00  INFO 26900 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T21:58:42.127+08:00  INFO 26900 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T21:58:42.127+08:00  INFO 26900 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T21:58:42.173+08:00  INFO 26900 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T21:58:42.174+08:00  INFO 26900 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 914 ms
+2024-07-12T21:58:42.351+08:00  INFO 26900 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T21:58:42.615+08:00  INFO 26900 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T21:58:42.623+08:00  INFO 26900 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.861 seconds (process running for 2.507)
+2024-07-12T21:58:54.048+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T21:58:54.048+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T21:58:54.049+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T21:58:54.140+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T21:58:54.446+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54cecd31
+2024-07-12T21:58:54.448+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T21:58:54.519+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:58:56.403+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:58:57.233+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T21:58:58.653+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T21:58:59.341+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:00:26.872+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-8] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:00:45.794+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-9] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T22:00:46.630+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-10] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:00:47.252+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T22:00:47.958+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:00:49.925+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T22:00:50.397+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:00:51.673+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T22:00:52.082+08:00  INFO 26900 --- [OnlineTest] [http-nio-8080-exec-6] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:01:56.866+08:00  INFO 26900 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:01:56.873+08:00  INFO 26900 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:01:59.390+08:00  INFO 27428 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 27428 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:01:59.394+08:00  INFO 27428 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:02:00.159+08:00  INFO 27428 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:02:00.168+08:00  INFO 27428 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:02:00.168+08:00  INFO 27428 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:02:00.209+08:00  INFO 27428 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:02:00.209+08:00  INFO 27428 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 760 ms
+2024-07-12T22:02:00.352+08:00  INFO 27428 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:02:00.568+08:00  INFO 27428 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:02:00.575+08:00  INFO 27428 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.626 seconds (process running for 2.32)
+2024-07-12T22:02:00.607+08:00  INFO 27428 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:02:00.608+08:00  INFO 27428 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:02:00.609+08:00  INFO 27428 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:02:00.675+08:00  INFO 27428 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:02:00.926+08:00  INFO 27428 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@191ece16
+2024-07-12T22:02:00.928+08:00  INFO 27428 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:02:01.034+08:00  INFO 27428 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:02:03.605+08:00  INFO 27428 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:02:10.237+08:00  INFO 27428 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:02:10.242+08:00  INFO 27428 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:02:12.684+08:00  INFO 11072 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 11072 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:02:12.686+08:00  INFO 11072 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:02:13.426+08:00  INFO 11072 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:02:13.434+08:00  INFO 11072 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:02:13.434+08:00  INFO 11072 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:02:13.477+08:00  INFO 11072 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:02:13.477+08:00  INFO 11072 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 731 ms
+2024-07-12T22:02:13.637+08:00  INFO 11072 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:02:13.961+08:00  INFO 11072 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:02:13.969+08:00  INFO 11072 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.678 seconds (process running for 2.361)
+2024-07-12T22:02:16.694+08:00  INFO 11072 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:02:16.694+08:00  INFO 11072 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:02:16.695+08:00  INFO 11072 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-12T22:02:16.760+08:00  INFO 11072 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:02:16.991+08:00  INFO 11072 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e61ccdb
+2024-07-12T22:02:16.993+08:00  INFO 11072 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:02:17.046+08:00  INFO 11072 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:02:36.819+08:00  INFO 11072 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:02:36.824+08:00  INFO 11072 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:02:39.091+08:00  INFO 27824 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 27824 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:02:39.095+08:00  INFO 27824 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:02:39.859+08:00  INFO 27824 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:02:39.867+08:00  INFO 27824 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:02:39.867+08:00  INFO 27824 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:02:39.910+08:00  INFO 27824 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:02:39.910+08:00  INFO 27824 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 763 ms
+2024-07-12T22:02:40.055+08:00  INFO 27824 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:02:40.279+08:00  INFO 27824 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:02:40.286+08:00  INFO 27824 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.584 seconds (process running for 2.176)
+2024-07-12T22:02:46.669+08:00  INFO 27824 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:02:46.669+08:00  INFO 27824 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:02:46.670+08:00  INFO 27824 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:02:46.734+08:00  INFO 27824 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:02:46.948+08:00  INFO 27824 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cd9afe0
+2024-07-12T22:02:46.949+08:00  INFO 27824 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:02:47.001+08:00  INFO 27824 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:02:56.492+08:00  INFO 27824 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:02:56.497+08:00  INFO 27824 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:02:59.008+08:00  INFO 28476 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 28476 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:02:59.012+08:00  INFO 28476 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:02:59.864+08:00  INFO 28476 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:02:59.873+08:00  INFO 28476 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:02:59.873+08:00  INFO 28476 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:02:59.917+08:00  INFO 28476 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:02:59.917+08:00  INFO 28476 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 834 ms
+2024-07-12T22:03:00.072+08:00  INFO 28476 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:03:00.303+08:00  INFO 28476 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:03:00.310+08:00  INFO 28476 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.732 seconds (process running for 2.387)
+2024-07-12T22:03:27.506+08:00  INFO 28476 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:03:27.506+08:00  INFO 28476 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:03:27.507+08:00  INFO 28476 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:03:27.573+08:00  INFO 28476 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:03:27.790+08:00  INFO 28476 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a854610
+2024-07-12T22:03:27.791+08:00  INFO 28476 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:03:27.845+08:00  INFO 28476 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:03:48.619+08:00  INFO 28476 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:03:48.624+08:00  INFO 28476 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:03:51.136+08:00  INFO 28096 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 28096 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:03:51.138+08:00  INFO 28096 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:03:51.900+08:00  INFO 28096 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:03:51.908+08:00  INFO 28096 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:03:51.909+08:00  INFO 28096 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:03:51.951+08:00  INFO 28096 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:03:51.952+08:00  INFO 28096 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 765 ms
+2024-07-12T22:03:52.095+08:00  INFO 28096 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:03:52.321+08:00  INFO 28096 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:03:52.328+08:00  INFO 28096 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.598 seconds (process running for 2.067)
+2024-07-12T22:04:12.819+08:00  INFO 28096 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:04:12.819+08:00  INFO 28096 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:04:12.820+08:00  INFO 28096 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:04:12.887+08:00  INFO 28096 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:04:13.107+08:00  INFO 28096 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6603be92
+2024-07-12T22:04:13.109+08:00  INFO 28096 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:04:13.166+08:00  INFO 28096 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:12:30.437+08:00  INFO 28096 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:12:30.444+08:00  INFO 28096 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:12:32.971+08:00  INFO 25316 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 25316 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:12:32.973+08:00  INFO 25316 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:12:33.894+08:00  INFO 25316 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:12:33.903+08:00  INFO 25316 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:12:33.903+08:00  INFO 25316 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:12:33.952+08:00  INFO 25316 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:12:33.953+08:00  INFO 25316 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 913 ms
+2024-07-12T22:12:34.125+08:00  INFO 25316 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:12:34.463+08:00  INFO 25316 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:12:34.472+08:00  INFO 25316 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.91 seconds (process running for 2.464)
+2024-07-12T22:13:35.878+08:00  INFO 27700 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 27700 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:13:35.880+08:00  INFO 27700 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:13:36.630+08:00  INFO 27700 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:13:36.638+08:00  INFO 27700 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:13:36.638+08:00  INFO 27700 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:13:36.681+08:00  INFO 27700 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:13:36.681+08:00  INFO 27700 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 754 ms
+2024-07-12T22:13:36.835+08:00  INFO 27700 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:13:37.062+08:00  INFO 27700 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:13:37.069+08:00  INFO 27700 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.551 seconds (process running for 2.16)
+2024-07-12T22:15:12.552+08:00  INFO 26548 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 26548 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:15:12.557+08:00  INFO 26548 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:15:13.313+08:00  INFO 26548 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:15:13.321+08:00  INFO 26548 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:15:13.321+08:00  INFO 26548 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:15:13.366+08:00  INFO 26548 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:15:13.367+08:00  INFO 26548 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 760 ms
+2024-07-12T22:15:13.531+08:00  INFO 26548 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:15:13.763+08:00  INFO 26548 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:15:13.771+08:00  INFO 26548 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.611 seconds (process running for 2.341)
+2024-07-12T22:15:16.873+08:00  INFO 26548 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:15:16.873+08:00  INFO 26548 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:15:16.874+08:00  INFO 26548 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:15:16.942+08:00  INFO 26548 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:15:17.186+08:00  INFO 26548 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30a4162c
+2024-07-12T22:15:17.187+08:00  INFO 26548 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:15:17.241+08:00  INFO 26548 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:16:16.989+08:00  INFO 26548 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:16:16.995+08:00  INFO 26548 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:16:19.524+08:00  INFO 28888 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 28888 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:16:19.527+08:00  INFO 28888 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:16:20.307+08:00  INFO 28888 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:16:20.315+08:00  INFO 28888 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:16:20.315+08:00  INFO 28888 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:16:20.357+08:00  INFO 28888 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:16:20.357+08:00  INFO 28888 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 779 ms
+2024-07-12T22:16:20.507+08:00  INFO 28888 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:16:20.735+08:00  INFO 28888 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:16:20.743+08:00  INFO 28888 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.616 seconds (process running for 2.479)
+2024-07-12T22:16:23.459+08:00  INFO 28888 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:16:23.459+08:00  INFO 28888 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:16:23.460+08:00  INFO 28888 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:16:23.527+08:00  INFO 28888 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:16:23.757+08:00  INFO 28888 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fd90106
+2024-07-12T22:16:23.759+08:00  INFO 28888 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:16:23.815+08:00  INFO 28888 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:28:28.702+08:00  INFO 28888 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:28:28.708+08:00  INFO 28888 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:28:31.368+08:00  INFO 28132 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 28132 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:28:31.371+08:00  INFO 28132 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:28:32.253+08:00  INFO 28132 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:28:32.263+08:00  INFO 28132 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:28:32.263+08:00  INFO 28132 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:28:32.316+08:00  INFO 28132 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:28:32.316+08:00  INFO 28132 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 896 ms
+2024-07-12T22:28:32.507+08:00  INFO 28132 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:28:32.760+08:00  INFO 28132 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:28:32.768+08:00  INFO 28132 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.765 seconds (process running for 2.662)
+2024-07-12T22:28:32.915+08:00  INFO 28132 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:28:32.916+08:00  INFO 28132 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:28:32.917+08:00  INFO 28132 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:28:32.986+08:00  INFO 28132 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:28:33.203+08:00  INFO 28132 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ff4224
+2024-07-12T22:28:33.206+08:00  INFO 28132 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:28:33.285+08:00  INFO 28132 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:29:11.058+08:00  INFO 28132 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:29:11.064+08:00  INFO 28132 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:29:13.269+08:00  INFO 30000 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 30000 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:29:13.273+08:00  INFO 30000 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:29:14.035+08:00  INFO 30000 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:29:14.043+08:00  INFO 30000 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:29:14.043+08:00  INFO 30000 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:29:14.085+08:00  INFO 30000 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:29:14.085+08:00  INFO 30000 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 739 ms
+2024-07-12T22:29:14.231+08:00  INFO 30000 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:29:14.506+08:00  INFO 30000 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:29:14.514+08:00  INFO 30000 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.655 seconds (process running for 2.342)
+2024-07-12T22:29:18.500+08:00  INFO 30000 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:29:18.500+08:00  INFO 30000 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:29:18.501+08:00  INFO 30000 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:29:18.569+08:00  INFO 30000 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:29:18.790+08:00  INFO 30000 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6603be92
+2024-07-12T22:29:18.791+08:00  INFO 30000 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:29:18.843+08:00  INFO 30000 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:32:38.940+08:00  INFO 30000 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:32:38.945+08:00  INFO 30000 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:32:41.220+08:00  INFO 30232 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 30232 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:32:41.222+08:00  INFO 30232 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:32:41.988+08:00  INFO 30232 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:32:41.996+08:00  INFO 30232 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:32:41.996+08:00  INFO 30232 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:32:42.041+08:00  INFO 30232 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:32:42.041+08:00  INFO 30232 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 769 ms
+2024-07-12T22:32:42.202+08:00  INFO 30232 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:32:42.471+08:00  INFO 30232 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:32:42.479+08:00  INFO 30232 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.668 seconds (process running for 2.494)
+2024-07-12T22:32:43.224+08:00  INFO 30232 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:32:43.225+08:00  INFO 30232 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:32:43.225+08:00  INFO 30232 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-12T22:32:43.292+08:00  INFO 30232 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:32:43.511+08:00  INFO 30232 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6603be92
+2024-07-12T22:32:43.512+08:00  INFO 30232 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:32:43.565+08:00  INFO 30232 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:33:01.906+08:00  INFO 30232 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:33:01.912+08:00  INFO 30232 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:33:04.842+08:00  INFO 25984 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 25984 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:33:04.846+08:00  INFO 25984 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:33:05.768+08:00  INFO 25984 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:33:05.777+08:00  INFO 25984 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:33:05.777+08:00  INFO 25984 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:33:05.822+08:00  INFO 25984 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:33:05.823+08:00  INFO 25984 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 920 ms
+2024-07-12T22:33:06.034+08:00  INFO 25984 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:33:06.360+08:00  INFO 25984 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:33:06.367+08:00  INFO 25984 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 2.006 seconds (process running for 3.016)
+2024-07-12T22:33:06.408+08:00  INFO 25984 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:33:06.409+08:00  INFO 25984 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:33:06.411+08:00  INFO 25984 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-12T22:33:06.478+08:00  INFO 25984 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:33:06.816+08:00  INFO 25984 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23512af0
+2024-07-12T22:33:06.818+08:00  INFO 25984 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:33:06.886+08:00  INFO 25984 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:34:52.872+08:00  INFO 25984 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:34:52.878+08:00  INFO 25984 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:34:55.408+08:00  INFO 28780 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 28780 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:34:55.411+08:00  INFO 28780 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:34:56.165+08:00  INFO 28780 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:34:56.172+08:00  INFO 28780 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:34:56.173+08:00  INFO 28780 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:34:56.213+08:00  INFO 28780 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:34:56.213+08:00  INFO 28780 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 747 ms
+2024-07-12T22:34:56.357+08:00  INFO 28780 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:34:56.574+08:00  INFO 28780 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:34:56.581+08:00  INFO 28780 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.548 seconds (process running for 2.198)
+2024-07-12T22:34:58.814+08:00  INFO 28780 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:34:58.814+08:00  INFO 28780 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:34:58.815+08:00  INFO 28780 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:34:58.882+08:00  INFO 28780 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:34:59.102+08:00  INFO 28780 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@587ebd4f
+2024-07-12T22:34:59.104+08:00  INFO 28780 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:34:59.158+08:00  INFO 28780 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:35:27.211+08:00  INFO 28780 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:35:27.217+08:00  INFO 28780 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:35:29.861+08:00  INFO 29460 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 29460 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:35:29.864+08:00  INFO 29460 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:35:30.590+08:00  INFO 29460 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:35:30.598+08:00  INFO 29460 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:35:30.598+08:00  INFO 29460 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:35:30.640+08:00  INFO 29460 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:35:30.641+08:00  INFO 29460 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 740 ms
+2024-07-12T22:35:30.786+08:00  INFO 29460 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:35:31.025+08:00  INFO 29460 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:35:31.032+08:00  INFO 29460 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.574 seconds (process running for 2.317)
+2024-07-12T22:35:50.879+08:00  INFO 22936 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 22936 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:35:50.886+08:00  INFO 22936 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:35:51.693+08:00  INFO 22936 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:35:51.702+08:00  INFO 22936 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:35:51.702+08:00  INFO 22936 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:35:51.756+08:00  INFO 22936 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:35:51.756+08:00  INFO 22936 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 822 ms
+2024-07-12T22:35:51.916+08:00  INFO 22936 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:35:52.153+08:00  INFO 22936 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:35:52.161+08:00  INFO 22936 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.702 seconds (process running for 2.402)
+2024-07-12T22:35:52.406+08:00  INFO 22936 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:35:52.406+08:00  INFO 22936 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:35:52.408+08:00  INFO 22936 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-12T22:35:52.558+08:00  INFO 22936 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:35:52.833+08:00  INFO 22936 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30a4162c
+2024-07-12T22:35:52.834+08:00  INFO 22936 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:35:52.889+08:00  INFO 22936 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:36:00.697+08:00  INFO 22936 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:36:00.702+08:00  INFO 22936 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:36:03.423+08:00  INFO 17356 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 17356 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:36:03.427+08:00  INFO 17356 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:36:04.361+08:00  INFO 17356 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:36:04.370+08:00  INFO 17356 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:36:04.370+08:00  INFO 17356 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:36:04.423+08:00  INFO 17356 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:36:04.424+08:00  INFO 17356 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 948 ms
+2024-07-12T22:36:04.630+08:00  INFO 17356 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:36:04.923+08:00  INFO 17356 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:36:04.931+08:00  INFO 17356 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 2.123 seconds (process running for 2.821)
+2024-07-12T22:36:05.101+08:00  INFO 17356 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:36:05.103+08:00  INFO 17356 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:36:05.104+08:00  INFO 17356 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:36:05.177+08:00  INFO 17356 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:36:05.556+08:00  INFO 17356 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e61ccdb
+2024-07-12T22:36:05.558+08:00  INFO 17356 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:36:05.628+08:00  INFO 17356 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:37:23.747+08:00  INFO 17356 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:37:23.752+08:00  INFO 17356 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:37:26.412+08:00  INFO 7496 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 7496 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:37:26.414+08:00  INFO 7496 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:37:27.145+08:00  INFO 7496 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:37:27.153+08:00  INFO 7496 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:37:27.154+08:00  INFO 7496 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:37:27.195+08:00  INFO 7496 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:37:27.195+08:00  INFO 7496 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 730 ms
+2024-07-12T22:37:27.343+08:00  INFO 7496 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:37:27.578+08:00  INFO 7496 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:37:27.586+08:00  INFO 7496 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.628 seconds (process running for 2.446)
+2024-07-12T22:37:29.706+08:00  INFO 7496 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:37:29.706+08:00  INFO 7496 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:37:29.708+08:00  INFO 7496 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:37:29.773+08:00  INFO 7496 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:37:29.998+08:00  INFO 7496 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a854610
+2024-07-12T22:37:30.000+08:00  INFO 7496 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:37:30.054+08:00  INFO 7496 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:37:47.967+08:00  INFO 7496 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:37:47.972+08:00  INFO 7496 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:37:50.214+08:00  INFO 28436 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 28436 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:37:50.219+08:00  INFO 28436 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:37:50.983+08:00  INFO 28436 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:37:50.992+08:00  INFO 28436 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:37:50.992+08:00  INFO 28436 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:37:51.035+08:00  INFO 28436 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:37:51.035+08:00  INFO 28436 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 757 ms
+2024-07-12T22:37:51.180+08:00  INFO 28436 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:37:51.401+08:00  INFO 28436 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:37:51.409+08:00  INFO 28436 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.574 seconds (process running for 2.259)
+2024-07-12T22:39:03.366+08:00  INFO 17636 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 17636 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:39:03.378+08:00  INFO 17636 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:39:04.103+08:00  INFO 17636 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:39:04.111+08:00  INFO 17636 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:39:04.111+08:00  INFO 17636 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:39:04.156+08:00  INFO 17636 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:39:04.156+08:00  INFO 17636 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 742 ms
+2024-07-12T22:39:04.313+08:00  INFO 17636 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:39:04.539+08:00  INFO 17636 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:39:04.545+08:00  INFO 17636 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.597 seconds (process running for 2.316)
+2024-07-12T22:39:04.728+08:00  INFO 17636 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:39:04.728+08:00  INFO 17636 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:39:04.729+08:00  INFO 17636 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:39:04.796+08:00  INFO 17636 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:39:05.184+08:00  INFO 17636 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e61ccdb
+2024-07-12T22:39:05.187+08:00  INFO 17636 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:39:05.276+08:00  INFO 17636 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:42:57.994+08:00  INFO 17636 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:42:58.001+08:00  INFO 17636 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:43:00.666+08:00  INFO 29888 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 29888 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:43:00.668+08:00  INFO 29888 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:43:01.440+08:00  INFO 29888 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:43:01.448+08:00  INFO 29888 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:43:01.448+08:00  INFO 29888 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:43:01.493+08:00  INFO 29888 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:43:01.493+08:00  INFO 29888 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 772 ms
+2024-07-12T22:43:01.654+08:00  INFO 29888 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:43:01.895+08:00  INFO 29888 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:43:01.902+08:00  INFO 29888 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.621 seconds (process running for 2.329)
+2024-07-12T22:43:03.028+08:00  INFO 29888 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:43:03.028+08:00  INFO 29888 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:43:03.029+08:00  INFO 29888 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:43:03.100+08:00  INFO 29888 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:43:03.319+08:00  INFO 29888 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e61ccdb
+2024-07-12T22:43:03.321+08:00  INFO 29888 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:43:03.375+08:00  INFO 29888 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:43:21.824+08:00  INFO 29888 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:43:21.829+08:00  INFO 29888 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:43:24.193+08:00  INFO 24616 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 24616 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:43:24.195+08:00  INFO 24616 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:43:24.927+08:00  INFO 24616 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:43:24.935+08:00  INFO 24616 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:43:24.936+08:00  INFO 24616 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:43:24.979+08:00  INFO 24616 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:43:24.979+08:00  INFO 24616 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 728 ms
+2024-07-12T22:43:25.120+08:00  INFO 24616 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:43:25.343+08:00  INFO 24616 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:43:25.351+08:00  INFO 24616 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.548 seconds (process running for 2.219)
+2024-07-12T22:44:14.148+08:00  INFO 30408 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 30408 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:44:14.150+08:00  INFO 30408 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:44:14.878+08:00  INFO 30408 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:44:14.886+08:00  INFO 30408 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:44:14.886+08:00  INFO 30408 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:44:14.927+08:00  INFO 30408 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:44:14.927+08:00  INFO 30408 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 728 ms
+2024-07-12T22:44:15.074+08:00  INFO 30408 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:44:15.293+08:00  INFO 30408 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:44:15.300+08:00  INFO 30408 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.506 seconds (process running for 1.98)
+2024-07-12T22:45:00.045+08:00  INFO 30408 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:45:00.045+08:00  INFO 30408 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:45:00.046+08:00  INFO 30408 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:45:00.114+08:00  INFO 30408 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:45:00.370+08:00  INFO 30408 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e61ccdb
+2024-07-12T22:45:00.371+08:00  INFO 30408 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:45:00.425+08:00  INFO 30408 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:49:17.689+08:00  INFO 30408 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:49:17.696+08:00  INFO 30408 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:49:20.349+08:00  INFO 26976 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 26976 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:49:20.352+08:00  INFO 26976 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:49:21.080+08:00  INFO 26976 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:49:21.088+08:00  INFO 26976 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:49:21.088+08:00  INFO 26976 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:49:21.129+08:00  INFO 26976 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:49:21.129+08:00  INFO 26976 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 728 ms
+2024-07-12T22:49:21.276+08:00  INFO 26976 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:49:21.512+08:00  INFO 26976 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:49:21.519+08:00  INFO 26976 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.539 seconds (process running for 2.16)
+2024-07-12T22:50:10.378+08:00  INFO 31036 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 31036 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:50:10.380+08:00  INFO 31036 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:50:11.134+08:00  INFO 31036 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:50:11.142+08:00  INFO 31036 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:50:11.142+08:00  INFO 31036 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:50:11.185+08:00  INFO 31036 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:50:11.186+08:00  INFO 31036 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 754 ms
+2024-07-12T22:50:11.334+08:00  INFO 31036 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:50:11.565+08:00  INFO 31036 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:50:11.573+08:00  INFO 31036 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.572 seconds (process running for 2.276)
+2024-07-12T22:50:14.267+08:00  INFO 31036 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:50:14.268+08:00  INFO 31036 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:50:14.269+08:00  INFO 31036 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:50:14.335+08:00  INFO 31036 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:50:14.552+08:00  INFO 31036 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30a4162c
+2024-07-12T22:50:14.553+08:00  INFO 31036 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:50:14.602+08:00  INFO 31036 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:50:24.896+08:00  INFO 31036 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T22:50:26.489+08:00  INFO 31036 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:50:29.780+08:00  INFO 31036 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:56:12.434+08:00  INFO 31036 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:56:12.440+08:00  INFO 31036 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:56:14.744+08:00  INFO 32012 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 32012 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:56:14.746+08:00  INFO 32012 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:56:15.496+08:00  INFO 32012 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:56:15.505+08:00  INFO 32012 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:56:15.505+08:00  INFO 32012 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:56:15.548+08:00  INFO 32012 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:56:15.548+08:00  INFO 32012 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 755 ms
+2024-07-12T22:56:15.699+08:00  INFO 32012 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:56:15.930+08:00  INFO 32012 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:56:15.938+08:00  INFO 32012 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.574 seconds (process running for 2.065)
+2024-07-12T22:56:19.718+08:00  INFO 32012 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:56:19.719+08:00  INFO 32012 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:56:19.720+08:00  INFO 32012 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:56:19.785+08:00  INFO 32012 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:56:20.014+08:00  INFO 32012 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@587ebd4f
+2024-07-12T22:56:20.015+08:00  INFO 32012 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:56:20.072+08:00  INFO 32012 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:57:00.255+08:00  INFO 32012 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:57:00.261+08:00  INFO 32012 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:57:02.651+08:00  INFO 28220 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 28220 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:57:02.656+08:00  INFO 28220 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:57:03.406+08:00  INFO 28220 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:57:03.415+08:00  INFO 28220 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:57:03.415+08:00  INFO 28220 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:57:03.458+08:00  INFO 28220 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:57:03.458+08:00  INFO 28220 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 750 ms
+2024-07-12T22:57:03.605+08:00  INFO 28220 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:57:03.830+08:00  INFO 28220 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:57:03.837+08:00  INFO 28220 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.624 seconds (process running for 2.496)
+2024-07-12T22:57:07.244+08:00  INFO 28220 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:57:07.244+08:00  INFO 28220 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:57:07.245+08:00  INFO 28220 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:57:07.313+08:00  INFO 28220 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:57:07.534+08:00  INFO 28220 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e61ccdb
+2024-07-12T22:57:07.535+08:00  INFO 28220 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:57:07.590+08:00  INFO 28220 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:57:09.175+08:00  INFO 28220 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:57:10.305+08:00  INFO 28220 --- [OnlineTest] [http-nio-8080-exec-3] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T22:57:11.570+08:00  INFO 28220 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:57:24.032+08:00  INFO 28220 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:57:24.037+08:00  INFO 28220 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:57:26.363+08:00  INFO 29132 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 29132 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:57:26.370+08:00  INFO 29132 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:57:27.101+08:00  INFO 29132 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:57:27.109+08:00  INFO 29132 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:57:27.109+08:00  INFO 29132 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:57:27.152+08:00  INFO 29132 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:57:27.152+08:00  INFO 29132 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 731 ms
+2024-07-12T22:57:27.295+08:00  INFO 29132 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:57:27.521+08:00  INFO 29132 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:57:27.529+08:00  INFO 29132 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.537 seconds (process running for 2.163)
+2024-07-12T22:57:32.420+08:00  INFO 29132 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:57:32.420+08:00  INFO 29132 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:57:32.422+08:00  INFO 29132 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-12T22:57:32.487+08:00  INFO 29132 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:57:32.713+08:00  INFO 29132 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@767247
+2024-07-12T22:57:32.714+08:00  INFO 29132 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:57:32.766+08:00  INFO 29132 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:57:40.375+08:00  INFO 29132 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:57:40.380+08:00  INFO 29132 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:57:42.948+08:00  INFO 18080 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 18080 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:57:42.952+08:00  INFO 18080 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:57:43.707+08:00  INFO 18080 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:57:43.716+08:00  INFO 18080 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:57:43.716+08:00  INFO 18080 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:57:43.758+08:00  INFO 18080 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:57:43.759+08:00  INFO 18080 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 755 ms
+2024-07-12T22:57:43.909+08:00  INFO 18080 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:57:44.140+08:00  INFO 18080 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:57:44.147+08:00  INFO 18080 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.626 seconds (process running for 2.37)
+2024-07-12T22:57:44.226+08:00  INFO 18080 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:57:44.227+08:00  INFO 18080 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:57:44.229+08:00  INFO 18080 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:57:44.300+08:00  INFO 18080 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:57:44.633+08:00  INFO 18080 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61153930
+2024-07-12T22:57:44.637+08:00  INFO 18080 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:57:44.723+08:00  INFO 18080 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:58:09.540+08:00  INFO 18080 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:58:09.546+08:00  INFO 18080 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:58:11.931+08:00  INFO 25368 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 25368 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:58:11.934+08:00  INFO 25368 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:58:12.719+08:00  INFO 25368 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:58:12.727+08:00  INFO 25368 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:58:12.727+08:00  INFO 25368 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:58:12.770+08:00  INFO 25368 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:58:12.771+08:00  INFO 25368 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 780 ms
+2024-07-12T22:58:12.916+08:00  INFO 25368 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:58:13.134+08:00  INFO 25368 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:58:13.141+08:00  INFO 25368 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.582 seconds (process running for 2.175)
+2024-07-12T22:58:20.087+08:00  INFO 25368 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:58:20.088+08:00  INFO 25368 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:58:20.089+08:00  INFO 25368 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-12T22:58:20.154+08:00  INFO 25368 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:58:20.374+08:00  INFO 25368 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@767247
+2024-07-12T22:58:20.375+08:00  INFO 25368 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:58:20.430+08:00  INFO 25368 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T22:58:40.561+08:00  INFO 25368 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T22:58:40.567+08:00  INFO 25368 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T22:58:43.075+08:00  INFO 31616 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 31616 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T22:58:43.078+08:00  INFO 31616 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T22:58:43.845+08:00  INFO 31616 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T22:58:43.853+08:00  INFO 31616 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T22:58:43.853+08:00  INFO 31616 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T22:58:43.925+08:00  INFO 31616 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T22:58:43.925+08:00  INFO 31616 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 790 ms
+2024-07-12T22:58:44.073+08:00  INFO 31616 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T22:58:44.295+08:00  INFO 31616 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T22:58:44.303+08:00  INFO 31616 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.628 seconds (process running for 2.315)
+2024-07-12T22:58:46.847+08:00  INFO 31616 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T22:58:46.847+08:00  INFO 31616 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T22:58:46.848+08:00  INFO 31616 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T22:58:46.916+08:00  INFO 31616 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T22:58:47.153+08:00  INFO 31616 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6603be92
+2024-07-12T22:58:47.155+08:00  INFO 31616 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T22:58:47.210+08:00  INFO 31616 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T23:05:58.233+08:00  INFO 31616 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T23:06:02.861+08:00  INFO 31616 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T23:07:35.560+08:00  INFO 31616 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T23:07:35.569+08:00  INFO 31616 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T23:07:38.070+08:00  INFO 23664 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 23664 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T23:07:38.072+08:00  INFO 23664 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T23:07:38.823+08:00  INFO 23664 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T23:07:38.832+08:00  INFO 23664 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T23:07:38.832+08:00  INFO 23664 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T23:07:38.874+08:00  INFO 23664 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T23:07:38.875+08:00  INFO 23664 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 755 ms
+2024-07-12T23:07:39.025+08:00  INFO 23664 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T23:07:39.237+08:00  INFO 23664 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T23:07:39.244+08:00  INFO 23664 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.596 seconds (process running for 2.295)
+2024-07-12T23:07:51.761+08:00  INFO 23664 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T23:07:51.761+08:00  INFO 23664 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T23:07:51.762+08:00  INFO 23664 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T23:07:51.826+08:00  INFO 23664 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T23:07:52.046+08:00  INFO 23664 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6603be92
+2024-07-12T23:07:52.048+08:00  INFO 23664 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T23:07:52.100+08:00  INFO 23664 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T23:11:39.112+08:00  INFO 23664 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T23:11:39.119+08:00  INFO 23664 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T23:11:41.721+08:00  INFO 29676 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 29676 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T23:11:41.724+08:00  INFO 29676 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T23:11:42.519+08:00  INFO 29676 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T23:11:42.528+08:00  INFO 29676 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T23:11:42.528+08:00  INFO 29676 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T23:11:42.573+08:00  INFO 29676 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T23:11:42.573+08:00  INFO 29676 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 801 ms
+2024-07-12T23:11:42.724+08:00  INFO 29676 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T23:11:42.983+08:00  INFO 29676 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T23:11:42.991+08:00  INFO 29676 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.667 seconds (process running for 2.527)
+2024-07-12T23:12:07.422+08:00  INFO 3844 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 3844 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T23:12:07.427+08:00  INFO 3844 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T23:12:08.175+08:00  INFO 3844 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T23:12:08.183+08:00  INFO 3844 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T23:12:08.184+08:00  INFO 3844 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T23:12:08.227+08:00  INFO 3844 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T23:12:08.227+08:00  INFO 3844 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 743 ms
+2024-07-12T23:12:08.384+08:00  INFO 3844 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T23:12:08.617+08:00  INFO 3844 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T23:12:08.625+08:00  INFO 3844 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.575 seconds (process running for 2.281)
+2024-07-12T23:12:43.830+08:00  INFO 3844 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T23:12:43.831+08:00  INFO 3844 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T23:12:43.832+08:00  INFO 3844 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-12T23:12:43.900+08:00  INFO 3844 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T23:12:44.127+08:00  INFO 3844 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54cecd31
+2024-07-12T23:12:44.129+08:00  INFO 3844 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T23:12:44.182+08:00  INFO 3844 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T23:12:50.625+08:00  INFO 3844 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T23:12:51.415+08:00  INFO 3844 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T23:13:01.783+08:00  INFO 3844 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T23:13:01.790+08:00  INFO 3844 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T23:13:04.448+08:00  INFO 32808 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 32808 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T23:13:04.453+08:00  INFO 32808 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T23:13:05.246+08:00  INFO 32808 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T23:13:05.255+08:00  INFO 32808 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T23:13:05.255+08:00  INFO 32808 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T23:13:05.298+08:00  INFO 32808 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T23:13:05.298+08:00  INFO 32808 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 799 ms
+2024-07-12T23:13:05.468+08:00  INFO 32808 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T23:13:05.733+08:00  INFO 32808 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T23:13:05.741+08:00  INFO 32808 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.726 seconds (process running for 2.497)
+2024-07-12T23:13:11.090+08:00  INFO 32808 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T23:13:11.090+08:00  INFO 32808 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T23:13:11.091+08:00  INFO 32808 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T23:13:11.157+08:00  INFO 32808 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T23:13:11.379+08:00  INFO 32808 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e61ccdb
+2024-07-12T23:13:11.380+08:00  INFO 32808 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T23:13:11.435+08:00  INFO 32808 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T23:14:03.693+08:00  INFO 32808 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T23:14:07.456+08:00  INFO 32808 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T23:14:07.463+08:00  INFO 32808 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T23:14:09.999+08:00  INFO 30448 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Starting OnlineTestApplication using Java 17.0.10 with PID 30448 (D:\Program\OnlineTest\target\classes started by 27249 in D:\Program\OnlineTest)
+2024-07-12T23:14:10.004+08:00  INFO 30448 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T23:14:10.924+08:00  INFO 30448 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-12T23:14:10.934+08:00  INFO 30448 --- [OnlineTest] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-12T23:14:10.935+08:00  INFO 30448 --- [OnlineTest] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-12T23:14:10.979+08:00  INFO 30448 --- [OnlineTest] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-12T23:14:10.980+08:00  INFO 30448 --- [OnlineTest] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 922 ms
+2024-07-12T23:14:11.145+08:00  INFO 30448 --- [OnlineTest] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-12T23:14:11.442+08:00  INFO 30448 --- [OnlineTest] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-12T23:14:11.452+08:00  INFO 30448 --- [OnlineTest] [main] o.web.onlinetest.OnlineTestApplication   : Started OnlineTestApplication in 1.89 seconds (process running for 2.573)
+2024-07-12T23:14:11.565+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-12T23:14:11.566+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-12T23:14:11.567+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-12T23:14:11.645+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T23:14:11.939+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a854610
+2024-07-12T23:14:11.940+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T23:14:12.031+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T23:14:16.076+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T23:16:24.084+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-6] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T23:16:24.897+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-7] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T23:20:51.862+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-10] o.w.o.controller.AdminController         : trying to delete question id: 12
+2024-07-12T23:20:51.867+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-10] o.w.onlinetest.service.QuestionService   : deleteQuestion success
+2024-07-12T23:20:51.901+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-1] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T23:20:53.185+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-2] o.w.o.controller.AdminController         : trying to ques manage page2
+2024-07-12T23:20:55.731+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-4] o.w.o.controller.AdminController         : trying to add question
+2024-07-12T23:21:03.473+08:00  INFO 30448 --- [OnlineTest] [http-nio-8080-exec-5] o.w.o.controller.AdminController         : trying to ques manage page1
+2024-07-12T23:21:08.355+08:00  INFO 30448 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T23:21:08.363+08:00  INFO 30448 --- [OnlineTest] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

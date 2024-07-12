@@ -11,7 +11,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.web.onlinetest.main.User;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 @Component
 @Transactional
@@ -83,6 +85,20 @@ public class AdminService {
         logger.info(e.getMessage());
         logger.info("重置密码失败！");}
     logger.info("重置密码成功！");
+    }
+
+    public List<User> findUserByUid(String uid) {
+        //先查询全部用户
+        List<User> userList = findAllUser();
+        List<User> searchList =new ArrayList<>();
+        Pattern pattern = Pattern.compile(".*"+uid+".*");
+        //正则表达式匹配用户
+        for (User user : userList) {
+            if (pattern.matcher(user.getUid()).matches()) {
+                searchList.add(user);
+            }
+        }
+        return searchList;
     }
 
 

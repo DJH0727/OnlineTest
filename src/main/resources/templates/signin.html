@@ -3,10 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>登录</title>
-  <link rel="stylesheet" href="/css/reset.css" />
   <link rel="stylesheet" href="/css/common.css"/>
   <link rel="stylesheet" href="/css/font-awesome.min.css" />
 </head>
+<style>
+  body {
+    background-image: url('/img/logo_bg.jpg');
+  }
+  .ececk_warning {
+    font-size: 13px;
+    color: red;
+    width: 300px;
+    margin: 0 auto;
+    display: none;
+  }
+</style>
 <body>
 
 <div class="wrap login_wrap">
@@ -20,11 +31,11 @@
           <div class="form_text_ipt">
             <input name="userid" type="text" placeholder="用户名/学号">
           </div>
-          <div class="ececk_warning"><span>用户名/学号不能为空</span></div>
+          <div class="ececk_warning" style="display: none;"><span>用户名/学号不能为空</span></div>
           <div class="form_text_ipt">
             <input name="password" type="password" placeholder="密码">
           </div>
-          <div class="ececk_warning"><span>密码不能为空</span></div>
+          <div class="ececk_warning" style="display: none;"><span>密码不能为空</span></div>
           <div id="nogg" style="text-align: center"><span style="color: red;text-align: center" id="sb" th:text="${error}"/></div>
           <br>
           <div class="form_btn" >
