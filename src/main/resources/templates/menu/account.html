@@ -1,0 +1,135 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Spring Mvc Web App</title>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/profile.js"></script>
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/profile.css" rel="stylesheet">
+</head>
+<body style="font-size:16px">
+<div>
+            <nav class='sidebar sidebar-menu-collapsed'>
+                <a href='#' id='justify-icon'>
+                    <span class='glyphicon glyphicon-align-justify'></span>
+                </a>
+                <ul>
+                    <li>
+                        <a class='expandable' href='#' title='主页'>
+                            <span class='glyphicon glyphicon-home collapsed-element'></span>
+                            <span class='expanded-element'>主页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class='expandable' href='/menu/exam' title='工具'>
+                            <span class='glyphicon glyphicon-wrench collapsed-element'></span>
+                            <span class='expanded-element'>工具</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class='expandable' href='#' title='设置'>
+                            <span class='glyphicon glyphicon-cog collapsed-element'></span>
+                            <span class='expanded-element'>设置</span>
+                        </a>
+                    </li>
+                    <li class='active'>
+                        <a class='expandable' href='/menu/account' title='账户'>
+                            <span class='glyphicon glyphicon-user collapsed-element'></span>
+                            <span class='expanded-element'>账户</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href='/signout' id='logout-icon' title='Logout'>
+                    <span class='glyphicon glyphicon-off'></span>
+                </a>
+            </nav>
+
+</div>
+<div style="margin-top: 30px; text-align: center">
+    <span class="account-title">账 户 信 息</span>
+</div>
+
+<div  style="margin-top: 30px; text-align: center">
+    <form action="/menu/save-account" method="post" class="form-control-static  ">
+        <!-- 文本输入框 -->
+        <div class="form-group">
+        <label for="UserID">学号:</label>
+        <br>
+        <input th:if="${user!= null}" th:value="${user.userID}" readonly="readonly" type="text" id="UserID" name="UserID" >
+        </div>
+        <!-- 密码输入框 -->
+        <div class="form-group">
+        <label for="name">姓名:</label>
+            <br>
+        <input th:if="${user!= null}" th:value="${user.userName}" readonly="readonly" type="text" id="name" name="name" >
+        </div>
+
+        <!-- 邮箱输入框 -->
+        <div class="form-group">
+        <label for="email">邮箱:</label>
+            <br>
+        <input th:if="${user!= null}" th:value="${user.email}" readonly="readonly" type="text" id="email" name="email" >
+        </div>
+        <!-- 电话输入框 -->
+        <div class="form-group">
+        <label for="phone">电话:</label>
+            <br>
+        <input  th:if="${user!= null}" th:value="${user.phone}" readonly="readonly" type="text" id="phone" name="phone" >
+        </div>
+
+
+
+
+
+
+
+        <!-- 下拉列表 -->
+        <label for="country">学院:</label>
+        <select id="country" name="country">
+            <option value="school1"> 信息学院 </option>
+            <option value="school2"> 数学学院 </option>
+            <option value="school3"> 物理学院 </option>
+            <option value="school4"> 生命科学学院 </option>
+            <option value="school5"> 化学学院 </option>
+            <option value="school6"> 材料学院 </option>
+        </select>
+
+        <br>
+
+        <!-- 修改 -->
+        <div class="form-group">
+            <a href="/menu/edit-account" class="btn btn-primary" style="font-size: 18px;" id="modify">修改</a>
+            <button  type="submit" class="btn btn-primary" style="font-size: 18px;" id="submit">保存</button>
+        </div>
+        <span  th:if="${message!= null}" th:text="${message}" id="message" style="display:none;"></span>
+
+        <script>
+
+            if($('#message').text() === 'modify'){
+                $('#modify').hide();
+                $('#submit').show();
+                console.log('modify');
+                $('#name').removeAttr('readonly');
+                $('#email').removeAttr('readonly');
+                $('#phone').removeAttr('readonly');
+            }
+            else{
+                $('#modify').show();
+                $('#submit').hide();
+                console.log('submit');
+                $('#name').attr('readonly', true);
+                $('#email').attr('readonly', true);
+                $('#phone').attr('readonly', true);
+            }
+        </script>
+    </form>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top" style="margin-top: 100px; text-align: center">
+        <p>Copyright © 2024</p>
+    </footer>
+
+
+</div>
+</body>
+</html>
