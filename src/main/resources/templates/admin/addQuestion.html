@@ -56,7 +56,7 @@
 
       <div class="form-group" style="font-size: 24px;text-align:center; width:40%; display: inline-block;" >
         <span style="font-size: 20px">课程：</span>
-        <select id="courseId" name="courseId" class="form-control" required>
+        <select id="courseId1" name="courseId1" class="form-control" required>
           <option th:each="course : ${courses}" th:value="${course.cid}" th:text="${course.cname}"></option>
         </select>
       </div>
@@ -75,8 +75,8 @@
 
     <script>
       // 保存文本到 LocalStorage
-      document.getElementById("courseId").addEventListener("input", function() {
-        localStorage.setItem("courseId", this.value);
+      document.getElementById("courseId1").addEventListener("input", function() {
+        localStorage.setItem("courseId1", this.value);
       });
       document.getElementById("question1").addEventListener("input", function() {
         localStorage.setItem("question1", this.value);
@@ -99,12 +99,12 @@
       document.getElementById("optionB1").value = localStorage.getItem("optionB1");
       document.getElementById("optionC1").value = localStorage.getItem("optionC1");
       document.getElementById("optionD1").value = localStorage.getItem("optionD1");
-      document.getElementById("courseId").value = localStorage.getItem("courseId");
+      document.getElementById("courseId1").value = localStorage.getItem("courseId1");
       function ClearInput1() {
-        const courseId = document.getElementById("courseId").value;
+        const courseId1 = document.getElementById("courseId1").value;
         const questionType = document.getElementById("questionType").value;
         localStorage.clear();
-        localStorage.setItem("courseId", courseId);
+        localStorage.setItem("courseId1", courseId1);
         localStorage.setItem("questionType", questionType);
         document.getElementById("question1").value = "";
         document.getElementById("optionA1").value = "";
@@ -283,6 +283,10 @@
 
   <span th:text="${message}" style="display:none;" id="message"></span>
   <script>
+    //如果courseId不存在，则显示对应的表单
+
+
+
     // 显示表单,设置questionType的值到 localStorage
     if($("#message").text() !== "")
     {

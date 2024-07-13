@@ -42,7 +42,7 @@ public class AdminController {
     @Autowired
     QuestionService questionService;
 
-    @RequestMapping("/admin/adminHome")
+    @RequestMapping("/adminHome")
     public String adminHome() {
 
         return "admin/adminHome";

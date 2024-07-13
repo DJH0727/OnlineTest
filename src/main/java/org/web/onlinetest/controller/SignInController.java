@@ -18,7 +18,7 @@ import org.web.onlinetest.service.UserService;
 public class SignInController {
     final Logger logger = LoggerFactory.getLogger(getClass());
 
-    public static final String KEY_USER = "__user__";
+    public static final String KEY_USER = "user";
 
     @Autowired
     UserService userService;
@@ -54,10 +54,11 @@ public class SignInController {
 
         if (user!= null) {
             session.setAttribute(KEY_USER, user);
+            model.addAttribute("user", user);
             if(user.getRole()==0)
-                return "redirect:/admin/adminHome";
+                return "redirect:/adminHome";
             else
-                return "redirect:/student/studentHome";
+                return "redirect:/studentHome";
 
         } else {
             model.addAttribute("userid", UserID);

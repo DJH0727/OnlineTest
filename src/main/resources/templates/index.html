@@ -40,7 +40,8 @@
       <span class="index-span-style" style="font-size: 1.5rem;"> 欢迎使用在线考试系统 ，</span>
       <span  class="index-span-style" style="font-size: 1.5rem;" th:if="${user != null}" th:text="${user.getName()} " th:value="${user}" id="userName"></span>
       <br>
-      <a type="button" href="/profile" class="btn btn-outline-primary"   style="font-size: 1.0rem; text-align: center; width: 100%;">进入系统</a>
+      <a type="button" href="/student/studentHome" class="btn btn-outline-primary"   style="font-size: 1.0rem; text-align: center; width: 100%;">进入系统</a>
+      <a type="button" href="/signout" class="btn btn-outline-primary"   style="font-size: 1.0rem; text-align: center; width: 100%;">退出系统</a>
     </div>
   </div>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<html lang="zh-CN"  xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -141,7 +141,8 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a id="ht2"><span class="glyphicon glyphicon-user" ></span>Admin</a></li>
+                    <li><img  th:if="${session.user!=null}" th:src="${session.user.imgurl}" alt="用户头像" style="width: 30px;height: 30px;border-radius: 50%;margin-top: 10px;"></li>
+                    <li><a id="ht2"><span class="glyphicon glyphicon-user" th:if="${session.user!=null}" th:text="${session.user.name}" id="username"></span></a></li>
                     <li><a><input type="hidden" name="classid" /></a></li>
                     <li><a href="/signout" ><span class="glyphicon glyphicon-off"></span>退出系统</a></li>
                     <li><a></a></li>
@@ -153,22 +154,43 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
-                    <li ><a ><span class="glyphicon glyphicon-th-list"></span>&nbsp; &nbsp;&nbsp;&nbsp;菜单列表 </a></li>
-                    <li><a class="a-hd"><span class="glyphicon glyphicon-briefcase"></span>&nbsp; &nbsp;&nbsp;系统功能</a></li>
-                    <li id="menu1"><a href="/userManage"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;用户管理</a></li>
+                    <li><a class="a-hd"><span class="glyphicon glyphicon-briefcase"></span>&nbsp; &nbsp;&nbsp;考试</a></li>
+                    <li id="menu1"><a href="/createExam" ><span class="glyphicon glyphicon-play" ></span>&nbsp; &nbsp;&nbsp;创建考试</a></li>
+                    <li id="menu2"><a href="/myExam"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;我的考试</a></li>
                 </ul>
-
                 <ul class="nav nav-sidebar">
-                    <li><a class="a-hd"><span class="glyphicon glyphicon-briefcase"></span>&nbsp; &nbsp;&nbsp;题库管理</a></li>
-                    <li id="menu2"><a href="/addQuestion"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;添加试题</a></li>
-                    <li id="menu3"><a href="/quesManage"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;试题管理</a></li>
-
+                    <li><a class="a-hd"><span class="glyphicon glyphicon-briefcase"></span>&nbsp; &nbsp;&nbsp;个人中心</a></li>
+                    <li id="menu3"><a href="/personalInfo"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;个人信息</a></li>
+                    <li id="menu4"><a href="/changePassword"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;修改密码</a></li>
                 </ul>
-                <span id="menuNum" th:text="${menu}" style="display:none;">1</span>
+
+                <span style="display: none;" th:if="${session.user!=null}" th:text="${session.user.role}" id="role"></span>
                 <script>
-                    var menuNo = $('#menuNum').text();
-                    console.log(menuNo);
-                    $('#menu'+ menuNo).addClass('active');
+
+                    if(document.getElementById("username")==null)
+                    {
+                        window.location.href = "signin";
+                    }
+                    else if(document.getElementById("role").innerHTML!=='1') {
+                    window.location.href = "signin";
+                    }
+
+                    document.getElementById("menu1").onclick = function () {
+                       sessionStorage.setItem("menu", "menu1");
+                    };
+                    document.getElementById("menu2").onclick = function () {
+                        sessionStorage.setItem("menu", "menu2");
+                    };
+                    document.getElementById("menu3").onclick = function () {
+                        sessionStorage.setItem("menu", "menu3");
+                    };
+                    document.getElementById("menu4").onclick = function () {
+                        sessionStorage.setItem("menu", "menu4");
+                    };
+                    if(sessionStorage.getItem("menu")!=null){
+                        var menu = sessionStorage.getItem("menu");
+                            document.getElementById(menu).className = "active";
+                    }
 
                 </script>
 

@@ -57,6 +57,13 @@ public class User {
     public void setUno(String uno) {
         this.uno = uno;
     }
+    public String getImgurl() {
+        return imgurl;
+    }
+
+    public void setImgurl(String imgurl) {
+        this.imgurl = imgurl;
+    }
 
     private String uno;//编号
     private String uid;
@@ -65,20 +72,23 @@ public class User {
     private String name;
     private String email;
     private String phone;
+    private String imgurl;
 
     public User() {
     }
 
-    public User(String uid, int role, String pwd, String name, String email, String phone) {
+    public User(String uid, int role, String pwd, String name, String email, String phone, String imgurl) {
         this.uid = uid;
         this.role = role;
         this.pwd = pwd;
         this.name = name;
         this.email = email;
         this.phone = phone;
+        this.imgurl = imgurl;
+
     }
     public String toString() {
-        return "User [uid=" + uid + ", role=" + role + ", pwd=" + pwd + ", name=" + name + ", email=" + email + ", phone=" + phone + "]";
+        return "User [uid=" + uid + ", role=" + role + ", pwd=" + pwd + ", name=" + name + ", email=" + email + ", phone=" + phone + ", imgurl=" + imgurl + "]";
     }
 
 }
