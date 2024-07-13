@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>在线考试系统</title>
+    <script src="/static/js/jquery.js"></script>
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/index.css" rel="stylesheet">
+  <style>
+    body {
+     background-image: url('/img/img.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .index-span-style {
+      font-family: "华文中宋", serif;/*设置字体*/
+      font-size:5rem; /*设置字体大小*/
+      font-weight:500; /*设置字体粗细*/
+      -webkit-text-stroke:1px #fdfdfd;        /*文字描边*/
+      -webkit-text-fill-color: #fdfcfc;    /*设置文字的填充颜色*/
+    }
+    .login-button {
+      /*background-color: rgba(255, 255, 255, 0.1); /* 背景半透明 */
+      color: #fdfdfd; /* 字体颜色 */
+      font-family: "华文楷体", sans-serif; /* 字体 */
+      font-size: 1rem; /* 字体大小 */
+      padding: 10px 20px; /* 内边距 */
+      border-radius: 5px; /* 圆角 */
+      font-weight:500; /*设置字体粗细*/
+      text-align: center; /* 文本居中 */
+    }
+    .logo {
+      position: absolute;
+      top: 20px; /* 距离顶部的距离，可以根据需要调整 */
+      right: 20px; /* 距离右边的距离，可以根据需要调整 */
+      height: 50px; /* 图片高度，可以根据需要调整 */
+    }
+
+  </style>
+
+</head>
+<body >
+<div>
+  <img src="/static/img/logo5_h100.png" class="logo" alt="Logo">
+  <div style="height: 30vh;">
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center;" class="index-span-style">
+    <h3 style="letter-spacing:30px; text-align: center;font-size: 4.5rem;">在线考试系统</h3>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center;" class="index-span-style">
+    <span style="text-align: center; font-size: 2.8rem;">Online Examination System</span>
+  </div>
+
+  <div style="height: 10vh;">
+  </div>
+<!-- 登录按钮 -->
+  <div style="display: flex; justify-content: center;">
+    <a href="/signin">
+      <div id="HaveNoLogin" class="btn btn-outline-primary login-button" style="width: fit-content;">
+        <span data-i18n="login" style="font-size: 5.0rem;"> 登 录 </span><span style="font-size: 2rem;">Login</span>
+      </div>
+    </a>
+    <div id="HaveLogin" style="display: none; width: fit-content; justify-content: center; align-items: center;">
+      <span class="index-span-style" style="font-size: 1.5rem;"> 欢迎使用在线考试系统 ，</span>
+      <span class="index-span-style" style="font-size: 1.5rem;" th:if="${user != null}" th:text="${user.getName()}" th:value="${user}" id="userName"></span>
+      <br>
+      <a type="button" href="/profile" class="btn btn-outline-primary login-button" style="font-size: 1.0rem; text-align: center; width: 100%;">进入系统</a>
+    </div>
+  </div>
+
+
+
+  <script>
+    var userName = $('#userName').text();
+   if(userName == null || userName === ""){
+     $('#HaveNoLogin').show();
+     $('#HaveLogin').hide();
+     $('#loginBtn').show();
+     $('#logoutBtn').hide();
+   }else{
+     $('#HaveNoLogin').hide();
+     $('#HaveLogin').show();
+     $('#loginBtn').hide();
+     $('#logoutBtn').show();
+   }
+
+
+
+  </script>
+
+
+  <div class="container" style="max-width: 960px">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <h5>Copyright&copy;2024</h5>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>
