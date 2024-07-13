@@ -22,7 +22,7 @@ em {font-style: normal;}
 .left{float: left;}
 .right{float: right;}
 .clear{clear:both;}
-.red{color: #f60;}
+.red{color: #f60; }
 
 .ececk_warning{
 	font-size: 13px;
