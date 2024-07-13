@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>在线考试系统</title>
-<<<<<<< HEAD
-    <script src="/static/js/jquery.js"></script>
-    <link href="/static/css/bootstrap.css" rel="stylesheet">
-    <link href="/static/css/index.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>在线考试系统</title>
+  <script src="/static/js/jquery.js"></script>
+  <link href="/static/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/css/index.css" rel="stylesheet">
   <style>
     body {
-     background-image: url('/img/img.jpg');
-=======
-    <script src="/js/jquery.js"></script>
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/index.css" rel="stylesheet">
-  <style>
-    body {
-     background-image: url('/img/logo_bg.jpg');
->>>>>>> a55cdf32a29d9319fb10485ec652b96045d31ab4
+      background-image: url('/img/img.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
     }
-<<<<<<< HEAD
     .index-span-style {
       font-family: "华文中宋", serif;/*设置字体*/
-      font-size:5rem; /*设置字体大小*/
-      font-weight:500; /*设置字体粗细*/
+      font-weight:300; /*设置字体粗细*/
       -webkit-text-stroke:1px #fdfdfd;        /*文字描边*/
-      -webkit-text-fill-color: #fdfcfc;    /*设置文字的填充颜色*/
+      -webkit-text-fill-color: #fdfdfd;    /*设置文字的填充颜色*/
     }
     .login-button {
       /*background-color: rgba(255, 255, 255, 0.1); /* 背景半透明 */
@@ -44,34 +33,31 @@
       position: absolute;
       top: 20px; /*  距离顶部的距离，可以根据需要调整 */
       right: 20px; /* 距离右边的距离，可以根据需要调整 */
-      height: 50px; /* 图片高度，可以根据需要调整 */
+      height: 60px; /* 图片高度，可以根据需要调整 */
     }
 
-=======
->>>>>>> a55cdf32a29d9319fb10485ec652b96045d31ab4
   </style>
 
 </head>
 <body >
 <div>
-<<<<<<< HEAD
-  <img src="/static/img/logo5_h100.png" class="logo" alt="Logo">
-  <div style="height: 30vh;">
+  <img src="/img/logo5_h100.png" class="logo" alt="Logo">
+  <div style="height: 28vh;">
   </div>
   <div style="display: flex; justify-content: center; align-items: center;" class="index-span-style">
-    <h3 style="letter-spacing:30px; text-align: center;font-size: 4.5rem;">在线考试系统</h3>
+    <h3 style="letter-spacing:35px;font-weight:200; text-align: center;font-size: 3.4rem;">在线考试系统</h3>
   </div>
   <div style="display: flex; justify-content: center; align-items: center;" class="index-span-style">
-    <span style="text-align: center; font-size: 2.8rem;">Online Examination System</span>
+    <span style="text-align: center; font-size: 2rem;margin-top: -50px;">Online Examination System</span>
   </div>
 
   <div style="height: 10vh;">
   </div>
-<!-- 登录按钮 -->
+  <!-- 登录按钮 -->
   <div style="display: flex; justify-content: center;">
-    <a href="/signin">
+    <a href="/signin" style="text-decoration: none;">
       <div id="HaveNoLogin" class="btn btn-outline-primary login-button" style="width: fit-content;">
-        <span data-i18n="login" style="font-size: 5.0rem;"> 登 录 </span><span style="font-size: 2rem;">Login</span>
+        <span data-i18n="login" style="font-size: 3rem;"> 登 录 </span><span style="font-size: 1.5rem;">Login</span>
       </div>
     </a>
     <div id="HaveLogin" style="display: none; width: fit-content; justify-content: center; align-items: center;">
@@ -79,32 +65,6 @@
       <span class="index-span-style" style="font-size: 1.5rem;" th:if="${user != null}" th:text="${user.getName()}" th:value="${user}" id="userName"></span>
       <br>
       <a type="button" href="/profile" class="btn btn-outline-primary login-button" style="font-size: 1.0rem; text-align: center; width: 100%;">进入系统</a>
-=======
-  <div style="height: 30vh;">
-  </div>
-  <div style="display: flex; justify-content: center; align-items: center;" class="index-span-style">
-    <h3 style="letter-spacing:30px; text-align: center;">在线考试系统</h3>
-  </div>
-  <div style="display: flex; justify-content: center; align-items: center;" class="index-span-style">
-    <span style="text-align: center; font-size: 1.5rem;">Online Examination System</span>
-  </div>
-
-  <div style="height: 20vh;">
-  </div>
-<!-- 登录按钮 -->
-  <div style="display: flex; justify-content: center;" >
-    <a href="/signin">
-    <div  id="HaveNoLogin" class="btn btn-outline-primary" style="width: fit-content;">
-      <span data-i18n="login" style="font-size: 1.5rem;"> 登 录 </span><span style="font-size: 1.5rem;">Login</span>
-    </div>
-    </a>
-    <div  id="HaveLogin"  style="display: none; width: fit-content; justify-content: center; align-items: center;"  >
-      <span class="index-span-style" style="font-size: 1.5rem;"> 欢迎使用在线考试系统 ，</span>
-      <span  class="index-span-style" style="font-size: 1.5rem;" th:if="${user != null}" th:text="${user.getName()} " th:value="${user}" id="userName"></span>
-      <br>
-      <a type="button" href="/student/studentHome" class="btn btn-outline-primary"   style="font-size: 1.0rem; text-align: center; width: 100%;">进入系统</a>
-      <a type="button" href="/signout" class="btn btn-outline-primary"   style="font-size: 1.0rem; text-align: center; width: 100%;">退出系统</a>
->>>>>>> a55cdf32a29d9319fb10485ec652b96045d31ab4
     </div>
   </div>
 
@@ -112,17 +72,17 @@
 
   <script>
     var userName = $('#userName').text();
-   if(userName == null || userName === ""){
-     $('#HaveNoLogin').show();
-     $('#HaveLogin').hide();
-     $('#loginBtn').show();
-     $('#logoutBtn').hide();
-   }else{
-     $('#HaveNoLogin').hide();
-     $('#HaveLogin').show();
-     $('#loginBtn').hide();
-     $('#logoutBtn').show();
-   }
+    if(userName == null || userName === ""){
+      $('#HaveNoLogin').show();
+      $('#HaveLogin').hide();
+      $('#loginBtn').show();
+      $('#logoutBtn').hide();
+    }else{
+      $('#HaveNoLogin').hide();
+      $('#HaveLogin').show();
+      $('#loginBtn').hide();
+      $('#logoutBtn').show();
+    }
 
 
 
