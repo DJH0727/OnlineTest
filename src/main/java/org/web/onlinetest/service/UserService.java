@@ -70,7 +70,17 @@ public class UserService {
         }
         return false;
     }
-    //找到uid跟要查询的uid相似的用户
+
+    public void updateInfo(User user) {
+        String sql = "UPDATE user_info SET name = ?, email = ?, phone = ?, imgurl = ? WHERE uid = ?";
+        try {
+            jdbcTemplate.update(sql, user.getName(), user.getEmail(),user.getPhone(),user.getImgurl(), user.getUid());
+        } catch (Exception e) {
+            logger.info("update info failed by {}...", user.getUid());
+        }
+
+    }
+
 
 
 

@@ -4,13 +4,93 @@
     <meta charset="UTF-8">
     <title>Student Home</title>
     <div th:replace="~{include/StuNav::bootstrap}"></div>
+    <link rel="stylesheet" type="text/css" href="/css/selfinfo.css">
 </head>
 <body>
 <div th:replace="~{include/StuNav::stuNav }"></div>
-<div style="margin-left: 17%;">
-    <h1>Person Information</h1>
 
+    <div class="info-card" th:if="${session.user!= null}">
+        <h1>个人信息</h1>
+        <div class="header" style="margin-top: 10px;">
+          <p>头像: <img th:src="${session.user.imgurl}" alt="用户头像" class="avatar" id="current-avatar"></p>
+        </div>
+        <div class="info-row">
+            <p>学号: <span th:text="${session.user.uid}" class="info-span"></span></p>
+        </div>
+        <div class="info-row">
+            <p>姓名: <span th:text="${session.user.name}" class="info-span"></span></p>
+        </div>
+        <div class="info-row">
+            <p>电话: <span th:text="${session.user.phone}" class="info-span"></span></p>
+        </div>
+        <div class="info-row">
+            <p>邮箱: <span th:text="${session.user.email}" class="info-span"></span></p>
+        </div>
+        <button class="edit-button" onclick="changeInfo()">修改信息</button>
+    </div>
+
+<script>
+
+
+    function changeInfo() {
+        document.getElementById("myModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+
+</script>
+
+
+<!-- 模态框 -->
+<div id="myModal" class="modal" th:if="${session.user!= null}">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <h2>修改信息</h2>
+        <form id="editForm" method="post" action="/changeInfo" enctype="multipart/form-data">
+            <input type="hidden" name="uid" th:value="${session.user.uid}">
+            <label for="new-student-avatar">头像:</label>
+            <input type="file" id="new-student-avatar" name="file" accept="image/*" th:value="${session.user.imgurl}"><br>
+            <label for="new-name">姓名:</label>
+            <input type="text" id="new-name" name="name" th:value="${session.user.name}"><br>
+            <label for="new-phone">电话:</label>
+            <input type="text" id="new-phone" name="phone" th:value="${session.user.phone}"><br>
+            <label for="new-email">邮箱:</label>
+            <input type="email" id="new-email" name="email" th:value="${session.user.email}"><br>
+            <button type="submit"  class="submit-button" onclick="reloadPage()">提交</button>
+        </form>
+    </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (localStorage.getItem("imgurl") != null) {
+            document.getElementById("current-avatar").src = localStorage.getItem("imgurl");
+        }
+    });
+
+    //重新设置头像
+    function reloadPage() {
+        var fileInput = document.getElementById("new-student-avatar");
+        if (fileInput.files && fileInput.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                var imgData = e.target.result;
+                document.getElementById("current-avatar").src = imgData;
+                localStorage.setItem("imgurl", imgData);
+            };
+            reader.readAsDataURL(fileInput.files[0]);
+        }
+
+    }
+
+
+
+</script>
+
+
+
+
 
 </body>
 </html>

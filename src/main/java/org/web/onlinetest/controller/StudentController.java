@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.web.onlinetest.main.User;
 import org.web.onlinetest.service.UserService;
@@ -15,8 +16,11 @@ import org.web.onlinetest.main.Question;
 import org.web.onlinetest.main.QusOption;
 import org.web.onlinetest.main.Course;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Controller
 @RequestMapping("/")
@@ -80,5 +84,49 @@ public class StudentController {
             redirectAttributes.addFlashAttribute("message", "密码更改失败，请检查当前密码是否正确。");
         }
         return "redirect:/changePassword";
+    }
+
+
+    final String AVATAR_PATH = "D:\\Program\\OnlineTest\\src\\main\\resources\\static\\avatar\\";
+    @PostMapping("/changeInfo")
+    public String changeInfo(HttpSession session, Model model,
+                             @RequestParam("file") MultipartFile file,
+                             @RequestParam("uid") String uid,
+                             @RequestParam("name") String name,
+                             @RequestParam("email") String email,
+                             @RequestParam("phone") String phone) {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            return "redirect:/personalInfo";
+        }
+        String currentImgUrl =user.getImgurl();
+        logger.info("changeInfo");
+        if (file.isEmpty()) {
+            logger.info("file is empty");
+        }
+        else {
+            logger.info("try to upload file {}", file.getOriginalFilename());
+            //随机数
+            Random random = new Random();
+           String newFileName = "uid"+uid+".jpg";
+            // 保存文件到指定路径
+            File dest = new File(AVATAR_PATH + newFileName);
+            try {
+                file.transferTo(dest);
+            } catch (IOException e) {
+                logger.error("文件上传失败", e);
+            }
+            currentImgUrl = "/avatar/" + newFileName;
+        }
+        user.setImgurl(currentImgUrl);
+        user.setName(name);
+        user.setEmail(email);
+        user.setPhone(phone);
+
+        userService.updateInfo(user);
+        session.setAttribute("user", user);
+        System.out.println("Have changed info!"+user.toString());
+
+        return "student/personalInfo";
     }
 }
