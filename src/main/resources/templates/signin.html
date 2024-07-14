@@ -1,78 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>登录</title>
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/common.css"/>
-    <link rel="stylesheet" href="/css/font-awesome.min.css" />
-    <style>
-        body {
-            background-image: url('/img/img.jpg'); /*  修改为正确的背景图片路径 */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        .login_wrap {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .login_box {
-            background-color: rgba(255, 255, 255, 0.3); /* 背景半透明 */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-            text-align: center; /* 添加文本居中 */
-            transform: translateY(-20px); /* 向上移动20像素 */
-        }
-        .login_box img { /* 为图标添加样式 */
-            width: 400px; /* 设定图标宽度 */
-            height: auto; /* 保持图标比例 */
-            margin-bottom: 0px;
-        }
-        .logo {
-            position: absolute;
-            top: 20px; /* 距离顶部的距离，可以根据需要调整 */
-            right: 20px; /* 距离右边的距离，可以根据需要调整 */
-            height: 50px; /* 图片高度，可以根据需要调整 */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/common.css"/>
+  <link rel="stylesheet" href="/css/font-awesome.min.css" />
+  <style>
+    body {
+      background-image: url('/img/img.jpg'); /*  修改为正确的背景图片路径 */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .login_wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login_box {
+      background-color: rgba(255, 255, 255, 0.3); /* 背景半透明 */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+      text-align: center; /* 添加文本居中 */
+      transform: translateY(-20px); /* 向上移动20像素 */
+    }
+    .login_box img { /* 为图标添加样式 */
+      width: 400px; /* 设定图标宽度 */
+      height: auto; /* 保持图标比例 */
+      margin-bottom: 0px;
+    }
+    .logo {
+      position: absolute;
+      top: 20px; /* 距离顶部的距离，可以根据需要调整 */
+      right: 20px; /* 距离右边的距离，可以根据需要调整 */
+      height: 50px; /* 图片高度，可以根据需要调整 */
+    }
+  </style>
 </head>
 
 <body style="background-image: url('/img/img.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
-<div><img src="/img/logo5%20_h100.png" class="logo" alt="Logo"></div>
+<div><img src="/static/img/logo5_h100.png" class="logo" alt="Logo"></div>
 <div class="wrap login_wrap" style="background: transparent;">
-    <div class="content">
-        <div class="logo"></div>
-        <div class="login_box">
-            <img src="/img/logo5%20_h100.png" alt="Logo1"> <!-- 添加图标 -->
-            <div class="login_form">
-                <div class="login_title" style="color: #e6e6e6;">在线考试系统</div>
+  <div class="content">
+    <div class="logo"></div>
+    <div class="login_box">
+      <img src="/img/logo5_h100.png" alt="Logo"> <!-- 添加图标 -->
+      <div class="login_form">
+        <div class="login_title" style="color: #e6e6e6;">在线考试系统</div>
+        <form action="/signin" method="post">
+          <div class="form_text_ipt">
+            <input name="userid" type="text" placeholder="用户名/学号">
+          </div>
 
-                <form action="/signin" method="post">
-                    <div class="form_text_ipt">
-                        <input name="userid" type="text" placeholder="用户名/学号">
-                    </div>
+          <div class="ececk_warning"><span>用户名/学号不能为空</span></div>
+          <div class="form_text_ipt">
+            <input name="password" type="password" placeholder="密码">
+          </div>
+          <div class="ececk_warning"><span>密码不能为空</span></div>
+          <div id="nogg" style="text-align: center"><span style="color: red;text-align: center" id="sb" th:text="${error}"/></div>
+          <br>
+          <div class="form_btn">
+            <button type="submit" style="background: #003d85;">登录</button>
 
-                    <div class="ececk_warning"><span>用户名/学号不能为空</span></div>
-                    <div class="form_text_ipt">
-                        <input name="password" type="password" placeholder="密码">
-                    </div>
-                    <div class="ececk_warning"><span>密码不能为空</span></div>
-                    <div id="nogg" style="text-align: center"><span style="color: red;text-align: center" id="sb" th:text="${error}"/></div>
-                    <br>
-                    <div class="form_btn">
-                        <button type="submit" style="background: #003d85;">登录</button>
-
-                    </div>
-                    <br>
-                    <br>
-                </form>
-            </div>
-        </div>
+          </div>
+          <br>
+          <br>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
 
 <script type="text/javascript" src="/js/jquery.min.js"></script>

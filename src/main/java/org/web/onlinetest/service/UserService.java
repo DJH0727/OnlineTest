@@ -59,8 +59,28 @@ public class UserService {
         logger.info("login failed by {}...", uid);
         return null;
     }
+    //修改学生密码
+    public boolean updatePassword(String studentId, String currentPassword, String newPassword) {
+        User user = getUserById(studentId);
+        if (user != null && user.getPwd().equals(currentPassword)) {
+            int rowsAffected = jdbcTemplate.update("UPDATE users SET pwd = ? WHERE uid = ?", newPassword, studentId);
+            if (rowsAffected > 0) {
+                return true;
+            }
+        }
+        return false;
+    }
 
-    //找到uid跟要查询的uid相似的用户
+    public void updateInfo(User user) {
+        String sql = "UPDATE user_info SET name = ?, email = ?, phone = ?, imgurl = ? WHERE uid = ?";
+        try {
+            jdbcTemplate.update(sql, user.getName(), user.getEmail(),user.getPhone(),user.getImgurl(), user.getUid());
+        } catch (Exception e) {
+            logger.info("update info failed by {}...", user.getUid());
+        }
+
+    }
+
 
 
 

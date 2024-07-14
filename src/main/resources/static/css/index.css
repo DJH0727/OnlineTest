@@ -5,8 +5,8 @@
 .index-span-style {
     font-family: "华文楷体", serif;/*设置字体*/
     font-size:200px; /*设置字体大小*/
-    font-weight:bolder; /*设置字体粗细*/
-    -webkit-text-stroke:1px #fcfcfc;        /*文字描边*/
+    font-weight:300; /*设置字体粗细*/
+    -webkit-text-stroke:1px #fcfbfa;        /*文字描边*/
     -webkit-text-fill-color:transparent;    /*设置文字的填充颜色*/
 }
 
@@ -15,5 +15,3 @@
 }
 
 .
-
-
