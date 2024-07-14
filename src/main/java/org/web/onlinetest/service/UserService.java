@@ -59,7 +59,17 @@ public class UserService {
         logger.info("login failed by {}...", uid);
         return null;
     }
-
+    //修改学生密码
+    public boolean updatePassword(String studentId, String currentPassword, String newPassword) {
+        User user = getUserById(studentId);
+        if (user != null && user.getPwd().equals(currentPassword)) {
+            int rowsAffected = jdbcTemplate.update("UPDATE users SET pwd = ? WHERE uid = ?", newPassword, studentId);
+            if (rowsAffected > 0) {
+                return true;
+            }
+        }
+        return false;
+    }
     //找到uid跟要查询的uid相似的用户
 
 
