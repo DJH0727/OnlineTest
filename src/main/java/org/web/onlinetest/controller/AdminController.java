@@ -179,9 +179,10 @@ public class AdminController {
                                           @RequestParam("optionC1") String optionC1,
                                           @RequestParam("optionD1") String optionD1,
                                           @RequestParam("answer1") String answer1,
-                                          @RequestParam("courseId") int courseId,
+                                          @RequestParam("courseId1") int courseId,
                                           RedirectAttributes redirectAttributes)
     {
+        logger.info("trying to add single choice question");
         Question question = new Question();
         question.setCid(courseId);
         question.setQtype(1);

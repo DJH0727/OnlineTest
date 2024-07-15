@@ -9,12 +9,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import org.web.onlinetest.main.User;
+import org.web.onlinetest.main.*;
+import org.web.onlinetest.service.StudentService;
 import org.web.onlinetest.service.UserService;
 import org.web.onlinetest.service.QuestionService;
-import org.web.onlinetest.main.Question;
-import org.web.onlinetest.main.QusOption;
-import org.web.onlinetest.main.Course;
 
 import java.io.File;
 import java.io.IOException;
@@ -30,7 +28,8 @@ public class StudentController {
 
     @Autowired
     private UserService userService;
-
+    @Autowired
+    private StudentService studentService;
     @Autowired
     private QuestionService questionService;
 
@@ -39,15 +38,50 @@ public class StudentController {
         return "student/studentHome";
     }
 
-    @RequestMapping("/createExam")
+    @GetMapping("/createExam")
     public String createExam(HttpSession session, Model model) {
+        List<Course> courses = questionService.getAllCourses();
+        model.addAttribute("courses", courses);
         logger.info("create exam");
         return "student/createExam";
+    }
+
+
+    @PostMapping("/createExam")
+    public String createExam(@RequestParam("course1") Integer courseId1,
+                             @RequestParam("course2") Integer courseId2,
+                             @RequestParam("singleChoice") Integer singleChoice,
+                             @RequestParam("multipleChoice") Integer multipleChoice,
+                             @RequestParam("trueFalse") Integer trueFalse,
+                             @RequestParam("duration") Integer duration,
+                             @RequestParam("examName") String examName,
+                             HttpSession session) {
+        logger.info("post create exam");
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            return "redirect:/signin";
+        }
+        String uid = user.getUid();
+
+        studentService.createExam(uid, courseId1, courseId2, singleChoice, multipleChoice, trueFalse, duration, examName);
+        return "redirect:/createExam";
     }
 
     @RequestMapping("/myExam")
     public String myExam(HttpSession session, Model model) {
         logger.info("myExam");
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            return "redirect:/signin";
+        }
+
+        String uid = user.getUid();
+       List<Exam> exams = studentService.getMyExam(uid,0);
+
+       //for(Exam exam:exams) System.out.println("myExam Have Not Finished Exam:" + exam.toString());
+
+       model.addAttribute("exams", exams);
+
         return "student/myExam";
     }
 
@@ -129,4 +163,21 @@ public class StudentController {
 
         return "student/personalInfo";
     }
+
+    @RequestMapping("/startExam")
+    public String startExam(HttpSession session, Model model, @RequestParam("eid") Integer eid) {
+        logger.info("startExam by eid {}",eid);
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            return "redirect:/signin";
+        }
+        List<Question> questions = studentService.getQuestionsByEid(eid);
+        List<Question> singleChoiceQuestions = studentService.getTypeQuestions(questions, 1);
+        List<Question> multipleChoiceQuestions = studentService.getTypeQuestions(questions, 2);
+        List<Question> trueFalseQuestions = studentService.getTypeQuestions(questions, 3);
+        model.addAttribute("questions", questions);
+        return "student/ExamPage";
+    }
+
+
 }

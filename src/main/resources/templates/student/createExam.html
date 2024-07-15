@@ -4,11 +4,98 @@
     <meta charset="UTF-8">
     <title>Student Home</title>
     <div th:replace="~{include/StuNav::bootstrap}"></div>
+    <link rel="stylesheet" href="/css/createExam.css">
 </head>
 <body>
 <div th:replace="~{include/StuNav::stuNav }"></div>
 <div style="margin-left: 17%;">
-    <h1>Create Exam</h1>
+    <div class="container">
+        <iframe id="myIframe" name="myIframe" style="display:none;"></iframe>
+        <div id="examInput">
+        <h1>生成考试</h1>
+        <form id="examForm" method="post" th:action="@{/createExam}" target="myIframe" >
+            <div class="form-group">
+                <label for="course1">选择课程1:</label>
+                <select id="course1" name="course1">
+                    <option th:each="course : ${courses}" th:value="${course.cid}" th:text="${course.cname}" th:id="'course1'+${course.cid}"></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="course2">选择课程2:</label>
+                <select id="course2" name="course2">
+                    <option th:each="course : ${courses}" th:value="${course.cid}" th:text="${course.cname}" th:id="'course2'+${course.cid}"></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="singleChoice">单选题数量:</label>
+                <input type="number" id="singleChoice" name="singleChoice" min="1" value="5" max="10">
+            </div>
+            <div class="form-group">
+                <label for="multipleChoice">多选题数量:</label>
+                <input type="number" id="multipleChoice" name="multipleChoice" min="1" value="5" max="10">
+            </div>
+            <div class="form-group">
+                <label for="trueFalse">判断题数量:</label>
+                <input type="number" id="trueFalse" name="trueFalse" min="1" value="5" max="10">
+            </div>
+            <div class="form-group">
+                <label for="duration">考试持续时间（分钟）:</label>
+                <input type="number" id="duration" name="duration" min="30" value="60">
+            </div>
+            <div class="form-group">
+                <label for="examName">考试名称:</label>
+                <input type="text" id="examName" name="examName"  value="我的考试" required>
+            </div>
+            <button type="button" onclick="return generateExam()">生成考试</button>
+        </form>
+        </div>
+        <div id="examOutput"></div>
+    </div>
+
+    <script>
+        function generateExam() {
+
+            const course1 = document.getElementById('course1').value;
+            const course2 = document.getElementById('course2').value;
+            if (course1 === course2) {
+                alert('课程1和课程2不能相同，请重新选择。');
+                return false;
+            }
+
+            const course1Name = document.getElementById('course1' + course1).text;
+            const course2Name = document.getElementById('course2' + course2).text;
+            const singleChoice = document.getElementById('singleChoice').value;
+            const multipleChoice = document.getElementById('multipleChoice').value;
+            const trueFalse = document.getElementById('trueFalse').value;
+            const duration = document.getElementById('duration').value;
+            const output = document.getElementById('examOutput');
+            output.innerHTML = `
+                <h2>生成的考试</h2>
+
+                <p>课程1: ${course1Name}</p>
+                <p>课程2: ${course2Name}</p>
+                <p>单选题数量: ${singleChoice}</p>
+                <p>多选题数量: ${multipleChoice}</p>
+                <p>判断题数量: ${trueFalse}</p>
+                <p>考试持续时间: ${duration} 分钟</p>
+                <button type="button" onclick="submitExam()">确定</button>
+                <button type="button" onclick="comeBack()">返回</button>
+            `;
+            document.getElementById('examInput').style.display = 'none';
+            document.getElementById('examOutput').style.display = 'block';
+            return true;
+        }
+        function submitExam() {
+            document.getElementById('examForm').submit();
+            alert('考试已生成，请在我的考试中查看。');
+            document.getElementById('examInput').style.display = 'block';
+            document.getElementById('examOutput').style.display = 'none';
+        }
+        function comeBack() {
+            document.getElementById('examInput').style.display = 'block';
+            document.getElementById('examOutput').style.display = 'none';
+        }
+    </script>
 
 </div>
 

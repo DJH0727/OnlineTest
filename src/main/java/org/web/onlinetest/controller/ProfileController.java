@@ -16,7 +16,7 @@ import org.web.onlinetest.service.UserService;
 public class ProfileController {
 
     final Logger logger = LoggerFactory.getLogger(getClass());
-    public static final String KEY_USER = "__user__";
+    public static final String KEY_USER = "user";
 
     @Autowired
     UserService userService;

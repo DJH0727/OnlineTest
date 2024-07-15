@@ -156,12 +156,13 @@
                 <ul class="nav nav-sidebar">
                     <li><a class="a-hd"><span class="glyphicon glyphicon-briefcase"></span>&nbsp; &nbsp;&nbsp;考试</a></li>
                     <li id="menu1"><a href="/createExam" ><span class="glyphicon glyphicon-play" ></span>&nbsp; &nbsp;&nbsp;创建考试</a></li>
-                    <li id="menu2"><a href="/myExam"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;我的考试</a></li>
+                    <li id="menu2"><a href="/myExam"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;未完成考试</a></li>
+                    <li id="menu3"><a href="/examHistory"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;考试历史</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a class="a-hd"><span class="glyphicon glyphicon-briefcase"></span>&nbsp; &nbsp;&nbsp;个人中心</a></li>
-                    <li id="menu3"><a href="/personalInfo"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;个人信息</a></li>
-                    <li id="menu4"><a href="/changePassword"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;修改密码</a></li>
+                    <li id="menu4"><a href="/personalInfo"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;个人信息</a></li>
+                    <li id="menu5"><a href="/changePassword"><span class="glyphicon glyphicon-play"></span>&nbsp; &nbsp;&nbsp;修改密码</a></li>
                 </ul>
 
                 <span style="display: none;" th:if="${session.user!=null}" th:text="${session.user.role}" id="role"></span>
