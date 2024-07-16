@@ -17,6 +17,7 @@ import java.sql.Date;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 @Component
@@ -184,7 +185,6 @@ public class StudentService {
         catch (Exception e) {
             logger.error("getQuestionsByEid error", e);
         }
-        System.out.println("qids="+qids);
         List<Question> questions = new ArrayList<>();
         List<QusOption> options;
         Question question = null;
@@ -208,4 +208,45 @@ public class StudentService {
     }
 
 
+    public void updateExam(Integer eid, String uid, Map<String, String> formData) {
+
+
+        List<Question> questions = getQuestionsByEid(eid);
+        List<Question> singleChoiceQuestions = getTypeQuestions(questions, 1);
+        List<Question> multipleChoiceQuestions = getTypeQuestions(questions, 2);
+        List<Question> trueFalseQuestions = getTypeQuestions(questions, 3);
+
+
+
+        for(int i=1;i<=singleChoiceQuestions.size();i++){
+            String answer = formData.get("singleChoiceAnswer"+i);
+            if(answer==null|| answer.isEmpty()){
+                System.out.println("singleChoiceAnswer"+i+" 未选择答案");
+            }
+            else{
+                System.out.println( "singleChoiceAnswer"+i+" 选择的答案是："+ answer+" 正确答案是："+singleChoiceQuestions.get(i-1).getAnswer());
+            }
+        }
+        for(int i=1;i<=multipleChoiceQuestions.size();i++){
+            String answer = formData.get("multipleChoiceAnswer"+i);
+            if(answer==null|| answer.isEmpty()){
+                System.out.println("multipleChoiceAnswer"+i+" 未选择答案");
+            }
+            else{
+                System.out.println( "multipleChoiceAnswer"+i+" 选择的答案是："+ answer+" 正确答案是："+multipleChoiceQuestions.get(i-1).getAnswer());
+            }
+        }
+        for(int i=1;i<=trueFalseQuestions.size();i++){
+            String answer = formData.get("trueFalseAnswer"+i);
+            if(answer==null|| answer.isEmpty()){
+                System.out.println("trueFalseAnswer"+i+" 未选择答案");
+            }
+            else{
+                System.out.println( "trueFalseAnswer"+i+" 选择的答案是："+ answer+" 正确答案是："+trueFalseQuestions.get(i-1).getAnswer());
+            }
+
+        }
+
+
+    }
 }

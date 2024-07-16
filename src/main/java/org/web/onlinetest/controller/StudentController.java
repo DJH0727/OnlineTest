@@ -18,6 +18,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 @Controller
@@ -164,7 +165,7 @@ public class StudentController {
         return "student/personalInfo";
     }
 
-    @RequestMapping("/startExam")
+    @GetMapping("/startExam")
     public String startExam(HttpSession session, Model model, @RequestParam("eid") Integer eid) {
         logger.info("startExam by eid {}",eid);
         User user = (User) session.getAttribute("user");
@@ -175,8 +176,31 @@ public class StudentController {
         List<Question> singleChoiceQuestions = studentService.getTypeQuestions(questions, 1);
         List<Question> multipleChoiceQuestions = studentService.getTypeQuestions(questions, 2);
         List<Question> trueFalseQuestions = studentService.getTypeQuestions(questions, 3);
-        model.addAttribute("questions", questions);
+        model.addAttribute("singleChoiceQuestions", singleChoiceQuestions );
+        model.addAttribute("multipleChoiceQuestions", multipleChoiceQuestions );
+        model.addAttribute("trueFalseQuestions", trueFalseQuestions );
+        model.addAttribute("eid", eid);
         return "student/ExamPage";
+    }
+
+    @PostMapping("/submitTest")
+    public String submitExam(HttpSession session, Model model,
+                             @RequestParam Map<String, String> formData) {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            return "redirect:/signin";
+        }
+        String id = formData.get("eid");
+        Integer eid = Integer.parseInt(id);
+        logger.info("submitExam by eid {}",eid);
+
+        studentService.updateExam(eid, user.getUid(), formData);
+
+
+
+        logger.info("submitExam by eid ");
+        System.out.println(formData.toString());
+        return "redirect:/myExam";
     }
 
 
