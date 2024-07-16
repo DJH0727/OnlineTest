@@ -70,9 +70,7 @@
     </a>
     <div id="HaveLogin" style="display: none; width: fit-content; justify-content: center; align-items: center;">
       <span class="index-span-style" style="font-size: 1.5rem;"> 欢迎使用在线考试系统 ，</span>
-      <span class="index-span-style" style="font-size: 1.5rem;" th:if="${user != null}" th:text="${user.getName()}" th:value="${user}" id="userName"></span>
-      <br>
-      <a type="button" href="/profile" class="btn btn-outline-primary login-button" style="font-size: 1.0rem; text-align: center; width: 100%;">进入系统</a>
+      <span class="index-span-style" style="font-size: 5.0rem;" th:if="${user != null}" th:text="${user.getName()}" th:value="${user}" id="userName"></span>
     </div>
   </div>
 

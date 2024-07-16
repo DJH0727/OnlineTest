@@ -122,7 +122,7 @@ public class StudentController {
     }
 
 
-    final String AVATAR_PATH = "D:\\Program\\OnlineTest\\src\\main\\resources\\static\\avatar\\";
+    final String AVATAR_PATH = getClass().getResource("/").getPath()+"static/avatar/";
     @PostMapping("/changeInfo")
     public String changeInfo(HttpSession session, Model model,
                              @RequestParam("file") MultipartFile file,
@@ -146,6 +146,7 @@ public class StudentController {
            String newFileName = "uid"+uid+".jpg";
             // 保存文件到指定路径
             File dest = new File(AVATAR_PATH + newFileName);
+            System.out.println(AVATAR_PATH+newFileName);
             try {
                 file.transferTo(dest);
             } catch (IOException e) {

@@ -188,6 +188,9 @@
                     document.getElementById("menu4").onclick = function () {
                         sessionStorage.setItem("menu", "menu4");
                     };
+                    document.getElementById("menu5").onclick = function () {
+                        sessionStorage.setItem("menu", "menu5");
+                    };
                     if(sessionStorage.getItem("menu")!=null){
                         var menu = sessionStorage.getItem("menu");
                             document.getElementById(menu).className = "active";
