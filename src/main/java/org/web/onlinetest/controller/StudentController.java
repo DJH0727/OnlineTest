@@ -198,12 +198,55 @@ public class StudentController {
 
         studentService.updateExam(eid, user.getUid(), formData);
 
-
-
         logger.info("submitExam by eid ");
         System.out.println(formData.toString());
         return "redirect:/myExam";
     }
+
+    @RequestMapping("/examHistory")
+    public String examHistory(HttpSession session, Model model) {
+        logger.info("examHistory");
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            return "redirect:/signin";
+        }
+        List<Exam> exams = studentService.getMyExam(user.getUid(),2);
+        model.addAttribute("exams", exams);
+        return "student/examHistory";
+    }
+
+
+    @RequestMapping("/viewPage")
+    public String viewPage(HttpSession session, Model model, @RequestParam("eid") Integer eid) {
+        logger.info("viewPage");
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            return "redirect:/signin";
+        }
+        List<Question> questions = studentService.getQuestionsByEid(eid);
+        List<Question> singleChoiceQuestions = studentService.getTypeQuestions(questions, 1);
+        List<String> userSingleChoiceAnswers = studentService.getUserAnswers(eid,singleChoiceQuestions);
+        System.out.println(userSingleChoiceAnswers.toString());
+
+        List<Question> multipleChoiceQuestions = studentService.getTypeQuestions(questions, 2);
+        List<String> userMultipleChoiceAnswers = studentService.getUserAnswers(eid,multipleChoiceQuestions);
+        System.out.println(userMultipleChoiceAnswers.toString());
+        List<Question> trueFalseQuestions = studentService.getTypeQuestions(questions, 3);
+        List<String> userTrueFalseAnswers = studentService.getUserAnswers(eid,trueFalseQuestions);
+        System.out.println(userTrueFalseAnswers.toString());
+
+        model.addAttribute("singleChoiceQuestions", singleChoiceQuestions );
+        model.addAttribute("userSingleChoiceAnswers", userSingleChoiceAnswers );
+        model.addAttribute("multipleChoiceQuestions", multipleChoiceQuestions );
+        model.addAttribute("userMultipleChoiceAnswers", userMultipleChoiceAnswers );
+        model.addAttribute("trueFalseQuestions", trueFalseQuestions );
+        model.addAttribute("eid", eid);
+        model.addAttribute("userTrueFalseAnswers", userTrueFalseAnswers );
+
+
+        return "student/viewPage";
+    }
+
 
 
 }

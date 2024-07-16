@@ -10,8 +10,16 @@
     <link href="/css/test.css" rel="stylesheet" type="text/css" />
 
     <style>
-        .hasBeenAnswer {
-            background: #5d9cec;
+        .AnswerRight {
+            background: #5FB878;
+            color:#fff;
+        }
+        .AnswerWrong {
+            background: #ac2925;
+            color:#fff;
+        }
+        .NoAnswer {
+            background: #f90;
             color:#fff;
         }
 
@@ -25,13 +33,6 @@
         <div class="nr_left">
             <div class="test">
                 <form  th:id="${eid}">
-                    <div class="test_title">
-                        <p class="test_time">
-                            <i class="icon iconfont">&#xe6fb;</i><b class="alt-1" id="testTime"></b>
-                        </p>
-                        <font><input type="button" name="test_jiaojuan" value="交卷" onclick="submitTest()" id="submitBtn" /></font>
-                    </div>
-                    <span id="testTimeSpan" style="display:none;" th:text="${etime}"></span>
                     <div class="test_content">
                         <div class="test_content_title">
                             <h2>单选题</h2>
@@ -95,7 +96,13 @@
                                             </label>
                                         </li>
 
+
                                     </ul>
+
+                                    <div class="test_content_nr_answer" style="margin-top: 20px; font-size: 16px;">
+                                        正确答案：<span th:id="'singleChoiceRightAnswer'+${iterStat.count}" th:utext="${singleChoiceQuestion.answer}" style="margin-right: 10px;"></span>
+                                        你的答案：<span th:id="'singleChoiceUserAnswer'+${iterStat.count}" th:utext="${userSingleChoiceAnswers[iterStat.index]}"></span>
+                                    </div>
                                 </div>
                             </li>
 
@@ -170,6 +177,10 @@
                                         </li>
 
                                     </ul>
+                                    <div class="test_content_nr_answer" style="margin-top: 20px; font-size: 16px;">
+                                        正确答案：<span th:id="'multipleChoiceRightAnswer'+${iterStat.count}" th:utext="${multipleChoiceQuestion.answer}" style="margin-right: 10px;"></span>
+                                        你的答案：<span th:id="'multipleChoiceUserAnswer'+${iterStat.count}" th:utext="${userMultipleChoiceAnswers[iterStat.index]}"></span>
+                                    </div>
                                 </div>
                             </li>
 
@@ -216,6 +227,10 @@
                                             </label>
                                         </li>
                                     </ul>
+                                    <div class="test_content_nr_answer" style="margin-top: 20px; font-size: 16px;">
+                                        正确答案：<span th:id="'trueFalseRightAnswer'+${iterStat.count}" th:utext="${trueFalseQuestion.answer}" style="margin-right: 10px;"></span>
+                                        你的答案：<span th:id="'trueFalseUserAnswer'+${iterStat.count}" th:utext="${userTrueFalseAnswers[iterStat.index]}"></span>
+                                    </div>
                                 </div>
                             </li>
 
@@ -235,11 +250,6 @@
                         <h1>
                             <i class="icon iconfont">&#xe692;</i>答题卡
                         </h1>
-                        <p class="test_time">
-                            <span id="hours" style="font-size: 16px;">00</span>:
-                            <span id="minutes" style="font-size: 16px;">00</span>:
-                            <span id="seconds" style="font-size: 16px;">00</span>
-                        </p>
                     </div>
 
                     <!-- 单选题答题卡 -->
@@ -293,194 +303,97 @@
     <div class="foot"></div>
 </div>
 
-
-<span style="display:none" th:text="${eid}" id="eid"></span>
 <script src="/js/jquery-1.11.3.min.js"></script>
 <script src="/js/jquery.easy-pie-chart.js"></script>
-<!--时间js-->
-<script src="/js/jquery.countdown.js"></script>
 <script>
-    window.jQuery(function ($) {
-        "use strict";
 
-        $('time').countDown({
-            with_separators: false
+    // 等待页面加载完成后执行
+    document.addEventListener('DOMContentLoaded', function() {
+        // 获取所有具有特定类名的复选框
+        var checkboxes = document.querySelectorAll('input.checkOption');
+        // 遍历并禁用每个复选框
+        checkboxes.forEach(function(checkbox) {
+            checkbox.disabled = true;
         });
-        $('.alt-1').countDown({
-            css_class: 'countdown-alt-1'
+        var radioOptions = document.querySelectorAll('input.radioOption');
+        radioOptions.forEach(function(radioOption) {
+            radioOption.disabled = true;
         });
-        $('.alt-2').countDown({
-            css_class: 'countdown-alt-2'
-        });
+
+
 
 
     });
-    //刷新页面后，恢复答题卡
-    window.onload = function () {
-        console.log(sessionStorage);
+
+    $(function(){
         var singleChoiceQuestionCount = document.getElementById("singleChoiceQuestionCount").innerHTML;
-        var multipleChoiceQuestionCount = document.getElementById("multipleChoiceQuestionCount").innerHTML;
-        var trueFalseQuestionCount = document.getElementById("trueFalseQuestionCount").innerHTML;
-        console.log("单选题数量：" + singleChoiceQuestionCount);
-        console.log("多选题数量：" + multipleChoiceQuestionCount);
-        console.log("判断题数量：" + trueFalseQuestionCount);
-        for (var i = 1; i <= singleChoiceQuestionCount; i++) {
-
-            var answer = sessionStorage.getItem("qu_1_" + i);
-            if (answer) {
-                var radio = document.getElementById("singleChoice" + i + "_" + answer);
-                radio.checked = true;
-                var cardLi = $('a[href=#qu_1_' + i + ']');
-                if (!cardLi.hasClass('hasBeenAnswer')) {
-                    cardLi.addClass('hasBeenAnswer');
-                }
+        for(var i=1;i<=singleChoiceQuestionCount;i++){
+            var userAnswer = document.getElementById("singleChoiceUserAnswer"+i).innerHTML;
+            var cardLi = $('a[href=#qu_1_' + i + ']');
+            if(userAnswer==="U"){
+                cardLi.addClass("NoAnswer");
+                continue;
             }
-        }
-
-        for (var i = 1; i <= trueFalseQuestionCount; i++) {
-            var answer = sessionStorage.getItem("qu_3_" + i);
-            if (answer) {
-                var radio = document.getElementById("trueFalse" + i + "_" + answer);
-                radio.checked = true;
-                var cardLi = $('a[href=#qu_3_' + i + ']');
-                if (!cardLi.hasClass('hasBeenAnswer')) {
-                    cardLi.addClass('hasBeenAnswer');
-                }
-            }
+            //选择对应的单选框
+            var radioOption = document.getElementById("singleChoice"+i+"_"+userAnswer);
+            radioOption.checked = true;
+            var rightAnswer = document.getElementById("singleChoiceRightAnswer"+i).innerHTML;
+            if(userAnswer===rightAnswer)cardLi.addClass("AnswerRight");
+            else cardLi.addClass("AnswerWrong");
         }
 
 
-        for (var i = 1; i <= multipleChoiceQuestionCount; i++) {
-            var answer = sessionStorage.getItem("qu_2_" + i);
-            if (answer) {
-                for (var j = 0; j < answer.length; j++) {
-                    var checkbox = document.getElementById("multipleChoice" + i + "_" + answer[j]);
-                    checkbox.checked = true;
-                }
-                var cardLi = $('a[href=#qu_2_' + i + ']');
-                if (!cardLi.hasClass('hasBeenAnswer')) {
-                    cardLi.addClass('hasBeenAnswer');
-                }
-            }
-
-        }
-
-    }
 
 
-    $(function () {
-        $('.radioOption').click(function () {
-            var questionId = $(this).closest('.test_content_nr_main').closest('li').attr('id'); // 得到题目ID
-            var cardLi = $('a[href=#' + questionId + ']'); // 根据题目ID找到对应答题卡
-            //得到选择的答案
-            var answer = '';
-            if ($(this).is(':checked')) {
-                answer = $(this).val();
-                sessionStorage.setItem(questionId, answer);
-                console.log(questionId + "答案：" + answer);
-            }
 
-            // 设置已答题
-            if (!cardLi.hasClass('hasBeenAnswer')) {
-                cardLi.addClass('hasBeenAnswer');
-            }
-        });
-        $('.checkOption').change(function () {
-            var questionId = $(this).closest('.test_content_nr_main').closest('li').attr('id'); // 得到题目ID
-            var cardLi = $('a[href=#' + questionId + ']'); // 根据题目ID找到对应答题卡
-            //得到选择的答案
-            var answer = sessionStorage.getItem(questionId);
-            if (answer == null) {
-                answer = '';
-            }
-            for (var i = 0; i < $(this).length; i++) {
-                if ($(this)[i].checked) {
-                    answer += $(this)[i].value;
-                }
-                else {
-                    answer = answer.replace($(this)[i].value, '');
-                }
-            }
-
-            sessionStorage.setItem(questionId, answer);
-            var answerCount = questionId.charAt(questionId.length - 1);
-            document.getElementById("multipleChoiceAnswer"+answerCount).value = answer;
-
-            console.log(questionId + "答案：" + answer);
-
-
-            // 设置已答题
-            if (!cardLi.hasClass('hasBeenAnswer')) {
-                cardLi.addClass('hasBeenAnswer');
-            }
-        });
     });
 
-    submitTest = function () {
-        //提示是否交卷
-        if (!confirm("是否交卷？")) {
-            return false;
+    $(function(){
+        var multipleChoiceQuestionCount = document.getElementById("multipleChoiceQuestionCount").innerHTML;
+        for(var i=1;i<=multipleChoiceQuestionCount;i++){
+            var userAnswer = document.getElementById("multipleChoiceUserAnswer"+i).innerHTML;
+            console.log("multipleChoiceUserAnswer"+i+"="+userAnswer);
+            var cardLi = $('a[href=#qu_2_' + i + ']');
+            if(userAnswer==="U"){
+                cardLi.addClass("NoAnswer");
+                continue;
+            }
+            for (var j = 0; j < userAnswer.length; j++) {
+                var checkbox = document.getElementById("multipleChoice" + i + "_" + userAnswer[j]);
+                checkbox.checked = true;
+            }
+            var rightAnswer = document.getElementById("multipleChoiceRightAnswer"+i).innerHTML;
+            if(userAnswer===rightAnswer)cardLi.addClass("AnswerRight");
+            else cardLi.addClass("AnswerWrong");
         }
-        //提交答案
-        var eid = document.getElementById("eid").innerHTML;
-        var form = document.getElementById(eid);
-        var formData = new FormData(form);
-        formData.append("eid", eid);
-        fetch('/submitTest', {
-            method: 'POST',
-            body: formData
-        })
-            .then(data =>
-            {
-                window.location.href = "viewPage?eid="+eid;
-            })
 
-    }
+    });
+    $(function(){
+        var trueFalseQuestionCount = document.getElementById("trueFalseQuestionCount").innerHTML;
+        for(var i=1;i<=trueFalseQuestionCount;i++){
+            var userAnswer = document.getElementById("trueFalseUserAnswer"+i).innerHTML;
+            var cardLi = $('a[href=#qu_3_' + i + ']');
+            if(userAnswer==="U"){
+                cardLi.addClass("NoAnswer");
+                continue;
+            }
+            var radioOption = document.getElementById("trueFalse"+i+"_"+userAnswer);
+            radioOption.checked = true;
+            var rightAnswer = document.getElementById("trueFalseRightAnswer"+i).innerHTML;
+            if(userAnswer===rightAnswer)cardLi.addClass("AnswerRight");
+            else cardLi.addClass("AnswerWrong");
+        }
+
+    });
+
 
 
 
 
 </script>
 
-<script>
-    var countdownTime = 0;
-    if(sessionStorage.getItem("currentTime")!=null){
-         countdownTime = parseInt(sessionStorage.getItem("currentTime"));
-        console.log("倒计时：" + countdownTime);
-    }else{
-        countdownTime = document.getElementById("testTimeSpan").innerHTML * 60;
-    }
 
 
-    function updateCountdown() {
-        var hours = Math.floor(countdownTime / 3600);
-        var minutes = Math.floor((countdownTime % 3600) / 60);
-        var seconds = countdownTime % 60;
-
-        // 格式化时间为两位数
-        hours = hours < 10 ? '0' + hours : hours;
-        minutes = minutes < 10 ? '0' + minutes : minutes;
-        seconds = seconds < 10 ? '0' + seconds : seconds;
-
-        // 更新页面上的倒计时显示
-        document.getElementById('hours').textContent = hours;
-        document.getElementById('minutes').textContent = minutes;
-        document.getElementById('seconds').textContent = seconds;
-
-        // 每秒减少倒计时
-        if (countdownTime > 0) {
-            countdownTime--;
-            setTimeout(updateCountdown, 1000);
-        }
-        //将剩余时间写入sessionStorage
-        sessionStorage.setItem("currentTime", String(countdownTime));
-    }
-
-    // 初始化倒计时
-    updateCountdown();
-
-
-</script>
 
 </body>
 

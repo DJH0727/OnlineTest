@@ -15,10 +15,7 @@ import org.web.onlinetest.main.QusOption;
 
 import java.sql.Date;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 @Component
 @Transactional
@@ -208,7 +205,25 @@ public class StudentService {
     }
 
 
+    public void updatePaper(Integer pid, Integer qid,String userAnswer) {
+        try {
+            jdbcTemplate.update("UPDATE paper SET useranswer=? WHERE pid=? AND qid=?",
+                    userAnswer, pid,qid);
+
+        }catch (Exception e)
+        {
+            logger.error("updatePaper error", e);
+
+        }
+    }
+
+
+
+
     public void updateExam(Integer eid, String uid, Map<String, String> formData) {
+
+        Exam exam = getExamByEid(eid);
+        Integer pid = exam.getPid();
 
 
         List<Question> questions = getQuestionsByEid(eid);
@@ -216,37 +231,61 @@ public class StudentService {
         List<Question> multipleChoiceQuestions = getTypeQuestions(questions, 2);
         List<Question> trueFalseQuestions = getTypeQuestions(questions, 3);
 
-
+        int score = 0;
 
         for(int i=1;i<=singleChoiceQuestions.size();i++){
             String answer = formData.get("singleChoiceAnswer"+i);
             if(answer==null|| answer.isEmpty()){
-                System.out.println("singleChoiceAnswer"+i+" 未选择答案");
+               updatePaper(pid,singleChoiceQuestions.get(i-1).getQid(),"U");
             }
             else{
-                System.out.println( "singleChoiceAnswer"+i+" 选择的答案是："+ answer+" 正确答案是："+singleChoiceQuestions.get(i-1).getAnswer());
+                if(answer.equals(singleChoiceQuestions.get(i-1).getAnswer())) score++;
+                updatePaper(pid,singleChoiceQuestions.get(i-1).getQid(),answer);
             }
         }
         for(int i=1;i<=multipleChoiceQuestions.size();i++){
             String answer = formData.get("multipleChoiceAnswer"+i);
             if(answer==null|| answer.isEmpty()){
-                System.out.println("multipleChoiceAnswer"+i+" 未选择答案");
+                updatePaper(pid,multipleChoiceQuestions.get(i-1).getQid(),"U");
             }
             else{
-                System.out.println( "multipleChoiceAnswer"+i+" 选择的答案是："+ answer+" 正确答案是："+multipleChoiceQuestions.get(i-1).getAnswer());
+                char[] answerArray = answer.toCharArray();
+                Arrays.sort(answerArray);
+                answer = new String(answerArray);
+                if(answer.equals(multipleChoiceQuestions.get(i-1).getAnswer()))score++;
+                updatePaper(pid,multipleChoiceQuestions.get(i-1).getQid(),answer);
             }
         }
         for(int i=1;i<=trueFalseQuestions.size();i++){
             String answer = formData.get("trueFalseAnswer"+i);
             if(answer==null|| answer.isEmpty()){
-                System.out.println("trueFalseAnswer"+i+" 未选择答案");
+                updatePaper(pid,trueFalseQuestions.get(i-1).getQid(),"U");
             }
             else{
-                System.out.println( "trueFalseAnswer"+i+" 选择的答案是："+ answer+" 正确答案是："+trueFalseQuestions.get(i-1).getAnswer());
+                if(answer.equals(trueFalseQuestions.get(i-1).getAnswer())) score++;
+                updatePaper(pid,trueFalseQuestions.get(i-1).getQid(),answer);
             }
-
+        }
+        try {
+            jdbcTemplate.update("UPDATE exams SET userscore=?,status=2,edate=CURRENT_DATE WHERE eid=?", score, eid);
+        } catch (Exception e) {
+            logger.error("updateExam error", e);
+            return;
         }
 
+        logger.info("updateExam success by eid:{},uid:{} ",eid,uid);
+    }
 
+    public List<String> getUserAnswers(Integer eid,List<Question> singleChoiceQuestions) {
+
+        String findPidSql = "SELECT pid FROM exams WHERE eid=?";
+        Integer pid = jdbcTemplate.queryForObject(findPidSql, Integer.class, eid);
+        List<String> userAnswers = new ArrayList<>();
+        for(Question question:singleChoiceQuestions){
+            String findUserAnswerSql = "SELECT useranswer FROM paper WHERE pid=? AND qid=?";
+            String userAnswer = jdbcTemplate.queryForObject(findUserAnswerSql, String.class, pid, question.getQid());
+            userAnswers.add(userAnswer);
+        }
+        return userAnswers;
     }
 }

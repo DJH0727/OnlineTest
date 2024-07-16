@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Home</title>
+    <div th:replace="~{include/StuNav::bootstrap}"></div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #00bfff;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        td {
+            border-bottom: 1px solid #dddddd;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="~{include/StuNav::stuNav }"></div>
+<div style="margin-left: 17%;">
+    <table>
+        <tr>
+            <th>考试名称</th>
+            <th>考试提交时间</th>
+            <th>考试课程</th>
+            <th>总分</th>
+            <th>得分</th>
+            <th>操作</th>
+        </tr>
+        <tr th:each="exam : ${exams}">
+            <td th:text="${exam.ename}">考试名称</td>
+            <td th:text="${#dates.format(exam.edate, 'yyyy-MM-dd')}">考试提交时间</td>
+            <td th:text="${exam.courseName1}+'、'+${exam.courseName2}">考试课程</td>
+            <td th:text="${exam.totalscore}">总分</td>
+            <td th:text="${exam.userscore}">得分</td>
+            <td>
+                <a href="#" th:href="@{/viewPage(eid=${exam.eid})}" >查看详情</a>
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+
+</body>
+</html>
