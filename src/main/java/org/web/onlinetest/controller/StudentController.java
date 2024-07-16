@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.web.onlinetest.OnlineTestApplication;
 import org.web.onlinetest.main.*;
 import org.web.onlinetest.service.StudentService;
 import org.web.onlinetest.service.UserService;
@@ -122,7 +123,8 @@ public class StudentController {
     }
 
 
-    final String AVATAR_PATH = getClass().getResource("/").getPath()+"static/avatar/";
+    final String questionImagePath = "D:\\Program\\OnlineTest\\src\\main\\resources\\static\\questionImgUrl\\";
+    final String AVATAR_PATH = "D:\\Program\\OnlineTest\\src\\main\\resources\\static\\avatar\\";
     @PostMapping("/changeInfo")
     public String changeInfo(HttpSession session, Model model,
                              @RequestParam("file") MultipartFile file,
