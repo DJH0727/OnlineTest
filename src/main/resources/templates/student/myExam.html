@@ -9,69 +9,79 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
             margin: 0;
+            padding: 0;
+        }
+
+        .exam-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .exam-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
             padding: 20px;
+            width: 300px;
+            box-sizing: border-box;
+            flex: 1 1 300px;
+            cursor: pointer;
         }
-        h1 {
-            text-align: center;
-            color: #333;
+
+        .exam-box h2 {
+            margin-top: 0;
+            color: #00a1ff;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+
+        .exam-details {
+            margin-top: 10px;
         }
-        th, td {
-            padding: 12px;
-            text-align: left;
+
+        .exam-details p {
+            margin: 10px 0;
         }
-        th {
+
+        .exam-details a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
             background-color: #00bfff;
-            color: #ffffff;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
         }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
+
+        .exam-details a:hover {
+            background-color: #00a1ff;
         }
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-        td {
-            border-bottom: 1px solid #dddddd;
-        }
+
+
     </style>
 </head>
 <body>
 <div th:replace="~{include/StuNav::stuNav }"></div>
-<div style="margin-left: 17%;">
-    <table>
-        <tr>
-            <th>考试名称</th>
-            <th>考试生成时间</th>
-            <th>考试课程</th>
-            <th>总分</th>
-            <th>考试持续时间</th>
-            <th>操作</th>
-        </tr>
-        <tr th:each="exam : ${exams}">
-            <td th:text="${exam.ename}">考试名称</td>
-            <td th:text="${#dates.format(exam.edate, 'yyyy-MM-dd')}">考试生成时间</td>
-            <td th:text="${exam.courseName1}+'、'+${exam.courseName2}">考试课程</td>
-            <td th:text="${exam.totalscore}">总分</td>
-            <td th:text="${exam.etime}">考试持续时间</td>
-            <td>
-                <a href="#" th:href="@{/startExam(eid=${exam.eid})}" onclick="clearExam()">开始考试</a>
-            </td>
-        </tr>
-    </table>
-    <script>
-        function clearExam() {
-            sessionStorage.clear();
-        }
-    </script>
-
+<div class="exam-container" th:each="exam : ${exams}" style="margin-left: 17%">
+    <div class="exam-box">
+        <h2 th:text="${exam.ename}">考试名称</h2>
+        <div class="exam-details">
+            <p><strong>考试生成时间:</strong> <span th:text="${#dates.format(exam.edate, 'yyyy-MM-dd')}">考试生成时间</span></p>
+            <p><strong>考试课程:</strong> <span th:text="${exam.courseName1}+'、'+${exam.courseName2}">考试课程</span></p>
+            <p><strong>总分:</strong> <span th:text="${exam.totalscore}">总分</span></p>
+            <p><strong>考试持续时间:</strong> <span th:text="${exam.etime}">考试持续时间</span></p>
+            <a href="#" th:href="@{/startExam(eid=${exam.eid})}" onclick="clearExam()">开始考试</a>
+        </div>
+    </div>
 </div>
-
+<script>
+    function clearExam() {
+        sessionStorage.clear();
+    }
+</script>
 </body>
+
+
+
 </html>
