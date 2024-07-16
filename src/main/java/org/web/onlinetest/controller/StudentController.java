@@ -168,6 +168,7 @@ public class StudentController {
     @GetMapping("/startExam")
     public String startExam(HttpSession session, Model model, @RequestParam("eid") Integer eid) {
         logger.info("startExam by eid {}",eid);
+        Exam exam = studentService.getExamByEid(eid);
         User user = (User) session.getAttribute("user");
         if (user == null) {
             return "redirect:/signin";
@@ -180,6 +181,7 @@ public class StudentController {
         model.addAttribute("multipleChoiceQuestions", multipleChoiceQuestions );
         model.addAttribute("trueFalseQuestions", trueFalseQuestions );
         model.addAttribute("eid", eid);
+        model.addAttribute("etime", exam.getEtime());
         return "student/ExamPage";
     }
 

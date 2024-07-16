@@ -59,7 +59,7 @@
             <td th:text="${#dates.format(exam.edate, 'yyyy-MM-dd')}">考试生成时间</td>
             <td th:text="${exam.courseName1}+'、'+${exam.courseName2}">考试课程</td>
             <td th:text="${exam.totalscore}">总分</td>
-            <td th:text="${exam.ename}">考试持续时间</td>
+            <td th:text="${exam.etime}">考试持续时间</td>
             <td>
                 <a href="#" th:href="@{/startExam(eid=${exam.eid})}" onclick="clearExam()">开始考试</a>
             </td>

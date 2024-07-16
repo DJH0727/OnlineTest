@@ -27,11 +27,11 @@
                 <form  th:id="${eid}">
                     <div class="test_title">
                         <p class="test_time">
-                            <i class="icon iconfont">&#xe6fb;</i><b class="alt-1">01:40</b>
+                            <i class="icon iconfont">&#xe6fb;</i><b class="alt-1" id="testTime"></b>
                         </p>
                         <font><input type="button" name="test_jiaojuan" value="交卷" onclick="submitTest()" id="submitBtn" /></font>
                     </div>
-
+                    <span id="testTimeSpan" style="display:none;" th:text="${etime}"></span>
                     <div class="test_content">
                         <div class="test_content_title">
                             <h2>单选题</h2>
@@ -236,7 +236,9 @@
                             <i class="icon iconfont">&#xe692;</i>答题卡
                         </h1>
                         <p class="test_time">
-                            <i class="icon iconfont">&#xe6fb;</i><b class="alt-1">01:40</b>
+                            <span id="hours" style="font-size: 16px;">00</span>:
+                            <span id="minutes" style="font-size: 16px;">00</span>:
+                            <span id="seconds" style="font-size: 16px;">00</span>
                         </p>
                     </div>
 
@@ -310,6 +312,7 @@
         $('.alt-2').countDown({
             css_class: 'countdown-alt-2'
         });
+
 
     });
     //刷新页面后，恢复答题卡
@@ -435,6 +438,46 @@
     }
 
 
+
+
+</script>
+
+<script>
+    var countdownTime = 0;
+    if(sessionStorage.getItem("currentTime")!=null){
+         countdownTime = parseInt(sessionStorage.getItem("currentTime"));
+        console.log("倒计时：" + countdownTime);
+    }else{
+        countdownTime = document.getElementById("testTimeSpan").innerHTML * 60;
+    }
+
+
+    function updateCountdown() {
+        var hours = Math.floor(countdownTime / 3600);
+        var minutes = Math.floor((countdownTime % 3600) / 60);
+        var seconds = countdownTime % 60;
+
+        // 格式化时间为两位数
+        hours = hours < 10 ? '0' + hours : hours;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        // 更新页面上的倒计时显示
+        document.getElementById('hours').textContent = hours;
+        document.getElementById('minutes').textContent = minutes;
+        document.getElementById('seconds').textContent = seconds;
+
+        // 每秒减少倒计时
+        if (countdownTime > 0) {
+            countdownTime--;
+            setTimeout(updateCountdown, 1000);
+        }
+        //将剩余时间写入sessionStorage
+        sessionStorage.setItem("currentTime", String(countdownTime));
+    }
+
+    // 初始化倒计时
+    updateCountdown();
 
 
 </script>
