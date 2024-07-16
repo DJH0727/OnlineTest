@@ -223,6 +223,7 @@ public class StudentController {
         if (user == null) {
             return "redirect:/signin";
         }
+        Exam exam = studentService.getExamByEid(eid);
         List<Question> questions = studentService.getQuestionsByEid(eid);
         List<Question> singleChoiceQuestions = studentService.getTypeQuestions(questions, 1);
         List<String> userSingleChoiceAnswers = studentService.getUserAnswers(eid,singleChoiceQuestions);
@@ -241,6 +242,8 @@ public class StudentController {
         model.addAttribute("userMultipleChoiceAnswers", userMultipleChoiceAnswers );
         model.addAttribute("trueFalseQuestions", trueFalseQuestions );
         model.addAttribute("eid", eid);
+        model.addAttribute("totalScore", exam.getTotalscore());
+        model.addAttribute("userScore", exam.getUserscore());
         model.addAttribute("userTrueFalseAnswers", userTrueFalseAnswers );
 
 
