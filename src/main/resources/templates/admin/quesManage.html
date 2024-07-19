@@ -314,6 +314,11 @@
             mul_answer += "D";
         }
         $("#mul_answer").val(mul_answer);
+        document.location.reload();//重新加载当前页面
+
+    }
+    function reloadInfo() {
+        document.location.reload();
     }
 </script>
 
@@ -378,7 +383,7 @@
                 </div>
 
                 <div style="text-align:center; margin-top: 2%; margin-bottom: 2%;">
-                    <button type="submit" class="btn btn-primary">提交</button>
+                    <button type="submit" class="btn btn-primary" onclick="reloadInfo()">提交</button>
                 </div>
 
 
@@ -420,7 +425,7 @@
 
                 </div>
                 <div style="text-align:center; margin-top: 2%; margin-bottom: 2%;">
-                    <button type="submit" class="btn btn-primary">提交</button>
+                    <button type="submit" class="btn btn-primary" onclick="reloadInfo()">提交</button>
                 </div>
 
 

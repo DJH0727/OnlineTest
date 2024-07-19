@@ -101,19 +101,22 @@ public class StudentController {
 
     @PostMapping("/updatePassword")
     public String updatePassword(HttpSession session,
-                                 @RequestParam("studentId") String studentId,
                                  @RequestParam("currentPassword") String currentPassword,
                                  @RequestParam("newPassword") String newPassword,
                                  @RequestParam("confirmPassword") String confirmPassword,
                                  RedirectAttributes redirectAttributes) {
         logger.info("updatePassword");
+        User  user = (User) session.getAttribute("user");
+        if (user == null) {
+            return "redirect:/signin";
+        }
 
         if (!newPassword.equals(confirmPassword)) {
             redirectAttributes.addFlashAttribute("message", "新密码和确认新密码不一致。");
             return "redirect:/changePassword";
         }
 
-        boolean success = userService.updatePassword(studentId, currentPassword, newPassword);
+        boolean success = userService.updatePassword(user.getUid(), currentPassword, newPassword);
         if (success) {
             redirectAttributes.addFlashAttribute("message", "密码已成功更改！");
         } else {
